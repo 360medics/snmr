@@ -1,0 +1,126 @@
+[
+  {
+    "pathology": "Polyarthrite Rhumatoïde",
+    "scores": [
+      {
+        "title": "ACR EULAR 2010",
+        "link": "https://www.rheumakit.com/fr/calculators/acr_eular2010"
+      },
+      {
+        "title": "DAS 28",
+        "link": "https://www.rheumakit.com/fr/calculators/das28"
+      },
+      {
+        "title": "SDAI",
+        "link": "https://www.rheumakit.com/fr/calculators/sdai"
+      },
+      {
+        "title": "CDAI",
+        "link": "https://www.rheumakit.com/fr/calculators/cdai"
+      },
+      {
+        "title": "HAQ",
+        "link": "https://www.rheumakit.com/fr/calculators/haq_di"
+      },
+      {
+        "title": "RAPID3",
+        "link": "https://www.rheumakit.com/fr/calculators/rapid3"
+      }
+    ]
+  },
+  {
+    "pathology": "Spondylarthrite Ankylosante",
+    "scores": [
+      {
+        "title": "ASAS Axiale",
+        "link": "http://medicalcul.free.fr/spondylo_asas.html"
+      },
+      {
+        "title": "ASAS Périphérique",
+        "link": "http://medicalcul.free.fr/spondperiph_asas.html"
+      },
+      {
+        "title": "AMOR",
+        "link": "http://medicalcul.free.fr/spondylo_amor.html"
+      },
+      {
+        "title": "BASDAI",
+        "link": "http://medicalcul.free.fr/basdai.html"
+      },
+      {
+        "title": "ASDAS",
+        "link": "http://medicalcul.free.fr/asdas.html"
+      }
+    ]
+  },
+  {
+    "pathology": "Rhumatisme psoriasique",
+    "scores": [
+      {
+        "title": "Caspar",
+        "link": "http://www.rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques"
+      }
+    ]
+  },
+  {
+    "pathology": "Fibromyalgie",
+    "scores": [
+      {
+        "title": "FIRST",
+        "link": "http://medicalcul.free.fr/firstquest.html"
+      },
+      {
+        "title": "ACR2010",
+        "link": "http://www.townsendletter.com/Nov2013/FibromyalgiaDiagnosticCriteria.pdf"
+      },
+      {
+        "title": "QIF",
+        "link": "http://www.sfetd-douleur.org/sites/default/files/u161/evaluation/fiq_revise.pdf"
+      }
+    ]
+  },
+  {
+    "pathology": "Lupus érythémateux disséminé",
+    "scores": [
+      {
+        "title": "ACR 1997",
+        "link": "http://www.sfdermato.com/media/pdf/recommandation/lupus-c9d31b7646c68e5947a2bea775f3a73b.pdf"
+      },
+      {
+        "title": "SLEDAI",
+        "link": "http://www.rhumatologie.asso.fr/03-Services/instruments-pratiques/SLEDAI.html"
+      }
+    ]
+  },
+  {
+    "pathology": "Syndrome de Gougerot-Sjogren",
+    "scores": [
+      {
+        "title": "Critères diagnostiques américano-européens de 2002",
+        "link": "http://www.orphanaide.com/maladiespublic/gougerot-sjoegren/criteres-diagnostiques.html"
+      },
+      {
+        "title": "ESSDAI",
+        "link": "http://scores.sanoia.com/sjogren/essdai/fr/"
+      }
+    ]
+  },
+  {
+    "pathology": "Lombalgie",
+    "scores": [
+      {
+        "title": "EIFEL",
+        "link": "http://www.antalvite.fr/pdf/EIFEL.pdf"
+      }
+    ]
+  },
+  {
+    "pathology": "Ostéoporose",
+    "scores": [
+      {
+        "title": "FRAX",
+        "link": "https://www.sheffield.ac.uk/FRAX/tool.aspx?country=12"
+      }
+    ]
+  }
+]
