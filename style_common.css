@@ -12,21 +12,6 @@ h1 {
     text-align: center;
 }
 
-.bold {
-    font-weight: bold;
-}
-
-.and {
-    list-style: none;
-    color: green;
-}
-
-.or {
-    list-style: none;
-    color: blue;
-    text-align: center;
-}
-
 table {
     width:100%;
 }
@@ -138,4 +123,23 @@ h2,
 }
 .altern_color{
   background-color:#DEDEDE
+}
+
+/* ASAS AXIALE */
+
+.bold {
+    font-weight: bold;
+}
+
+.and {
+    color: green;
+    margin: 5px;
+}
+
+.or {
+    color: blue;
+}
+
+.red {
+    color: #c41723;
 }
