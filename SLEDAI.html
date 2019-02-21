@@ -1,33 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!-- DW6 -->
+
 <head>
 <title>Systemic Lupus Erythematosus Disease Activity Index (SLEDAI)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width" />
 <script type="text/javascript" src="script_amor.js"></script>
-<!-- <script type="text/javascript">f_ChooseCss();</script> -->
 <link rel="stylesheet" href="style_common.css" />
-<!--  <link rel="stylesheet" href="style_sledai.css" /> -->
-
-<script type="text/javascript">
-// ===========================================================================================
-// Fonction de calcul de la page
-function f_Calculer()
-{
-	// calcul du résultat
-	var Res = 0;
-	for(var i=1; i<24; i++)
-		Res += f_GetRadioValue('vItem'+i)*1;
-
-	// Affichage du résultat
-	document.Form.Resultat.value = Res;
-
-
-	try { MSSAndroidFunction.storeHistory(f_GetFilename(), "Systemic Lupus", "rhumatologie", "Score:", Res); } catch(e) {}
-}
-// ======================================================================================
-</script>
 </head>
 
 <body class="scorebody">
@@ -160,13 +139,25 @@ function f_Calculer()
 
 </form>
 
-<!--
-<div class="score_inter">Interprétation</div>
-<span class="description">Un score <span style="color:red; font-weight:bold;">supérieur ou égal à 6</span> indique la présence d'une spondylarthrite (sensibilité 85%, spécificité 90%).</span>
--->
-
 <div class="score_ref">Références</div>
 <span class="description">Bombardier C., Gladmann D.D., Urowitz M.B., Caron D., Chang C.H., and the Committee on prognosis studies in SLE – Derivation of the SLEDAI : a disease activity index for lupus patients. Arthritis Rheum., 1992, 35, 630-640.</span>
+
+<script type="text/javascript">
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+        // calcul du résultat
+        var Res = 0;
+        for(var i=1; i<24; i++)
+            Res += f_GetRadioValue('vItem'+i)*1;
+
+        // Affichage du résultat
+        document.Form.Resultat.value = Res;
+
+
+        try { MSSAndroidFunction.storeHistory(f_GetFilename(), "Systemic Lupus", "rhumatologie", "Score:", Res); } catch(e) {}
+    }
+</script>
 
 </body>
 </html>
