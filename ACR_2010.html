@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>2010 ACR Fibromyalgia Diagnostic Criteria (Modified 2011)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">2010 ACR Fibromyalgia<br/>Diagnostic Criteria<br/>(Modified 2011)<br /></p>
+
+<form name="Form" id="Form">
+<h2></h2>
+<div>
+  A patient satisfies diagnostic criteria for fibromyalgia if the following conditions are met:<br/>
+  1. Widespread pain index (WPI) ≥7 and symptom severity (SS) scale score ≥5 or WPI 3-6 and SS scale score ≥9.<br/>
+  2. Symptoms have been present at a similar level for at least 3 months.<br/>
+  3. The patient does not have a disorder that would otherwise explain the pain<br/>
+</div>
+
+<h2>Take this test and add</h2>
+<div>
+
+      <div class="score_result">
+          <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly"/>
+          WPI: Check each area you’ve had pain over the last week. Count these (score will be between 0 and 19)
+      </div>
+</div>
+
+<table>
+  <tr>
+    <td>Shoulder girdle, left<br/> <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Hip (buttock, trochanter), left<br/> <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Jaw, left  <br/><input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Upper back  <br/><input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+    <td>Shoulder girdle, right <br/><input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Hip (buttock, trochanter), right <br/><input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Jaw, right <br/><input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Lower back  <br/><input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+    <td>Upper arm, left <br/><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Upper leg, left <br/><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Chest <br/><input name="vItem10" id="vItem10" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Neck <br/><input name="vItem11" id="vItem11" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+    <td>Upper arm, right <br/><input name="vItem12" id="vItem12" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Upper leg, right <br/><input name="vItem13" id="vItem13" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Abdomen <br/><input name="vItem14" id="vItem14" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Lower arm, left <br/><input name="vItem15" id="vItem15" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Lower leg, left <br/><input name="vItem16" id="vItem16" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Lower arm, right <br/><input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Lower leg, right <br/><input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>Résultats</h2>
+<div>
+    Ils varient de 0 à 24.
+</div>
+
+<h2>Evalutation - Questions</h2>
+
+
+
+</form>
+
+
+<div class="score_inter">Interprétation</div>
+<span class="description">Plus le score est élevé, plus le retentissement du mal de dos est important.</span>
+
+<script type="text/javascript">
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+        // calcul du résultat
+        var Res = 0;
+        for(var i=1; i<25; i++)
+            Res += f_GetRadioValue('vItem'+i)*1;
+
+        // Affichage du résultat
+        document.Form.Resultat.value = 1;
+
+    }
+</script>
+
+</body>
+</html>
