@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<title>Systemic Lupus Erythematosus Disease Activity Index (SLEDAI)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="script_amor.js"></script>
+<!-- <script type="text/javascript">f_ChooseCss();</script> -->
+<link rel="stylesheet" href="style_common.css" />
+<!--  <link rel="stylesheet" href="style_sledai.css" /> -->
+
+<script type="text/javascript">
+// ===========================================================================================
+// Fonction de calcul de la page
+function f_Calculer()
+{
+	// calcul du résultat
+	var Res = 0;
+	for(var i=1; i<24; i++)
+		Res += f_GetRadioValue('vItem'+i)*1;
+
+	// Affichage du résultat
+	document.Form.Resultat.value = Res;
+
+
+	try { MSSAndroidFunction.storeHistory(f_GetFilename(), "Systemic Lupus", "rhumatologie", "Score:", Res); } catch(e) {}
+}
+// ======================================================================================
+</script>
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">Systemic Lupus<br />Erythematosus Disease Activity Index<br />(SLEDAI)<br />
+
+  <h2>Intérêt</h2>
+  <div>
+    Donne une évaluation de l’activité de la maladie lupique.
+    Le poids attribué à chaque variable a été déterminés par analyse de régression multiple.
+    Les manifestations décrites sont prises en compte si elles sont présentes le jour de la
+    consultation ou bien dans les 10 jours précédents.
+  </div>
+
+  <h2>Méthode</h2>
+  <div>
+    Vérification de la présence ou non de 24 variables.
+  </div>
+
+
+  <h2>Résultats</h2>
+  <div>
+    Ils varient de 0 à 105.
+  </div>
+
+  <h2>Evalutation - Valeurs - Manifestations - Définition</h2>
+
+<form name="Form" id="Form">
+  <table border="0" align="center" cellpadding="2" cellspacing="0">
+
+    <tr>
+  	  <td ><input name="vItem1" id="vItem1" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+    	<td ><label for="vItem1">8 - <b>Convulsion</b> Apparition récente. Exclusion des causes métaboliques, infectieuses ou médicamenteuses</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem2" id="vItem2" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem2">8 - <b>Psychose</b> Perturbation de l’activité normale en rapport avec une altération sévère de la perception de la réalité. Comprend : hallucinations, incohérence, appauvrissement du contenu de la pensée, raisonnement illogique, comportement bizarre, désorganisé ou catatonique. Exclusion d’une insuffisance rénale ou d’une cause médicamenteuse</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem3" id="vItem3" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem3">8 - <b>Atteinte cérébrale</b> Altération des fonctions mentales avec troubles de l’orientation, de la mémoire ou autre d’apparition brutale et d’évolution fluctuante. Comprend : troubles de la conscience avec réduction des capacités de concentration, incapacité à rester attentif avec en plus 2 au moins des manifestations suivantes : troubles perceptifs, discours incohérent, insomnie ou somnolence diurne, augmentation ou diminution de l’activité psychomotrice.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem4" id="vItem4" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem4">8 - <b>Troubles visuels</b> Atteinte rétinienne du lupus. Comprend : nodules dysoriques, hémorragies rétiniennes, exsudats séreux ou hémorragies choroïdiennes, névrite optique. Exclusion d’une cause hypertensive, infectieuse ou médicamenteuse.</label></td>
+    </tr>
+    <tr>
+  	  <td><input name="vItem5" id="vItem5" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+    	<td ><label for="vItem5">8 - <b>Nerfs crâniens</b> Neuropathie sensitive ou motrice d’apparition récente touchant un nerf crânien.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem6" id="vItem6" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem6">8 - <b>Céphalées</b> Céphalées sévères et persistantes, pouvant être migraineuses mais résistant aux antalgiques majeurs.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem7" id="vItem7" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem7">8 - <b>AVC</b> Accident vasculaire cérébral d’apparition récente. Artériosclérose exclue.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem8" id="vItem8" type="checkbox" value="8" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem8">8 - <b>Vascularite</b> Doigt ou orteil &laquo;&nbsp;en saucisse&nbsp;&raquo;.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem9" id="vItem9" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem9">4 - <b>Arthrites</b> Plus de 2 articulations douloureuses avec des signes inflammatoires locaux (douleur, tuméfaction ou épanchement articulaire).</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem10" id="vItem10" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem10">4 - <b>Myosite</b> Douleur/faiblesse musculaire proximale associées à une élévation des CPK et/ou aldolases ou à des modifications électromyographiques ou à une biopsie montrant des signes de vascularite.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem11" id="vItem11" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem11">4 - <b>Cylindres urinaires</b> Cylindres de globules rouges.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem12" id="vItem12" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem12">4 - <b>Hématurie</b> &gt; 5 GR / champ en l’absence de lithiase, d’infection ou d’une autre cause.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem13" id="vItem13" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem13">4 - <b>Protéinurie</b> &gt; 0,5 g/24h. Apparition récente ou majoration récente de plus de 0,5g/24h.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem14" id="vItem14" type="checkbox" value="4" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem14">4 - <b>Pyurie</b> &gt; 5 GB/champ en l’absence d’infection.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem15" id="vItem15" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem15">2 - <b>Alopécie</b> Apparition récente ou récidive d’une alopécie en plaque ou diffuse.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem16" id="vItem16" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem16">2 - <b>Ulcères muqueux</b> Apparition récente ou récidive d’ulcérations orales ou nasales.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem17" id="vItem17" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem17">2 - <b>Pleurésie</b> Douleur thoracique d’origine pleurale avec frottement ou épanchement ou épaississement pleural.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem18" id="vItem18" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem18">2 - <b>Péricardite</b> Douleur péricardique avec au moins l’une des manifestations suivantes : frottement, épanchement ou confirmation électrographique ou échographique.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem19" id="vItem19" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem19">2 - <b>Complément</b> Diminution du CH50, du C3ou du C4 &lt; à la normale inférieure du laboratoire.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem20" id="vItem20" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem20">2 - <b>Anti-ADN</b> Positivité &gt; à 25% par le test de Farr ou taux &gt; à la normale du laboratoire.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem21" id="vItem21" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem21">1 - <b>Fièvre</b> &gt;38° en l’absence de cause infectieuse.</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem22" id="vItem22" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem22">1 - <b>Thrombopénie</b> &lt; 100 000 plaquettes/mm3</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem23" id="vItem23" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem23">1 - <b>Leucopénie</b> &gt; 3 000 GB/mm3 en l’absence de cause médicamenteuse.</label></td>
+    </tr>
+  </table>
+  <br />
+
+<div class="score_result">
+	Score
+	<input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
+  <div id="score_result_confirm"></div>
+</div>
+
+</form>
+
+<!--
+<div class="score_inter">Interprétation</div>
+<span class="description">Un score <span style="color:red; font-weight:bold;">supérieur ou égal à 6</span> indique la présence d'une spondylarthrite (sensibilité 85%, spécificité 90%).</span>
+-->
+
+<div class="score_ref">Références</div>
+<span class="description">Bombardier C., Gladmann D.D., Urowitz M.B., Caron D., Chang C.H., and the Committee on prognosis studies in SLE – Derivation of the SLEDAI : a disease activity index for lupus patients. Arthritis Rheum., 1992, 35, 630-640.</span>
+
+</body>
+</html>
