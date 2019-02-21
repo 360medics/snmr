@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<title>Questionnaire	de	mesure	de	l’impact	de	la	fibromyalgie	(FIQ	révisé)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="script_amor.js"></script>
+<!-- <script type="text/javascript">f_ChooseCss();</script> -->
+<link rel="stylesheet" href="style_common.css" />
+<!--  <link rel="stylesheet" href="style_sledai.css" /> -->
+
+<script type="text/javascript">
+// ===========================================================================================
+// Fonction de calcul de la page
+function f_Calculer()
+{
+	// calcul du résultat
+	var Res = 0;
+	for(var i=1; i<24; i++)
+		Res += f_GetRadioValue('g'+i)*1;
+
+	// Affichage du résultat
+	document.Form.Resultat.value = Res;
+
+}
+// ======================================================================================
+</script>
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">Questionnaire	de	mesure<br/>de	l’impact	de	la	fibromyalgie <br/>(FIQ	révisé)<br />
+
+
+<h2>1 - Etes-vous	capable de</h2>
+<form name="Form" id="Form" class="form_qif">
+<table>
+  <tr class="subtitle">
+    <td></td>
+    <td>Toujours<br/>0</td>
+    <td>La plupart du temps<br/>
+    1</td>
+    <td>De temps en temps<br/>2</td>
+    <td>Jamais<br/>3</td>
+  </tr>
+  <tr>
+      <td>Faire	les	courses</td>
+      <td><input name="g1" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g1" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g1" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g1" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Faire	la	lessive	en	machine</td>
+      <td><input name="g2" id="vItem5" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g2" id="vItem6" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g2" id="vItem7" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g2" id="vItem8" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Faire	à	manger</td>
+      <td><input name="g3" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g3" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g3" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g3" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Faire la vaisselle à la main</td>
+      <td><input name="g4" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g4" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g4" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g4" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Passer l'aspirateur</td>
+      <td><input name="g5" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g5" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g5" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g5" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Faire les lits</td>
+      <td><input name="g6" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g6" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g6" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g6" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Marcher plusieurs cerntaines de mètres</td>
+      <td><input name="g7" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g7" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g7" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g7" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Aller voir des amis ou de la famille</td>
+      <td><input name="g8" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g8" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g8" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g8" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Faire du jardinage</td>
+      <td><input name="g9" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g9" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g9" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g9" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+  <tr>
+      <td>Conduire une voiture</td>
+      <td><input name="g10" id="vItem9" type="radio" value="0" onclick="f_Calculer()" /></td>
+      <td><input name="g10" id="vItem10" type="radio" value="1" onclick="f_Calculer()" /></td>
+      <td><input name="g10" id="vItem11" type="radio" value="2" onclick="f_Calculer()" /></td>
+      <td><input name="g10" id="vItem12" type="radio" value="3" onclick="f_Calculer()" /></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+<h2>Au cours des 7 derniers jours</h2>
+<table class="table_qif">
+<tr>
+    <td class="td_question">2 - Combien de jours vous êtes-vous senti(e) bien ?</td>
+    <td>0<input name="g11" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+    <td>1<input name="g11" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+    <td>2<input name="g11" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+    <td>3<input name="g11" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+    <td>4<input name="g11" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+    <td>5<input name="g11" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+    <td>6<input name="g11" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+    <td>7<input name="g11" id="vItem7" type="radio" value="7" onclick="f_Calculer()" /></td>
+</tr>
+</table>
+
+<h2>Si vous n'avez pas d'activité professionnelle,
+notez les activités bénévoles ou qui ont lieu à l'extérieur de la maison</h2>
+
+<table class="table_qif">
+<tr class="tr_question">
+    <td class="td_question">3 - Combien de journées de travail avez-vous manqué à cause de votre fibromyalgie ?</td>
+    <td>0<input name="g12" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+    <td>1<input name="g12" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+    <td>2<input name="g12" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+    <td>3<input name="g12" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+    <td>4<input name="g12" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+    <td>5<input name="g12" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+    <td>6<input name="g12" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+    <td>7<input name="g12" id="vItem7" type="radio" value="7" onclick="f_Calculer()" /></td>
+</tr>
+<tr class="tr_question">
+    <td rowspan="2" class="td_question">4 - Les	jours	où	vous	avez	travaillé,	les	douleurs	ou
+d’autres	problèmes	liés	à	votre	fibromyalgie	vous
+ont-ils	gêné	dans	votre	travail ?</td>
+    <td>0<input name="g13" id="vItem1" type="radio" value="0" onclick="f_Calculer()" />
+    </td>
+    <td>1<input name="g13" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+    <td>2<input name="g13" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+    <td>3<input name="g13" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+    <td>4<input name="g13" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+    <td>5<input name="g13" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+    <td>6<input name="g13" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+    <td>7<input name="g13" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+    <td>8<input name="g13" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+    <td>9<input name="g13" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+    <td>10<input name="g13" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+</tr>
+<tr class="tr_question">
+  <td colspan="2" class="info">Aucune gêne</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td colspan="2" class="info">Gêne très importante</td>
+</tr>
+<tr>
+  <td><br/><br/>
+    </td>
+  </tr>
+<tr>
+    <td class="td_question">5 - Avez-vous eu des douleurs ?</td>
+    <td>0<input name="g14" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+    <td>1<input name="g14" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+    <td>2<input name="g14" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+    <td>3<input name="g14" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+    <td>4<input name="g14" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+    <td>5<input name="g14" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+    <td>6<input name="g14" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+    <td>7<input name="g14" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+    <td>8<input name="g14" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+    <td>9<input name="g14" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+    <td>10<input name="g14" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+</tr>
+</table>
+
+<br/>
+<div class="score_result">
+	Score
+	<input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
+  <div id="score_result_confirm"></div>
+</div>
+
+</form>
+
+<!--
+<div class="score_inter">Interprétation</div>
+<span class="description">Un score <span style="color:red; font-weight:bold;">supérieur ou égal à 6</span> indique la présence d'une spondylarthrite (sensibilité 85%, spécificité 90%).</span>
+-->
+
+<div class="score_ref">Références</div>
+<span class="description">Bombardier C., Gladmann D.D., Urowitz M.B., Caron D., Chang C.H., and the Committee on prognosis studies in SLE – Derivation of the SLEDAI : a disease activity index for lupus patients. Arthritis Rheum., 1992, 35, 630-640.</span>
+
+</body>
+</html>

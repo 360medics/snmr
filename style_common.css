@@ -1,11 +1,11 @@
 body {
-    font-family: Arial;
+    font-family: "Arial", "Georgia";
     font-smooth: never;
     max-width: 100vw;
-    background-color: #fff;
     color: black;
     text-align: justify;
     margin: 15px;
+    background-color: white;
 }
 
 h1 {
@@ -32,14 +32,99 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 0px solid black;
     border-collapse: collapse;
 }
 th, td {
-    padding: 5px;
+    padding: 10px;
     text-align: left;
 }
+td {
+  vertical-align: middle;
+}
+td input{
+  margin:10px;
+}
 
-/*.none {*/
-    /*display: none;*/
-/*}*/
+.common_h1{
+text-align:center;
+margin:auto;
+margin-bottom:25px;
+display:block;
+font-size:28px;
+font-weight: bold;
+color:#404040;
+}
+
+h2,
+.common_h2{
+  font-weight: bold;
+  color:#c41723;
+  line-height:27px;
+  font-variant:petite-caps;
+  font-size: 19px;
+
+}
+
+.input_checkbox{
+  margin:10px;
+  padding:2px;
+}
+
+.score_inter,
+.score_ref{
+  font-variant:petite-caps;
+  font-weight: bold;
+  background-color: white;
+  margin-top:22px;
+  font-size: 17px;
+}
+
+.description{
+  font-size: 15px;
+}
+
+.score_result{
+  font-size:20px;
+  font-weight: bold;
+  width:100%;
+  text-align: center;
+
+}
+
+.score_result input{
+  width:40px;
+  height:30px;
+  font-size:20px;
+  color:#c41723;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score_result div{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* QIF */
+.form_qif td{
+  padding: 2px;
+}
+.table_qif td{
+    text-align: center;
+    border:1px solid #FFFFFF;
+}
+.td_question{
+    text-align: left !important;
+    padding: 20px 0 20px 0 !important;
+}
+.tr_question td{
+    /*padding: 15px 0 15px 0 !important;*/
+    /*vertical-align: bottom;*/
+}
+.info{
+    vertical-align: top;
+    font-size:15px;
+    vertical-align: top;
+    color:#444444;
+}
