@@ -16,14 +16,20 @@
     <table>
         <tr class="subtitle">
             <td></td>
-            <td>Toujours<br/>0</td>
-            <td>La plupart du temps<br/>
-                1</td>
-            <td>De temps en temps<br/>2</td>
-            <td>Jamais<br/>3</td>
+            <td>Toujours</td>
+            <td>La plupart du temps</td>
+            <td>De temps en temps</td>
+            <td>Jamais</td>
+        </tr>
+        <tr class="subtitle">
+          <td></td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
         </tr>
         <tr>
-            <td>Faire	les	courses</td>
+            <td >Faire	les	courses</td>
             <td><input name="g1" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
             <td><input name="g1" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
             <td><input name="g1" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
@@ -126,7 +132,7 @@
             <td>6<input name="g12" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
             <td>7<input name="g12" id="vItem7" type="radio" value="7" onclick="f_Calculer()" /></td>
         </tr>
-        <tr class="tr_question">
+        <tr class="tr_question altern_color">
             <td rowspan="2" class="td_question">4 - Les	jours	où	vous	avez	travaillé,	les	douleurs	ou
                 d’autres	problèmes	liés	à	votre	fibromyalgie	vous
                 ont-ils	gêné	dans	votre	travail ?</td>
@@ -143,7 +149,7 @@
             <td>9<input name="g13" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
             <td>10<input name="g13" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
         </tr>
-        <tr class="tr_question">
+        <tr class="tr_question altern_color">
             <td colspan="2" class="info">Aucune gêne</td>
             <td></td>
             <td></td>
@@ -159,7 +165,7 @@
             </td>
         </tr>
         <tr>
-            <td class="td_question">5 - Avez-vous eu des douleurs ?</td>
+            <td rowspan="2" class="td_question">5 - Avez-vous eu des douleurs ?</td>
             <td>0<input name="g14" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
             <td>1<input name="g14" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
             <td>2<input name="g14" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
@@ -171,6 +177,167 @@
             <td>8<input name="g14" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
             <td>9<input name="g14" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
             <td>10<input name="g14" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question">
+            <td colspan="2" class="info">Aucune douleur</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Douleurs très fortes</td>
+        </tr>
+        <tr>
+            <td><br/><br/>
+            </td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td rowspan="2"class="td_question ">6 - Avez-vous été fatigué(e) ?</td>
+            <td>0<input name="g15" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+            <td>1<input name="g15" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+            <td>2<input name="g15" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+            <td>3<input name="g15" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+            <td>4<input name="g15" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+            <td>5<input name="g15" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+            <td>6<input name="g15" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+            <td>7<input name="g15" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+            <td>8<input name="g15" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+            <td>9<input name="g15" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+            <td>10<input name="g15" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td colspan="2" class="info">Pas du tout fatigué(e)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Extrêmement fatigué(e)</td>
+        </tr>
+
+        <tr>
+            <td><br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2"class="td_question">7 - Avez-vous été fatigué(e) ?</td>
+            <td>0<input name="g16" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+            <td>1<input name="g16" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+            <td>2<input name="g16" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+            <td>3<input name="g16" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+            <td>4<input name="g16" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+            <td>5<input name="g16" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+            <td>6<input name="g16" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+            <td>7<input name="g16" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+            <td>8<input name="g16" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+            <td>9<input name="g16" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+            <td>10<input name="g16" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question">
+            <td colspan="2" class="info">Tout à fait reposé(e) au réveil</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Extrêmement fatigué(e) au réveil</td>
+        </tr>
+
+        <tr>
+            <td><br/><br/>
+            </td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td rowspan="2"class="td_question">8 - Vous êtes-vous senti(e) raide ?</td>
+            <td>0<input name="g17" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+            <td>1<input name="g17" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+            <td>2<input name="g17" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+            <td>3<input name="g17" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+            <td>4<input name="g17" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+            <td>5<input name="g17" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+            <td>6<input name="g17" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+            <td>7<input name="g17" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+            <td>8<input name="g17" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+            <td>9<input name="g17" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+            <td>10<input name="g17" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td colspan="2" class="info">Pas du tout raide</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Extrêmement raide</td>
+        </tr>
+
+        <tr>
+            <td><br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2"class="td_question">9- Vous	êtes-vous	senti(e)	tendu(e)	ou	inquiet(e)	?	</td>
+            <td>0<input name="g18" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+            <td>1<input name="g18" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+            <td>2<input name="g18" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+            <td>3<input name="g18" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+            <td>4<input name="g18" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+            <td>5<input name="g18" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+            <td>6<input name="g18" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+            <td>7<input name="g18" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+            <td>8<input name="g18" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+            <td>9<input name="g18" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+            <td>10<input name="g18" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question">
+            <td colspan="2" class="info">Pas du tout tendu(e)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Extrêmement tendu(e)</td>
+        </tr>
+
+
+        <tr>
+            <td><br/><br/>
+            </td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td rowspan="2"class="td_question ">10- Vous êtes-vous senti(e) déprimé(e) ?	</td>
+            <td>0<input name="g19" id="vItem1" type="radio" value="0" onclick="f_Calculer()" /></td>
+            <td>1<input name="g19" id="vItem2" type="radio" value="1" onclick="f_Calculer()" /></td>
+            <td>2<input name="g19" id="vItem3" type="radio" value="2" onclick="f_Calculer()" /></td>
+            <td>3<input name="g19" id="vItem4" type="radio" value="3" onclick="f_Calculer()" /></td>
+            <td>4<input name="g19" id="vItem5" type="radio" value="4" onclick="f_Calculer()" /></td>
+            <td>5<input name="g19" id="vItem6" type="radio" value="5" onclick="f_Calculer()" /></td>
+            <td>6<input name="g19" id="vItem7" type="radio" value="6" onclick="f_Calculer()" /></td>
+            <td>7<input name="g19" id="vItem8" type="radio" value="7" onclick="f_Calculer()" /></td>
+            <td>8<input name="g19" id="vItem9" type="radio" value="8" onclick="f_Calculer()" /></td>
+            <td>9<input name="g19" id="vItem10" type="radio" value="9" onclick="f_Calculer()" /></td>
+            <td>10<input name="g19" id="vItem11" type="radio" value="10" onclick="f_Calculer()" /></td>
+        </tr>
+        <tr class="tr_question altern_color">
+            <td colspan="2" class="info">Pas du tout tendu(e)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="info">Extrêmement tendu(e)</td>
         </tr>
     </table>
 
