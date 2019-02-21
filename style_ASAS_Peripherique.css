@@ -19,6 +19,7 @@ h1 {
 .and {
     list-style: none;
     color: green;
+    margin-left: 6px;
 }
 
 .or {
@@ -40,6 +41,3 @@ th, td {
     text-align: left;
 }
 
-/*.none {*/
-    /*display: none;*/
-/*}*/
