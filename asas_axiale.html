@@ -14,35 +14,24 @@
 <p class="common_h2">Chez un patient présentant une <span class="bold">rachialgie ≥ à 3 mois</span> dont l'<span class="bold">âge du diagnostic est &lt; à 45 ans</span>, on peut classer sa maladie dans la forme spondylarthrite axiale si :</p>
 
 
+<input onclick="uncheck34()" class="cb" type="checkbox" id="Mitem1" name="Mitem1" value="Mitem1">
+<label for="Mitem1">Sacro-iliite à l'imagerie</label>
 
-<!--<input class="cb" name="fries" type="checkbox" id="opt1" onchange="cbChange(this)"/>-->
-<!--<input class="cb" type="checkbox" name="fries" id="opt2" onchange="cbChange(this)"/>-->
+<br><span class="and">ET</span><br>
 
-<!--<input class="cb" type="radio" name="o1" id="hotdog" onchange="cbChange(this)"/>-->
+<input onclick="uncheck34()" class="cb" type="checkbox" id="Mitem2" name="item2" value="item2">
+<label for="Mitem2">≥ 1 signe de spondylarthite</label>
 
+<br><br><span class="or">OU</span><br><br>
 
+<input onclick="uncheck12()" class="cb" type="checkbox" id="Mitem3" name="Mitem3" value="Mitem3">
+<label for="Mitem3">HLA-B27 positif</label>
 
+<br><span class="and">ET</span><br>
 
+<input onclick="uncheck12()" class="cb" type="checkbox" id="Mitem4" name="item4" value="item4">
+<label for="Mitem4">≥ 2 <span class="bold">autres</span> signes de spondylarthite</label>
 
-<div>
-    <input onchange="cbChange(this)" class="cb" type="checkbox" id="item1" name="item1" value="item1">
-    <label for="item1">Sacro-iliite à l'imagerie</label>
-</div>
-<div class="and">ET</div>
-<div>
-    <input onchange="cbChange(this)" class="cb" type="checkbox" id="item2" name="item2" value="item2">
-    <label for="item2">≥ 1 signe de spondylarthite</label>
-</div>
-<br><div class="or">OU</div><br>
-<div>
-    <input onchange="cbChange(this)" class="cb" type="checkbox" id="item3" name="item3" value="item3">
-    <label for="item3">HLA-B27 positif</label>
-</div>
-<div class="and">ET</div>
-<div>
-    <input onchange="cbChange(this)" class="cb" type="checkbox" id="item4" name="item4" value="item4">
-    <label for="item4">≥ 2 <span class="bold">autres</span> signes de spondylarthite</label>
-</div>
 
 <br>
 <p class="common_h2">Sacro-iliite à l'imagerie:</p>
@@ -114,14 +103,21 @@
     Rudwaleit M, van der Heijde D, Landewé R, Listing J, Akkoc N, Brandt J, et al. The development of Assessment of Spondyloarthritis International Society classification criteria for axial spondyloarthritis (Part II): validation and final selection. Ann Rheum Dis. 2009;68:777–83.</span>
 
 
-
 <script>
-    function cbChange(obj) {
-        var cbs = document.getElementsByClassName("cb");
-        for (var i = 0; i < cbs.length; i++) {
-            cbs[i].checked = false;
-        }
-        obj.checked = true;
+    function uncheck34() {
+        var cb3 = document.getElementById("Mitem3");
+        var cb4 = document.getElementById("Mitem4");
+
+        cb3.checked = false;
+        cb4.checked = false;
+    }
+
+    function uncheck12() {
+        var cb1 = document.getElementById("Mitem1");
+        var cb2 = document.getElementById("Mitem2");
+
+        cb1.checked = false;
+        cb2.checked = false;
     }
 </script>
 </body>
