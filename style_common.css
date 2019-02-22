@@ -102,17 +102,21 @@ h2,
 /* QIF */
 .form_qif td{
   padding: 2px;
+  text-align:center;
+}
+.form_qif td:first-child{
+  text-align:left;
 }
 .table_qif td{
     text-align: center;
-    border:1px solid #FFFFFF;
+    border:0px solid #FFFFFF;
 }
 .td_question{
     text-align: left !important;
     padding: 20px 0 20px 0 !important;
 }
 .tr_question td{
-    /*padding: 15px 0 15px 0 !important;*/
+    padding: 7px 3px 3px 0px !important;
     /*vertical-align: bottom;*/
 }
 .info{
@@ -120,6 +124,13 @@ h2,
     font-size:15px;
     vertical-align: top;
     color:#444444;
+}
+.subtitle td{
+  text-align:center;
+  vertical-align: top;
+}
+.altern_color{
+  background-color:#DEDEDE
 }
 
 /* ASAS AXIALE */
@@ -136,6 +147,9 @@ h2,
     color: blue;
 }
 
+.red {
+    color: #c41723;
+}
 /* ASAS PERIPHERIQUE */
 .small {
     font-size: 0.8em;
