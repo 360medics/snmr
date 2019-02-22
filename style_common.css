@@ -154,3 +154,10 @@ h2,
 .small {
     font-size: 0.8em;
 }
+
+
+/* ACR 2010 */
+.acr_2010 td{
+    vertical-align: center;
+    text-align: center;
+}

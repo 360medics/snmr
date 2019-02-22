@@ -26,11 +26,11 @@
 
       <div class="score_result">
           <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly"/>
-          WPI: Check each area you’ve had pain over the last week. Count these (score will be between 0 and 19)
+          WPI: Check each area you’ve had pain over the last week. <span style="font-size:14px; font-weight:normal;">(score will be between 0 and 19)</span>
       </div>
 </div>
 
-<table>
+<table class="acr_2010">
   <tr>
     <td>Shoulder girdle, left<br/> <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
     <td>Hip (buttock, trochanter), left<br/> <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" /></td>
@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td>Upper arm, left <br/><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Upper leg, left <br/><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Upper leg, left <br/><input name="vItem19" id="vItem19" type="checkbox" value="1" onclick="f_Calculer()" /></td>
     <td>Chest <br/><input name="vItem10" id="vItem10" type="checkbox" value="1" onclick="f_Calculer()" /></td>
     <td>Neck <br/><input name="vItem11" id="vItem11" type="checkbox" value="1" onclick="f_Calculer()" /></td>
   </tr>
@@ -62,17 +62,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>Lower arm, right <br/><input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Lower leg, right <br/><input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Lower arm, right <br/><input name="vItem17" id="vItem17" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    <td>Lower leg, right <br/><input name="vItem18" id="vItem18" type="checkbox" value="1" onclick="f_Calculer()" /></td>
     <td></td>
     <td></td>
   </tr>
 </table>
 
-<h2>Résultats</h2>
+<h2>SS scale score</h2>
 <div>
-    Ils varient de 0 à 24.
+  For each of the 3 symptoms below, score their severity over the past week using the following scale:
+  
 </div>
+
 
 <h2>Evalutation - Questions</h2>
 
@@ -94,7 +96,7 @@
             Res += f_GetRadioValue('vItem'+i)*1;
 
         // Affichage du résultat
-        document.Form.Resultat.value = 1;
+        document.Form.Resultat.value = Res;
 
     }
 </script>
