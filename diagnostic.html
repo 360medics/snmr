@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SNMR</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>Critères diagnostiques<br> Américano-Européens de 2002</h1>
+<p>SYNDROME DE GOUGEROT-SJOGREN: CRITERES DIAGNOSTIQUES<br>
+    Critères européens révisés ou internationaux du syndrome de Gougerot-Sjögren<br>
+    (Ann Rheum Dis 2002 ;61 :554)</p>
+
+<fieldset id="checkArray">
+    <p class="common_h2">I. Symptômes oculaires</p>
+    <p>Au moins un des 3 critères ci-dessous :</p>
+    <div id="un">
+        <div>
+            <input onclick="critereUnValide()" type="checkbox" id="item1" name="check" value="item1">
+            <label for="item1">Sensation quotidienne, persistante et gênante d’yeux secs depuis plus de 3 mois</label>
+        </div>
+        <div>
+            <input onclick="critereUnValide()" type="checkbox" id="item2" name="check" value="item2">
+            <label for="item2">Sensation fréquente de « sable dans les yeux »</label>
+        </div>
+        <div>
+            <input onclick="critereUnValide()" type="checkbox" id="item3" name="check" value="item3">
+            <label for="item3">Utilisation de larmes artificielles plus de 3 fois par jour</label>
+        </div>
+    </div>
+    <p class="common_h2">II. Symptômes buccaux</p>
+    <p>Au moins un des 3 critères ci-dessous :</p>
+    <div>
+        <input onclick="critereDeuxValide()" type="checkbox" id="item4" name="check" value="item4">
+        <label for="item4">Sensation quotidienne de bouche sèche depuis plus de 3 mois</label>
+    </div>
+    <div>
+        <input onclick="critereDeuxValide()" type="checkbox" id="item5" name="check" value="item5">
+        <label for="item5">À l’âge adulte, épisodes récidivants ou permanents de gonflement parotidien</label>
+    </div>
+    <div>
+        <input onclick="critereDeuxValide()" type="checkbox" id="item6" name="check" value="item6">
+        <label for="item6">Consommation fréquente de liquides pour avaler les aliments secs</label>
+    </div>
+
+    <p class="common_h2">III. Signes objectifs d’atteinte oculaire</p>
+    <p>Au moins un des 2 tests ci-dessous positifs :</p>
+    <div>
+        <input onclick="critereTroisValide()" type="checkbox" id="item7" name="check" value="item7">
+        <label for="item7">Test de Schirmer ≤ 5 mm/5 mn</label>
+    </div>
+    <div>
+        <input onclick="critereTroisValide()" type="checkbox" id="item8" name="check" value="item8">
+        <label for="item8">Score de van Bijsterveld ≥ 4 (après examen au vert de Lissamine)</label>
+    </div>
+
+    <p class="common_h2">IV. Signes histologiques</p>
+    <div>
+        <input onclick="critereQuatreValide()" type="checkbox" id="item9" name="check" value="item9">
+        <label for="item9">Sialadénite avec <span class="bold">focus score</span> ≥ 1 sur la biopsie de glandes salivaires accessoires</label>
+    </div>
+    <p class="italic">(<span class="bold">focus score</span> = nombre de foyers par 4 mm2 de tissu glandulaire, un foyer étant défini par l’agglomérat d’au moins 50 lymphocytes)</p>
+
+    <p class="common_h2">V. Signes objectifs d’atteinte salivaire</p>
+    <p>Au moins un des 3 tests ci-dessous positifs :</p>
+    <div>
+        <input onclick="critereCinqValide()" type="checkbox" id="item10" name="check" value="item10">
+        <label for="item10">Flux salivaire non stimulé ≤ 1,5 mL/15 mn</label>
+    </div>
+    <div>
+        <input onclick="critereCinqValide()" type="checkbox" id="item11" name="check" value="item11">
+        <label for="item11">Sialographie parotidienne (ectasies canaliculaires, cavités ou destructions canaliculaires)</label>
+    </div>
+    <div>
+        <input onclick="critereCinqValide()" type="checkbox" id="item12" name="check" value="item12">
+        <label for="item12">Scintigraphie salivaire (captation retardée, diminution de la concentration et/ou de l’excrétion du traceur)</label>
+    </div>
+
+    <p class="common_h2">VI. Auto-anticorps</p>
+    <div>
+        <input onclick="critereSixValide()" type="checkbox" id="item13" name="check" value="item13">
+        <label for="item13">Présence d’anticorps anti-SSA (Ro) ou anti-SSB (La)</label>
+    </div>
+</fieldset>
+<br>
+<br>
+
+<input onclick="case15();case17();case18();total4Criteres();case14();displayMessage();" type="submit" id="btn-submit-diagnostic" value="Calculer">
+
+<br>
+<br>
+<p class="bold"><i class="fas fa-arrow-right"></i> Syndrome de Gougerot-Sjögren primitif :</p>
+<div class="flex-row">
+    <div class="flex-column">
+        <div>
+            <input onclick="return false;" type="checkbox" id="item14" name="item14" value="item14">
+            <label for="item14">4/6 critères avec au moins critères IV ou VI présents</label>
+        </div>
+        <span class="and">ET</span>
+        <div>
+            <input onclick="return false;" type="checkbox" id="item15" name="item15" value="item15">
+            <label for="item15">3 au moins des critères III, IV, V, VI</label>
+        </div>
+    </div>
+    <p id="text1" style="display:none">Affirmatif</p>
+</div>
+<br>
+<div class="flex-row">
+    <div class="flex-column">
+        <p class="bold"><i class="fas fa-arrow-right"></i>  Syndrome de Gougerot-Sjögren secondaire :</p>
+        <div>
+            <input onclick="checkifValid()" type="checkbox" id="item16" name="item16" value="item16">
+            <label for="item16">Association d’une autre connectivite bien définie</label>
+        </div>
+        <span class="and">ET</span>
+        <div>
+            <input onclick="return false;" type="checkbox" id="item17" name="item17" value="item17">
+            <label for="item17">Présence de l’item I ou II</label>
+        </div>
+        <span class="and">ET</span>
+        <div>
+            <input onclick="return false;" type="checkbox" id="item18" name="item18" value="item18">
+            <label for="item18">Présence de deux des items III, IV et V</label>
+        </div>
+    </div>
+    <p id="text2" style="display:none">Affirmatif</p>
+</div>
+<br>
+<p class="common_h2">Les critères d’exclusion retenus par le Comité International sont :</p>
+<div>
+    <input type="checkbox" id="item19" name="item19" value="item19">
+    <label for="item19">Antécédent d’irradiation cervicale ou céphalique</label>
+</div>
+<div>
+    <input type="checkbox" id="item20" name="item20" value="item20">
+    <label for="item20">Hépatite C</label>
+</div>
+<div>
+    <input type="checkbox" id="item21" name="item21" value="item21">
+    <label for="item21">Immunodéficience acquise</label>
+</div>
+<div>
+    <input type="checkbox" id="item22" name="item22" value="item22">
+    <label for="item22">Antécédent de lymphome</label>
+</div>
+<div>
+    <input type="checkbox" id="item23" name="item23" value="item23">
+    <label for="item23">Sarcoïdose</label>
+</div>
+<div>
+    <input type="checkbox" id="item24" name="item24" value="item24">
+    <label for="item24">Réaction du greffon contre l’hôte</label>
+</div>
+<div>
+    <input type="checkbox" id="item25" name="item25" value="item25">
+    <label for="item25">Utilisation de médicaments anticholinergiques (depuis une période inférieure à 4 fois la demi-vie du médicament)</label>
+</div>
+
+<script>
+    var cb1 = document.getElementById("item1");
+    var cb2 = document.getElementById("item2");
+    var cb3 = document.getElementById("item3");
+    var cb4 = document.getElementById("item4");
+    var cb5 = document.getElementById("item5");
+    var cb6 = document.getElementById("item6");
+    var cb7 = document.getElementById("item7");
+    var cb8 = document.getElementById("item8");
+    var cb9 = document.getElementById("item9");
+    var cb10 = document.getElementById("item10");
+    var cb11 = document.getElementById("item11");
+    var cb12 = document.getElementById("item12");
+    var cb13 = document.getElementById("item13");
+    var cb14 = document.getElementById("item14");
+    var cb15 = document.getElementById("item15");
+    var cb16 = document.getElementById("item16");
+    var cb17 = document.getElementById("item17");
+    var cb18 = document.getElementById("item18");
+
+    var isValid1 = false;
+    var isValid2 = false;
+    var isValid3 = false;
+    var isValid4 = false;
+    var isValid5 = false;
+    var isValid6 = false;
+
+    var resultat = 0;
+
+    //true si au moins un des critères est coché
+    function critereUnValide() {
+        if (cb1.checked === true || cb2.checked === true || cb3.checked === true) {
+            isValid1 = true;
+        } else {
+            isValid1 = false;
+        }
+        return isValid1;
+    }
+
+    function critereDeuxValide() {
+        if (cb4.checked === true || cb5.checked === true || cb6.checked === true) {
+            isValid2 = true;
+        } else {
+            isValid2 = false;
+        }
+        return isValid2;
+    }
+
+    function critereTroisValide() {
+        if (cb7.checked === true || cb8.checked === true) {
+            isValid3 = true;
+        } else {
+            isValid3 = false;
+        }
+        return isValid3;
+    }
+
+    function critereQuatreValide() {
+        if (cb9.checked === true) {
+            isValid4 = true;
+        } else {
+            isValid4 = false;
+        }
+        return isValid4;
+    }
+
+    function critereCinqValide() {
+        if (cb10.checked === true || cb11.checked === true || cb12.checked === true) {
+            isValid5 = true;
+        } else {
+            isValid5 = false;
+        }
+        return isValid5;
+    }
+
+    function critereSixValide() {
+        if (cb13.checked === true) {
+            isValid6 = true;
+        } else {
+            isValid6 = false;
+        }
+        return isValid6;
+    }
+
+    var res = 0;
+    function total4Criteres() {
+        if (isValid1 === true) {
+            res = res + 1;
+        } if (isValid2 === true) {
+            res = res + 1;
+        } if (isValid3 === true) {
+            res = res + 1;
+        } if (isValid4 === true) {
+            res = res + 1;
+        }
+        return res;
+    }
+
+    function case14() {
+        if (isValid4 === true || isValid6) {
+            if (res >= 3) {
+                cb14.checked = true;
+            } else {
+                cb14.checked = false;
+            }
+        }
+    }
+
+    //Validation de la case 15
+    function case15() {
+        if (isValid3 === true && isValid4 === true && isValid5 === true
+            || isValid3 === true && isValid4 === true && isValid6 === true
+            || isValid3 === true && isValid5 === true && isValid6 === true
+            || isValid4 === true && isValid5 === true && isValid6 === true) {
+            cb15.checked = true;
+        } else {
+            cb15.checked = false;
+        }
+    }
+
+    //Validation de la case 17
+    function case17() {
+        if (isValid1 === true || isValid2 === true){
+            cb17.checked = true;
+        } else {
+            cb17.checked = false;
+        }
+    }
+
+    //Validation de la case 18
+    function case18() {
+        if (isValid3 === true && isValid4 === true
+            || isValid3 === true && isValid5 === true
+            || isValid4 === true && isValid5 === true) {
+            cb18.checked = true;
+        } else {
+            cb18.checked = false;
+        }
+    }
+
+    function displayMessage() {
+        var text1 = document.getElementById("text1");
+
+        if (cb14.checked === true && cb15.checked === true) {
+            text1.style.display = "block";
+        } else {
+            text1.style.display = "none";
+        }
+
+    }
+
+    function checkifValid() {
+        var text2 = document.getElementById("text2");
+        if (cb16.checked === true) {
+            if (cb17.checked === true && cb18.checked === true) {
+                text2.style.display = "block";
+            } else {
+                text2.style.display = "none";
+            }
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
