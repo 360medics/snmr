@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34546208-80e0-4baa-b139-ade4235312e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/asas_axiale.html" beforeDir="false" afterPath="$PROJECT_DIR$/asas_axiale.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagnostic.html" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style_common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_common.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,23 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style_common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/asas_axiale.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="e#510#514#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="730">
+              <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
             </state>
           </provider>
         </entry>
@@ -36,8 +26,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/diagnostic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="123" column="56" lean-forward="true" selection-start-line="123" selection-start-column="56" selection-end-line="123" selection-end-column="56" />
+            <state relative-caret-position="630">
+              <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +48,7 @@
       <find>focus</find>
       <find>item1</find>
       <find>onclick=&quot;document.Form.vItem4.checked = fals</find>
+      <find>Affirma</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;hr&gt;</replace>
@@ -76,16 +71,16 @@
         <option value="$PROJECT_DIR$/asas-peripherique.html" />
         <option value="$PROJECT_DIR$/asas_peripherique.html" />
         <option value="$PROJECT_DIR$/style_ASAS_Peripherique.css" />
+        <option value="$PROJECT_DIR$/asas_axiale.html" />
         <option value="$PROJECT_DIR$/diagnostic.html" />
         <option value="$PROJECT_DIR$/style_common.css" />
-        <option value="$PROJECT_DIR$/asas_axiale.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="665" />
+    <option name="x" value="642" />
     <option name="y" value="23" />
-    <option name="width" value="1255" />
+    <option name="width" value="1278" />
     <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -97,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +104,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,17 +144,18 @@
       <updated>1550239774890</updated>
       <workItem from="1550239776833" duration="326000" />
       <workItem from="1550240536171" duration="3597000" />
+      <workItem from="1551081059573" duration="1489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14567000" />
+    <option name="totallyTimeSpent" value="16056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="665" y="23" width="1255" height="1004" extended-state="0" />
+    <frame x="642" y="23" width="1278" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14285715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13996764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -235,38 +231,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asas-peripherique.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#510#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asas_peripherique.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/asas-peripherique.html" />
     <entry file="file://$PROJECT_DIR$/style_ASAS_Peripherique.css" />
-    <entry file="file://$PROJECT_DIR$/style_common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="123" column="56" lean-forward="true" selection-start-line="123" selection-start-column="56" selection-end-line="123" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/amor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -276,11 +242,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asas_axiale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="524">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="e#510#514#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asas_peripherique.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-619">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnostic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="132" column="23" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style_common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
         </state>
       </provider>
     </entry>

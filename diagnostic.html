@@ -107,12 +107,14 @@
             <label for="item15">3 au moins des critères III, IV, V, VI</label>
         </div>
     </div>
-    <p id="text1" style="display:none">Affirmatif</p>
+    <div class="result1">
+        <p id="text1" style="display:none">Affirmatif</p>
+    </div>
 </div>
 <br>
+<p class="bold"><i class="fas fa-arrow-right"></i>Syndrome de Gougerot-Sjögren secondaire :</p>
 <div class="flex-row">
     <div class="flex-column">
-        <p class="bold"><i class="fas fa-arrow-right"></i>  Syndrome de Gougerot-Sjögren secondaire :</p>
         <div>
             <input onclick="checkifValid()" type="checkbox" id="item16" name="item16" value="item16">
             <label for="item16">Association d’une autre connectivite bien définie</label>
@@ -128,7 +130,9 @@
             <label for="item18">Présence de deux des items III, IV et V</label>
         </div>
     </div>
-    <p id="text2" style="display:none">Affirmatif</p>
+    <div class="result2">
+        <p id="text2" style="display:none">Affirmatif</p>
+    </div>
 </div>
 <br>
 <p class="common_h2">Les critères d’exclusion retenus par le Comité International sont :</p>
@@ -317,9 +321,9 @@
         if (cb16.checked === true) {
             if (cb17.checked === true && cb18.checked === true) {
                 text2.style.display = "block";
-            } else {
-                text2.style.display = "none";
             }
+        } else {
+            text2.style.display = "none";
         }
     }
 
