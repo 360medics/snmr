@@ -193,3 +193,9 @@ fieldset {
 #text2 {
     margin-left: 110px;
 }
+
+/* ACR_1997 */
+.reponse {
+    border: none;
+    min-width: 70px;
+}
