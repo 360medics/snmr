@@ -95,6 +95,7 @@ h2,
 
 }
 
+.input_score,
 .score_result input{
   width:40px;
   height:30px;
@@ -194,4 +195,14 @@ fieldset {
 .reponse {
     border: none;
     min-width: 70px;
+}
+
+/* ACR 2010 */
+.acr_2010 td{
+    vertical-align: center;
+    text-align: center;
+}
+
+.acr_2010 .score_subtitle{
+  text-align:right;
 }
