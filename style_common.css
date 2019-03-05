@@ -40,6 +40,19 @@ td input{
     display: flex;
     flex-direction: column;
 }
+[type="checkbox"]{
+  width:20px;
+  height:20px;
+}
+
+[type="radio"]{
+  width:17px;
+  height:17px;
+}
+/*
+input:disabled, textarea:disable{
+  color:
+}*/
 
 .italic {
     font-style: italic;
@@ -100,7 +113,7 @@ h2,
   width:40px;
   height:30px;
   font-size:20px;
-  color:#c41723;
+  color:#c41723 !important;
   font-weight: bold;
   text-align: center;
 }
