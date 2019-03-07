@@ -219,3 +219,8 @@ fieldset {
 .acr_2010 .score_subtitle{
   text-align:right;
 }
+
+.legalinfo{
+  font-style: italic;
+  color:#666;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>RHUMATISME PSORIASIQUE - CRITERES DE CLASSIFICATION CASPAR</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="script_amor.js"></script>
+<link rel="stylesheet" href="style_common.css" />
+<style>
+  .subtitle1{
+    font-weight:bold;
+  }
+  .score_result input {
+    width:120px;
+    }
+  </style>
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">Rhumatisme Psoriasique<br/>Critères de classification CASPAR</p>
+
+
+  <h2>Méthode</h2>
+  <div>
+    Pour retenir le diagnostic : il faut le critère 1 et au moins 3 points (Se:91.4%, Sp: 98.7%)
+  </div>
+
+
+  <h2>Critères de classification</h2>
+
+<form name="Form" id="Form">
+  <table border="0" align="center" cellpadding="2" cellspacing="0">
+    <tr>
+      <td colspan="2" class="subtitle1">1. Atteinte rhumatologique inflammatoire (périphérique, axiale ou enthésitique)</td>
+    </tr>
+
+    <tr>
+  	  <td ><input name="Crit01" id="Crit01" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    	<td ><label for="Crit01">Présence d'une atteinte rhumatologique inflammatoire</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="subtitle1">2. Présence explicite de psoriasis à l’examen ou dans les antécédents :</td>
+    </tr>
+
+    <tr>
+  	  <td ><input name="vItem1" id="vItem1" type="checkbox" value="2" onclick="f_Calculer()" /></td>
+    	<td ><label for="vItem1">2 - Lésion psoriasique cutanée ou du scalp diagnostiquée par un médecin à l’examen physique</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem2">1 - Notion de psoriasis selon le patient ou un médecin</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem3">1 - Antécédent familial de psoriasis au 1er ou 2nd degré</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="subtitle1">3. Atteinte unguéale</td>
+    </tr>
+
+
+    <tr>
+	    <td><input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td ><label for="vItem4">1 - Dystrophie unguéale psoriasique à l’examen clinique : onycholyse, ongles ponctués ou hyperkératose.</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="subtitle1">4. Négativité du facteur rhumatoïde</td>
+    </tr>
+    <tr>
+  	  <td><input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+    	<td ><label for="vItem5">1 - Absence de FR sérique (ELISA ou néphélométrie)</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="subtitle1">5. Présence ou antécédent de dactylite</td>
+    </tr>
+    <tr>
+	    <td><input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem6">1 - Dactylite actuelle diagnostiquée par un médecin</label></td>
+    </tr>
+    <tr>
+	    <td><input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem7">1 - Antécédent de dactylite constatée par un médecin</label></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="subtitle1">6. Aspect radiologique de construction osseuse</td>
+    </tr>
+    <tr>
+	    <td><input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" /></td>
+  	  <td><label for="vItem8">1 - Présence de signes radiographiques de construction osseuse juxta-articulaire (radiographies des mains et des pieds)</label></td>
+    </tr>
+  </table>
+  <br />
+
+<div class="score_result">
+	Diagnostic
+	<input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly"  style="width:150px; display:block; height:100px;" />
+  <div id="score_result_confirm" style="width:70px;"></div>
+</div>
+
+</form>
+
+<div class="score_ref">Références</div>
+
+<span class="description">Taylor W, Gladman D, Helliwel P et al. Arthr & Rheum 2006; 54: 2665-73</span>
+
+
+
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+<script type="text/javascript">
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+        // calcul du résultat
+        var Res = 0;
+        for(var i=1; i<24; i++)
+            Res += f_GetRadioValue('vItem'+i)*1;
+
+        // Affichage du résultat
+        if(Res>=3 && document.Form.Crit01.checked ){
+          document.Form.Resultat.value = "AFFIRMATIF";
+        }
+        else {
+          document.Form.Resultat.value = "NEGATIF";
+          }
+    }
+</script>
+
+</body>
+</html>
