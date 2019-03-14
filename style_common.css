@@ -21,15 +21,16 @@ table, th, td {
     border-collapse: collapse;
 }
 th, td {
-    padding: 10px;
-    text-align: left;
+    /*padding: 10px;*/
+    /*text-align: left;*/
 }
 td {
-  vertical-align: middle;
+    vertical-align: middle;
+    width: 100%;
 }
-td input{
-  margin:10px;
-}
+/*td input{*/
+    /*margin:10px;*/
+/*}*/
 
 .flex-row {
     display: flex;
@@ -41,13 +42,14 @@ td input{
     flex-direction: column;
 }
 [type="checkbox"]{
-  width:20px;
-  height:20px;
+    /*width:20px;*/
+    /*height:20px;*/
+    font-size: 16px;
 }
 
 [type="radio"]{
-  width:17px;
-  height:17px;
+    width:17px;
+    height:17px;
 }
 /*
 input:disabled, textarea:disable{
@@ -63,73 +65,73 @@ input:disabled, textarea:disable{
 }
 
 .common_h1{
-text-align:center;
-margin:auto;
-margin-bottom:25px;
-display:block;
-font-size:28px;
-font-weight: bold;
-color:#404040;
+    text-align:center;
+    margin:auto;
+    margin-bottom:25px;
+    display:block;
+    font-size:28px;
+    font-weight: bold;
+    color:#404040;
 }
 
 h2,
 .common_h2{
-  font-weight: bold;
-  color:#c41723;
-  line-height:27px;
-  font-variant:petite-caps;
-  font-size: 19px;
+    font-weight: bold;
+    color:#c41723;
+    line-height:27px;
+    font-variant:petite-caps;
+    font-size: 19px;
 
 }
 
 .input_checkbox{
-  margin:10px;
-  padding:2px;
+    margin:10px;
+    padding:2px;
 }
 
 .score_inter,
 .score_ref{
-  font-variant:petite-caps;
-  font-weight: bold;
-  background-color: white;
-  margin-top:22px;
-  font-size: 17px;
+    font-variant:petite-caps;
+    font-weight: bold;
+    background-color: white;
+    margin-top:22px;
+    font-size: 17px;
 }
 
 .description{
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .score_result{
-  font-size:20px;
-  font-weight: bold;
-  width:100%;
-  text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    width:100%;
+    text-align: center;
 
 }
 
 .input_score,
 .score_result input{
-  width:40px;
-  height:30px;
-  font-size:20px;
-  color:#c41723 !important;
-  font-weight: bold;
-  text-align: center;
+    width:40px;
+    height:30px;
+    font-size:20px;
+    color:#c41723 !important;
+    font-weight: bold;
+    text-align: center;
 }
 
 .score_result div{
-  font-size: 15px;
-  font-weight: normal;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 /* QIF */
 .form_qif td{
-  padding: 2px;
-  text-align:center;
+    padding: 2px;
+    text-align:center;
 }
 .form_qif td:first-child{
-  text-align:left;
+    text-align:left;
 }
 .table_qif td{
     text-align: center;
@@ -150,11 +152,11 @@ h2,
     color:#444444;
 }
 .subtitle td{
-  text-align:center;
-  vertical-align: top;
+    text-align:center;
+    vertical-align: top;
 }
 .altern_color{
-  background-color:#DEDEDE
+    background-color:#DEDEDE
 }
 
 /* ASAS AXIALE */
@@ -211,16 +213,168 @@ fieldset {
 }
 
 /* ACR 2010 */
+.acr_2010 {
+    width: auto;
+}
+
 .acr_2010 td{
     vertical-align: center;
     text-align: center;
 }
 
 .acr_2010 .score_subtitle{
-  text-align:right;
+    text-align:right;
 }
 
 .legalinfo{
-  font-style: italic;
-  color:#666;
+    font-style: italic;
+    color:#666;
+}
+
+
+/**** CUSTOMIZED CHECKBOX ****/
+
+/* Customize the label (the container) */
+.containerCb {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 21px;
+    min-width: 200px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmarkCb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCb:hover input ~ .checkmarkCb {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCb input:checked ~ .checkmarkCb {
+    background-color: #219610;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkCb:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCb input:checked ~ .checkmarkCb:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCb .checkmarkCb:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+/**** CUSTOMIZED RADIO BUTTON ****/
+
+/* Customize the label (the container) */
+.containerRadio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmarkRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmarkRadio {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked ~ .checkmarkRadio {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked ~ .checkmarkRadio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmarkRadio:after {
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.smol {
+    max-width: 12px !important;
+    min-width: 0 !important;
 }

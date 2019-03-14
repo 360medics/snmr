@@ -21,70 +21,96 @@
     <p>Au moins un des 3 critères ci-dessous :</p>
     <div id="un">
         <div>
-            <input onclick="critereUnValide()" type="checkbox" id="item1" name="check" value="item1">
-            <label for="item1">Sensation quotidienne, persistante et gênante d’yeux secs depuis plus de 3 mois</label>
+            <label class="containerCb">Sensation quotidienne, persistante et gênante d’yeux secs depuis plus de 3 mois
+                <input onclick="critereUnValide()" type="checkbox" id="item1" name="check" value="item1">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
         <div>
-            <input onclick="critereUnValide()" type="checkbox" id="item2" name="check" value="item2">
-            <label for="item2">Sensation fréquente de « sable dans les yeux »</label>
+            <label class="containerCb">Sensation fréquente de « sable dans les yeux »
+                <input onclick="critereUnValide()" type="checkbox" id="item2" name="check" value="item2">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
         <div>
-            <input onclick="critereUnValide()" type="checkbox" id="item3" name="check" value="item3">
-            <label for="item3">Utilisation de larmes artificielles plus de 3 fois par jour</label>
+            <label class="containerCb">Utilisation de larmes artificielles plus de 3 fois par jour
+                <input onclick="critereUnValide()" type="checkbox" id="item3" name="check" value="item3">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
     </div>
     <p class="common_h2">II. Symptômes buccaux</p>
     <p>Au moins un des 3 critères ci-dessous :</p>
     <div>
-        <input onclick="critereDeuxValide()" type="checkbox" id="item4" name="check" value="item4">
-        <label for="item4">Sensation quotidienne de bouche sèche depuis plus de 3 mois</label>
+        <label class="containerCb">Sensation quotidienne de bouche sèche depuis plus de 3 mois
+            <input onclick="critereDeuxValide()" type="checkbox" id="item4" name="check" value="item4">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <div>
-        <input onclick="critereDeuxValide()" type="checkbox" id="item5" name="check" value="item5">
-        <label for="item5">À l’âge adulte, épisodes récidivants ou permanents de gonflement parotidien</label>
+        <label class="containerCb">À l’âge adulte, épisodes récidivants ou permanents de gonflement parotidien
+            <input onclick="critereDeuxValide()" type="checkbox" id="item5" name="check" value="item5">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <div>
-        <input onclick="critereDeuxValide()" type="checkbox" id="item6" name="check" value="item6">
-        <label for="item6">Consommation fréquente de liquides pour avaler les aliments secs</label>
+        <label class="containerCb">Consommation fréquente de liquides pour avaler les aliments secs
+            <input onclick="critereDeuxValide()" type="checkbox" id="item6" name="check" value="item6">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
 
     <p class="common_h2">III. Signes objectifs d’atteinte oculaire</p>
     <p>Au moins un des 2 tests ci-dessous positifs :</p>
     <div>
-        <input onclick="critereTroisValide()" type="checkbox" id="item7" name="check" value="item7">
-        <label for="item7">Test de Schirmer ≤ 5 mm/5 mn</label>
+        <label class="containerCb">Test de Schirmer ≤ 5 mm/5 mn
+            <input onclick="critereTroisValide()" type="checkbox" id="item7" name="check" value="item7">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <div>
-        <input onclick="critereTroisValide()" type="checkbox" id="item8" name="check" value="item8">
-        <label for="item8">Score de van Bijsterveld ≥ 4 (après examen au vert de Lissamine)</label>
+        <label class="containerCb">Score de van Bijsterveld ≥ 4 (après examen au vert de Lissamine)
+            <input onclick="critereTroisValide()" type="checkbox" id="item8" name="check" value="item8">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
 
     <p class="common_h2">IV. Signes histologiques</p>
     <div>
-        <input onclick="critereQuatreValide()" type="checkbox" id="item9" name="check" value="item9">
-        <label for="item9">Sialadénite avec <span class="bold">focus score</span> ≥ 1 sur la biopsie de glandes salivaires accessoires</label>
+        <label class="containerCb">Sialadénite avec <span class="bold">focus score</span> ≥ 1 sur la biopsie de glandes salivaires accessoires
+            <input onclick="critereQuatreValide()" type="checkbox" id="item9" name="check" value="item9">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <p class="italic">(<span class="bold">focus score</span> = nombre de foyers par 4 mm2 de tissu glandulaire, un foyer étant défini par l’agglomérat d’au moins 50 lymphocytes)</p>
 
     <p class="common_h2">V. Signes objectifs d’atteinte salivaire</p>
     <p>Au moins un des 3 tests ci-dessous positifs :</p>
     <div>
-        <input onclick="critereCinqValide()" type="checkbox" id="item10" name="check" value="item10">
-        <label for="item10">Flux salivaire non stimulé ≤ 1,5 mL/15 mn</label>
+        <label class="containerCb">Flux salivaire non stimulé ≤ 1,5 mL/15 mn
+            <input onclick="critereCinqValide()" type="checkbox" id="item10" name="check" value="item10">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <div>
-        <input onclick="critereCinqValide()" type="checkbox" id="item11" name="check" value="item11">
-        <label for="item11">Sialographie parotidienne (ectasies canaliculaires, cavités ou destructions canaliculaires)</label>
+        <label class="containerCb">Sialographie parotidienne (ectasies canaliculaires, cavités ou destructions canaliculaires)
+            <input onclick="critereCinqValide()" type="checkbox" id="item11" name="check" value="item11">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
     <div>
-        <input onclick="critereCinqValide()" type="checkbox" id="item12" name="check" value="item12">
-        <label for="item12">Scintigraphie salivaire (captation retardée, diminution de la concentration et/ou de l’excrétion du traceur)</label>
+        <label class="containerCb">Scintigraphie salivaire (captation retardée, diminution de la concentration et/ou de l’excrétion du traceur)
+            <input onclick="critereCinqValide()" type="checkbox" id="item12" name="check" value="item12">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
 
     <p class="common_h2">VI. Auto-anticorps</p>
     <div>
-        <input onclick="critereSixValide()" type="checkbox" id="item13" name="check" value="item13">
-        <label for="item13">Présence d’anticorps anti-SSA (Ro) ou anti-SSB (La)</label>
+        <label class="containerCb">Présence d’anticorps anti-SSA (Ro) ou anti-SSB (La)
+            <input onclick="critereSixValide()" type="checkbox" id="item13" name="check" value="item13">
+            <span class="checkmarkCb"></span>
+        </label>
     </div>
 </fieldset>
 <br>
@@ -98,13 +124,17 @@
 <div class="flex-row">
     <div class="flex-column">
         <div>
-            <input onclick="return false;" type="checkbox" id="item14" name="item14" value="item14">
-            <label for="item14">4/6 critères avec au moins critères IV ou VI présents</label>
+            <label class="containerCb">4/6 critères avec au moins critères IV ou VI présents
+                <input onclick="return false;" type="checkbox" id="item14" name="item14" value="item14">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
         <span class="and">ET</span>
         <div>
-            <input onclick="return false;" type="checkbox" id="item15" name="item15" value="item15">
-            <label for="item15">3 au moins des critères III, IV, V, VI</label>
+            <label class="containerCb">3 au moins des critères III, IV, V, VI
+                <input onclick="return false;" type="checkbox" id="item15" name="item15" value="item15">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
     </div>
     <div class="result1">
@@ -116,18 +146,24 @@
 <div class="flex-row">
     <div class="flex-column">
         <div>
-            <input onclick="checkifValid()" type="checkbox" id="item16" name="item16" value="item16">
-            <label for="item16">Association d’une autre connectivite bien définie</label>
+            <label class="containerCb">Association d’une autre connectivite bien définie
+                <input onclick="checkifValid()" type="checkbox" id="item16" name="item16" value="item16">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
         <span class="and">ET</span>
         <div>
-            <input onclick="return false;" type="checkbox" id="item17" name="item17" value="item17">
-            <label for="item17">Présence de l’item I ou II</label>
+            <label class="containerCb">Présence de l’item I ou II
+                <input onclick="return false;" type="checkbox" id="item17" name="item17" value="item17">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
         <span class="and">ET</span>
         <div>
-            <input onclick="return false;" type="checkbox" id="item18" name="item18" value="item18">
-            <label for="item18">Présence de deux des items III, IV et V</label>
+            <label class="containerCb">Présence de deux des items III, IV et V
+                <input onclick="return false;" type="checkbox" id="item18" name="item18" value="item18">
+                <span class="checkmarkCb"></span>
+            </label>
         </div>
     </div>
     <div class="result2">
@@ -137,32 +173,46 @@
 <br>
 <p class="common_h2">Les critères d’exclusion retenus par le Comité International sont :</p>
 <div>
-    <input type="checkbox" id="item19" name="item19" value="item19">
-    <label for="item19">Antécédent d’irradiation cervicale ou céphalique</label>
+    <label class="containerCb">Antécédent d’irradiation cervicale ou céphalique
+        <input type="checkbox" id="item19" name="item19" value="item19">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item20" name="item20" value="item20">
-    <label for="item20">Hépatite C</label>
+    <label class="containerCb">Hépatite C
+        <input type="checkbox" id="item20" name="item20" value="item20">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item21" name="item21" value="item21">
-    <label for="item21">Immunodéficience acquise</label>
+    <label class="containerCb">Immunodéficience acquise
+        <input type="checkbox" id="item21" name="item21" value="item21">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item22" name="item22" value="item22">
-    <label for="item22">Antécédent de lymphome</label>
+    <label class="containerCb">Antécédent de lymphome
+        <input type="checkbox" id="item22" name="item22" value="item22">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item23" name="item23" value="item23">
-    <label for="item23">Sarcoïdose</label>
+    <label class="containerCb">Sarcoïdose
+        <input type="checkbox" id="item23" name="item23" value="item23">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item24" name="item24" value="item24">
-    <label for="item24">Réaction du greffon contre l’hôte</label>
+    <label class="containerCb">Réaction du greffon contre l’hôte
+        <input type="checkbox" id="item24" name="item24" value="item24">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 <div>
-    <input type="checkbox" id="item25" name="item25" value="item25">
-    <label for="item25">Utilisation de médicaments anticholinergiques (depuis une période inférieure à 4 fois la demi-vie du médicament)</label>
+    <label class="containerCb">Utilisation de médicaments anticholinergiques (depuis une période inférieure à 4 fois la demi-vie du médicament)
+        <input type="checkbox" id="item25" name="item25" value="item25">
+        <span class="checkmarkCb"></span>
+    </label>
 </div>
 
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>

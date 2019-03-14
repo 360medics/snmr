@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript" src="script_amor.js"></script>
     <link rel="stylesheet" href="style_common.css" />
-    <link rel="stylesheet" href="style_amor.css" />
 </head>
 
 <body class="scorebody">
@@ -18,65 +17,117 @@
             <td colspan="2"><font color="#0000FF" size="+1"><strong class="common_h2">Signes cliniques et histoire maladie</strong></font></td>
         </tr>
         <tr>
-            <td  align="right"><input class="input_checkbox" name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem1">1 - Douleurs nocturnes lombaires ou dorsales et/ou raideur matinale lombaire ou dorsale</label></td>
+            <td>
+                <label class="containerCb">1 - Douleurs nocturnes lombaires ou dorsales et/ou raideur matinale lombaire ou dorsale
+                    <input class="input_checkbox" name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem2" id="vItem2" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem2">2 - Oligoarthrite asymétrique</label></td>
+            <td>
+                <label class="containerCb">2 - Oligoarthrite asymétrique
+                    <input name="vItem2" id="vItem2" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="document.Form.vItem4.checked = false;f_Calculer()" /></td>
-            <td ><label for="vItem3">1 - Douleurs fessières uni- ou bilatérales</label></td>
+            <td>
+                <label class="containerCb">1 - Douleurs fessières uni- ou bilatérales
+                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="document.Form.vItem4.checked = false;f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem4" id="vItem4" type="checkbox" value="2" onclick="document.Form.vItem3.checked = false;f_Calculer()" /></td>
-            <td ><label for="vItem4">2 - Douleurs fessières à bascule</label></td>
+            <td>
+                <label class="containerCb">2 - Douleurs fessières à bascule
+                    <input name="vItem4" id="vItem4" type="checkbox" value="2" onclick="document.Form.vItem3.checked = false;f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem5" id="vItem5" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem5">2 - Doigt ou orteil &laquo;&nbsp;en saucisse&nbsp;&raquo;</label></td>
+            <td>
+                <label class="containerCb">2 - Doigt ou orteil &laquo;&nbsp;en saucisse&nbsp;&raquo;
+                    <input name="vItem5" id="vItem5" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td align="right"><input name="vItem6" id="vItem6" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem6">2 - Talalgie ou autre enthésopathie</label></td>
+            <td>
+                <label class="containerCb">2 - Talalgie ou autre enthésopathie
+                    <input name="vItem6" id="vItem6" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td align="right"><input name="vItem7" id="vItem7" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem7">2 - Iritis</label></td>
+            <td>
+                <label class="containerCb">2 - Iritis
+                    <input name="vItem7" id="vItem7" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem8">1 - Uréthrite non gonococcique ou cervicite moins d'un mois avant le début d'une arthrite</label></td>
+            <td>
+                <label class="containerCb">1 - Uréthrite non gonococcique ou cervicite moins d'un mois avant le début d'une arthrite
+                    <input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem9">1 - Diarrhée moins d'un mois avant le début d'une arthrite</label></td>
+            <td>
+                <label class="containerCb">1 - Diarrhée moins d'un mois avant le début d'une arthrite
+                    <input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem10" id="vItem10" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem10">2 - Présence ou antécédent de psoriasis et/ou de balanite et/ou d'entérocolopathie chronique</label></td>
+            <td>
+                <label class="containerCb">2 - Présence ou antécédent de psoriasis et/ou de balanite et/ou d'entérocolopathie chronique
+                    <input name="vItem10" id="vItem10" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
             <td colspan="2"><br /><font color="#0000FF" size="+1"><strong class="common_h2">Signes radiologiques</strong></font></td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem11" id="vItem11" type="checkbox" value="3" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem11">3 - Sacro-iliite radiologique stade &ge; 2 si bilatéral OU ≥ 3 si unilatéral</label></td>
+            <td>
+                <label class="containerCb">3 - Sacro-iliite radiologique stade &ge; 2 si bilatéral OU ≥ 3 si unilatéral
+                    <input name="vItem11" id="vItem11" type="checkbox" value="3" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
             <td colspan="2"><br /><font color="#0000FF" size="+1"><strong class="common_h2">Terrain génétique</strong></font></td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem12" id="vItem12" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem12">2 - Présence de l'antigène HLA-B27 ou antécédents familiaux de pelvispondylite, d'arthrite réactionnelle, de syndrome de Reiter, de psoriasis, d'entérocolopathies chroniques</label></td>
+            <td>
+                <label class="containerCb">2 - Présence de l'antigène HLA-B27 ou antécédents familiaux de pelvispondylite, d'arthrite réactionnelle, de syndrome de Reiter, de psoriasis, d'entérocolopathies chroniques
+                    <input name="vItem12" id="vItem12" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
         <tr>
             <td colspan="2"><br /><font color="#0000FF" size="+1"><strong class="common_h2">Réponse au traitement</strong></font></td>
         </tr>
         <tr>
-            <td  align="right"><input name="vItem13" id="vItem13" type="checkbox" value="2" onclick="f_Calculer()" /></td>
-            <td ><label for="vItem13">2 - Amélioration en 48 heures des douleurs par AINS et/ou rechute rapide (48 h) des douleurs à leur arrêt</label></td>
+            <td>
+                <label class="containerCb">2 - Amélioration en 48 heures des douleurs par AINS et/ou rechute rapide (48 h) des douleurs à leur arrêt
+                    <input name="vItem13" id="vItem13" type="checkbox" value="2" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
         </tr>
     </table>
     <br />
