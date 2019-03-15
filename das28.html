@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Calculateur DAS28</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript" src="script_amor.js"></script>
+<link rel="stylesheet" href="style_common.css" />
+<style>
+    .input_das {
+      width:150px; display:block; height:30px; line-height:30px; font-size: 13px;
+      border:2px solid #DDDDDD;
+      padding-left:6px;
+    }
+  </style>
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">Calculateur DAS28</p>
+
+
+  <h2>Méthode</h2>
+  <div>
+Le DAS28 est un score de l'activité de la maladie,
+il fait partie des nombreux scores « DAS » pour la polyarthrite rhumatoïde, très utiles pour réaliser
+une évaluation objective, reproductible et comparable de l'activité de la polyarthrite rhumatoïde.
+  <div>
+
+<form name="Form" id="Form">
+  <h2>Score des articulations</h2>
+
+  <table border="0" align="center" cellpadding="2" cellspacing="0">
+    <tr>
+      <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses (entre 0-28)</label></td>
+      <td>
+          <input name="Resultat" type="number" id="Tjc28" class="input_das" onchange="f_Calculer()" /></td>
+    </tr>
+    <tr>
+      <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées (entre 0-28)</label></td>
+      <td><input name="Resultat" type="number" id="Sjc28" class="input_das" onchange="f_Calculer()" /></td>
+    </tr>
+  </table>
+
+  <h2>Mesures</h2>
+  <table border="0" align="center" cellpadding="2" cellspacing="0">
+    <tr>
+  	  <td><label for="Crit01">VS (mm/première heure)</label></td>
+    	<td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das" /></td>
+    </tr>
+    <tr>
+  	  <td><label for="Crit01" id="Gh_label">Etat de santé général (de 0=le meilleur à 100=le pire)</label></td>
+    	<td><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das" /></td>
+    </tr>
+  </table>
+  <br />
+
+<div class="score_result">
+  <span>Score</span>
+
+  <input name="Mot" type="text" id="reponse" disabled readonly="readonly" style="width:60px;" />
+
+  <input class="reponse" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" readonly="readonly"  style="width:140px; font-weight:normal; font-style: italic; text-align: left; display:inline; font-size:15px; height:50px;" />
+</div>
+</form>
+
+<div class="score_ref">Interprétation</div>
+
+<span class="description">L'interprétation du score ne dépend pas de son évolution au cours du temps. Généralement, on considère qu'il y a rémission si le score est compris entre 0 et < 2,6. Une activité faible est indiquée par un score compris entre 2,6 et < 3,2. Une activité modérée est indiquée par un score compris entre 3,2 et ≤ 5,1, alors qu'une activité élevée est indiquée par un score strictement supérieur à 5,1. </span>
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.  </span>
+
+<script type="text/javascript">
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+      var Tjc28 = document.Form.Tjc28.value * 1;
+      var Sjc28 = document.Form.Sjc28.value * 1;
+      var Vs = document.Form.Vs.value * 1;
+      var Gh = document.Form.Gh.value * 1;
+      var Das28 = 0.56*Math.sqrt(Tjc28)+0.28*Math.sqrt(Sjc28)+0.7*Math.log(Vs)+0.014*Gh;
+
+      console.log(Tjc28+" "+Sjc28+" "+Vs+" "+Gh+" DAS="+Das28);
+
+      if(Tjc28>28){
+          document.getElementById('Tjc28_label').style.color="#F00";
+          document.getElementById('Tjc28').style.color="#F00";
+          document.getElementById('Tjc28').style.borderColor="#F00";
+      } else {
+          document.getElementById('Tjc28_label').style.color="#000";
+          document.getElementById('Tjc28').style.color="#000";
+          document.getElementById('Tjc28').style.border="2px solid #DDD";
+      }
+      if(Sjc28>28){
+          document.getElementById('Sjc28_label').style.color="#F00";
+          document.getElementById('Sjc28').style.color="#F00";
+          document.getElementById('Sjc28').style.borderColor="#F00";
+      } else {
+          document.getElementById('Sjc28_label').style.color="#000";
+          document.getElementById('Sjc28').style.color="#000";
+          document.getElementById('Sjc28').style.border="2px solid #DDD";
+      }
+
+      if(Gh>100){
+          document.getElementById('Gh_label').style.color="#F00";
+          document.getElementById('Gh').style.color="#F00";
+          document.getElementById('Gh').style.borderColor="#F00";
+      } else {
+          document.getElementById('Gh_label').style.color="#000";
+          document.getElementById('Gh').style.color="#000";
+          document.getElementById('Gh').style.border="2px solid #DDD";
+      }
+
+      if(Das28>0)
+        document.Form.reponse.value = Math.round(Das28*100)/100;
+
+      if(Das28>0 && Das28<2.6) {
+        document.Form.ResultatMessage.value = "Rémission";
+      }
+      else if(Das28>=2.6 && Das28<3.2 ){
+        document.Form.ResultatMessage.value = "Activité Faible";
+      }
+      else if(Das28>3.2 && Das28<=5.1 ){
+        document.Form.ResultatMessage.value = "Activité Modérée";
+      }
+      else if(Das28>5.1){
+        document.Form.ResultatMessage.value = "Activité Elevée";
+      }
+      //Reinitialisation
+      if(Das28=="-Infinity"){
+        document.Form.ResultatMessage.value = "";
+        document.Form.reponse.value = "";
+      }
+
+      if(Tjc28>28 || Sjc28>28 || Gh>100 || Vs==0 || Tjc28=="" || Sjc28=="" || Vs=="" || Gh==""){
+        document.Form.ResultatMessage.value = "";
+        document.Form.reponse.value = "";
+      }
+
+
+    }
+</script>
+
+</body>
+</html>
