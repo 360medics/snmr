@@ -9,10 +9,17 @@
 <link rel="stylesheet" href="style_common.css" />
 <style>
     .input_das {
-      width:150px; display:block; height:30px; line-height:30px; font-size: 13px;
+      width:60px; display:block; height:30px; line-height:30px; font-size: 13px;
       border:2px solid #DDDDDD;
       padding-left:6px;
     }
+    label{
+        margin-right:9px;
+        display: block;
+        text-align: left;
+
+    }
+
   </style>
 </head>
 
@@ -32,12 +39,12 @@ une évaluation objective, reproductible et comparable de l'activité de la poly
 
   <table border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
-      <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses (entre 0-28)</label></td>
+      <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses<br/>(entre 0-28)</label></td>
       <td>
           <input name="Resultat" type="number" id="Tjc28" class="input_das" onchange="f_Calculer()" /></td>
     </tr>
     <tr>
-      <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées (entre 0-28)</label></td>
+      <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées<br/>(entre 0-28)</label></td>
       <td><input name="Resultat" type="number" id="Sjc28" class="input_das" onchange="f_Calculer()" /></td>
     </tr>
   </table>
@@ -49,7 +56,7 @@ une évaluation objective, reproductible et comparable de l'activité de la poly
     	<td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das" /></td>
     </tr>
     <tr>
-  	  <td><label for="Crit01" id="Gh_label">Etat de santé général (de 0=le meilleur à 100=le pire)</label></td>
+  	  <td><label for="Crit01" id="Gh_label">Etat de santé général<br/>(de 0=le meilleur à 100=le pire)</label></td>
     	<td><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das" /></td>
     </tr>
   </table>
