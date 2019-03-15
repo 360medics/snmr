@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34546208-80e0-4baa-b139-ade4235312e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACR_2010.html" beforeDir="false" afterPath="$PROJECT_DIR$/ACR_2010.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style_common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caspar.html" beforeDir="false" afterPath="$PROJECT_DIR$/caspar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style_common.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="626">
               <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/caspar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="45" column="115" lean-forward="true" selection-start-line="45" selection-start-column="115" selection-end-line="45" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -101,7 +108,6 @@
         <option value="$PROJECT_DIR$/acr_1997_new.html" />
         <option value="$PROJECT_DIR$/acr_1997.html" />
         <option value="$PROJECT_DIR$/amor.html" />
-        <option value="$PROJECT_DIR$/caspar.html" />
         <option value="$PROJECT_DIR$/SLEDAI.html" />
         <option value="$PROJECT_DIR$/SLEDAI_new.html" />
         <option value="$PROJECT_DIR$/asas_axiale.html" />
@@ -111,6 +117,7 @@
         <option value="$PROJECT_DIR$/QIF.html" />
         <option value="$PROJECT_DIR$/ACR_2010.html" />
         <option value="$PROJECT_DIR$/style_common.css" />
+        <option value="$PROJECT_DIR$/caspar.html" />
       </list>
     </option>
   </component>
@@ -182,12 +189,12 @@
       <workItem from="1550240536171" duration="3597000" />
       <workItem from="1551081059573" duration="4820000" />
       <workItem from="1552636752439" duration="4555000" />
-      <workItem from="1552647920871" duration="1023000" />
+      <workItem from="1552647920871" duration="1162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38232000" />
+    <option name="totallyTimeSpent" value="38371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1003" extended-state="6" />
@@ -298,13 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caspar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -371,6 +371,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caspar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="45" column="115" lean-forward="true" selection-start-line="45" selection-start-column="115" selection-end-line="45" selection-end-column="115" />
         </state>
       </provider>
     </entry>
