@@ -4,11 +4,6 @@
     <list default="true" id="34546208-80e0-4baa-b139-ade4235312e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ACR_2010.html" beforeDir="false" afterPath="$PROJECT_DIR$/ACR_2010.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EIFEL.html" beforeDir="false" afterPath="$PROJECT_DIR$/EIFEL.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QIF.html" beforeDir="false" afterPath="$PROJECT_DIR$/QIF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asas_axiale.html" beforeDir="false" afterPath="$PROJECT_DIR$/asas_axiale.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asas_peripherique.html" beforeDir="false" afterPath="$PROJECT_DIR$/asas_peripherique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diagnostic.html" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style_common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_common.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,28 +17,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style_common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+            <state relative-caret-position="626">
+              <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QIF.html">
+        <entry file="file://$PROJECT_DIR$/ACR_2010.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="699" column="21" selection-start-line="699" selection-start-column="21" selection-end-line="699" selection-end-column="21" />
+            <state relative-caret-position="428">
+              <caret line="259" column="86" selection-start-line="259" selection-start-column="86" selection-end-line="259" selection-end-column="86" />
               <folding>
-                <element signature="n#tr#2;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#3;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#4;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#5;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#6;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#7;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#8;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#9;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#10;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#tr#11;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -53,9 +41,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;td&gt;(.*?)&lt;br/&gt;&lt;input name=&quot;(.*?)&quot; id=&quot;(.*?)&quot; type=&quot;checkbox&quot; value=&quot;1&quot; onclick=&quot;f_Calculer(.*?)&quot; /&gt;&lt;/td&gt;</find>
-      <find>&lt;td&gt;(.*?) &lt;input name=&quot;(.*?)&quot; id=&quot;(.*?)&quot; type=&quot;radio&quot; value=&quot;(.*?)&quot; onclick=&quot;(.*?)&quot; /&gt;</find>
-      <find>checkmark</find>
       <find>container</find>
       <find>width: 100</find>
       <find>align=&quot;right&quot;</find>
@@ -83,6 +68,9 @@
       <find>h1</find>
       <find>common_h</find>
       <find>containerRadio</find>
+      <find>.mt</find>
+      <find>input</find>
+      <find>input_sc</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;hr&gt;</replace>
@@ -116,20 +104,19 @@
         <option value="$PROJECT_DIR$/caspar.html" />
         <option value="$PROJECT_DIR$/SLEDAI.html" />
         <option value="$PROJECT_DIR$/SLEDAI_new.html" />
-        <option value="$PROJECT_DIR$/ACR_2010.html" />
         <option value="$PROJECT_DIR$/asas_axiale.html" />
         <option value="$PROJECT_DIR$/asas_peripherique.html" />
         <option value="$PROJECT_DIR$/diagnostic.html" />
         <option value="$PROJECT_DIR$/EIFEL.html" />
         <option value="$PROJECT_DIR$/QIF.html" />
+        <option value="$PROJECT_DIR$/ACR_2010.html" />
         <option value="$PROJECT_DIR$/style_common.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
     <option name="y" value="23" />
-    <option name="width" value="1760" />
+    <option name="width" value="1920" />
     <option name="height" value="1003" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -194,18 +181,19 @@
       <workItem from="1550239776833" duration="326000" />
       <workItem from="1550240536171" duration="3597000" />
       <workItem from="1551081059573" duration="4820000" />
-      <workItem from="1552636752439" duration="4320000" />
+      <workItem from="1552636752439" duration="4555000" />
+      <workItem from="1552647920871" duration="1023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36974000" />
+    <option name="totallyTimeSpent" value="38232000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="23" width="1760" height="1003" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1003" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10768335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.099574015" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,18 +263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ACR_2010.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -379,10 +355,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ACR_2010.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="259" column="86" selection-start-line="259" selection-start-column="86" selection-end-line="259" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style_common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="626">
+          <caret line="368" column="9" selection-start-line="368" selection-start-column="9" selection-end-line="368" selection-end-column="9" />
         </state>
       </provider>
     </entry>

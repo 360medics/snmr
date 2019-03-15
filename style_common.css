@@ -27,6 +27,8 @@ td {
 
 .mt {
     margin-top: 8px;
+    margin-left: 20px;
+    margin-top: 0px;
 }
 
 .flex-row {
@@ -103,8 +105,8 @@ h2,
 
 .input_score,
 .score_result input{
-    width:40px;
-    height:30px;
+    width: 25px;
+    height: 25px;
     font-size:20px;
     color:#c41723 !important;
     font-weight: bold;
@@ -360,11 +362,15 @@ fieldset {
 }
 
 .style1 {
-    background-color: lightgray;
+    background-color: #DCDCDC;
     height: 50px;
 }
 
 .style2 {
-    background-color: #BEBEBE;
     height: 50px;
+}
+
+#ResultatHeadaches.input_score_smaller {
+    width: 25px;
+    height: 25px;
 }
