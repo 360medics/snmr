@@ -13,175 +13,350 @@
 <p class="scoretitle_title common_h1">2010 ACR Fibromyalgia<br/>Diagnostic Criteria<br/>(Modified 2011)<br/></p>
 
 <form name="Form" id="Form">
-<h2></h2>
-<div>
-  A patient satisfies diagnostic criteria for fibromyalgia if the following conditions are met:<br/>
-  1. Widespread pain index (WPI) ≥7 and symptom severity (SS) scale score ≥5 or WPI 3-6 and SS scale score ≥9.<br/>
-  2. Symptoms have been present at a similar level for at least 3 months.<br/>
-  3. The patient does not have a disorder that would otherwise explain the pain<br/>
-</div>
+    <h2></h2>
+    <div>
+        A patient satisfies diagnostic criteria for fibromyalgia if the following conditions are met:<br/>
+        1. Widespread pain index (WPI) ≥7 and symptom severity (SS) scale score ≥5 or WPI 3-6 and SS scale score ≥9.<br/>
+        2. Symptoms have been present at a similar level for at least 3 months.<br/>
+        3. The patient does not have a disorder that would otherwise explain the pain<br/>
+    </div>
 
-<h2>Take this test and add</h2>
-<div>
+    <h2>Take this test and add</h2>
+    <div>
 
-      <div class="score_result">
-          <input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled readonly="readonly"/>
-          WPI: Check each area you’ve had pain over the last week. <span style="font-size:14px; font-weight:normal;">(score will be between 0 and 19)</span>
-      </div>
-</div>
+        <div class="score_result">
+            <input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled readonly="readonly"/>
+            WPI: Check each area you’ve had pain over the last week.
+            <span style="font-size:14px; font-weight:normal;"><br/>(score will be between 0 and 19)<br/><br/></span>
+        </div>
+    </div>
 
-<table class="acr_2010">
-  <tr>
-    <td>Shoulder girdle, left<br/> <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Hip (buttock, trochanter), left<br/> <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Jaw, left  <br/><input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Upper back  <br/><input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-  </tr>
-  <tr>
-    <td>Shoulder girdle, right <br/><input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Hip (buttock, trochanter), right <br/><input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Jaw, right <br/><input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Lower back  <br/><input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-  </tr>
-  <tr>
-    <td>Upper arm, left <br/><input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Upper leg, left <br/><input name="vItem10" id="vItem10" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Chest <br/><input name="vItem11" id="vItem11" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Neck <br/><input name="vItem12" id="vItem12" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-  </tr>
-  <tr>
-    <td>Upper arm, right <br/><input name="vItem13" id="vItem13" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Upper leg, right <br/><input name="vItem14" id="vItem14" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Abdomen <br/><input name="vItem15" id="vItem15" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Lower arm, left <br/><input name="vItem16" id="vItem16" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Lower leg, left <br/><input name="vItem17" id="vItem17" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Lower arm, right <br/><input name="vItem18" id="vItem18" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td>Lower leg, right <br/><input name="vItem19" id="vItem19" type="checkbox" value="1" onclick="f_Calculer()" /></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+    <table class="acr_2010">
+        <tr>
+            <td>
+                <label class="containerCb">Shoulder girdle, left
+                    <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Shoulder girdle, right
+                    <input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Hip (buttock, trochanter), left
+                    <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Hip (buttock, trochanter), right
+                    <input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Upper back
+                    <input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lower back
+                    <input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Jaw, left
+                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Jaw, right
+                    <input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Upper arm, left
+                    <input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Upper arm, right
+                    <input name="vItem13" id="vItem13" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Upper leg, left
+                    <input name="vItem10" id="vItem10" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Upper leg, right
+                    <input name="vItem14" id="vItem14" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lower arm, left
+                    <input name="vItem16" id="vItem16" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lower arm, right
+                    <input name="vItem18" id="vItem18" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lower leg, left
+                    <input name="vItem17" id="vItem17" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lower leg, right
+                    <input name="vItem19" id="vItem19" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Neck
+                    <input name="vItem12" id="vItem12" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Chest
+                    <input name="vItem11" id="vItem11" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Abdomen
+                    <input name="vItem15" id="vItem15" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+    </table>
 
-<h2>SS scale score</h2>
-<div>
-  For each of the 3 symptoms below, score their severity over the past week using the following scale:
-  <table>
-    <tr>
-      <td>0 = No problem</td>
-    </tr>
-    <tr>
-      <td>1 = Slight or mild problems, generally mild or intermittent</td>
-    </tr>
-    <tr>
-      <td>2 = Moderate, considerable problems, often present and/or at a moderate level</td>
-    </tr>
-    <tr>
-      <td>3 = Severe : pervasive, continuous, life-disturbing problems</td>
-    </tr>
-  </table>
+    <h2>SS scale score</h2>
+    <div>
+        For each of the 3 symptoms below, score their severity over the past week using the following scale:
+        <table>
+            <tr>
+                <td>0 = No problem</td>
+            </tr>
+            <tr>
+                <td>1 = Slight or mild problems, generally mild or intermittent</td>
+            </tr>
+            <tr>
+                <td>2 = Moderate, considerable problems, often present and/or at a moderate level</td>
+            </tr>
+            <tr>
+                <td>3 = Severe : pervasive, continuous, life-disturbing problems</td>
+            </tr>
+        </table>
 
-  <table class="acr_2010">
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatFatigue" type="text" id="ResultatFatigue" style="" disabled readonly="readonly"/>
-      </td>
-      <td class="score_subtitle">Fatigue (Score 0-3)
-      </td>
-      <td>0 <input name="vItemFatigue" id="vItemFatigue1" type="radio" value="0" onclick="f_CalculerFatigue()" />
-      </td>
-      <td>1 <input name="vItemFatigue" id="vItemFatigue2" type="radio" value="1" onclick="f_CalculerFatigue()" />
-      </td>
-      <td>2 <input name="vItemFatigue" id="vItemFatigue3" type="radio" value="2" onclick="f_CalculerFatigue()" />
-      </td>
-      <td>3 <input name="vItemFatigue" id="vItemFatigue4" type="radio" value="3" onclick="f_CalculerFatigue()" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatWaking" type="text" id="ResultatWaking" style="" disabled readonly="readonly"/>
-      </td>
-      <td class="score_subtitle">Waking unrefreshed (Score 0-3)
-      </td>
-      <td>0 <input name="vItemWaking" id="vItem15" type="radio" value="0" onclick="f_CalculerWaking()" />
-      </td>
-      <td>1 <input name="vItemWaking" id="vItem15" type="radio" value="1" onclick="f_CalculerWaking()" />
-      </td>
-      <td>2 <input name="vItemWaking" id="vItem15" type="radio" value="2" onclick="f_CalculerWaking()" />
-      </td>
-      <td>3 <input name="vItemWaking" id="vItem15" type="radio" value="3" onclick="f_CalculerWaking()" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatCognitive" type="text" id="ResultatCognitive" style="" disabled readonly="readonly"/>
-      </td>
-      <td class="score_subtitle">Cognitive symptoms ("brain fog" Score 0-3)
-      </td>
-      <td>0 <input name="vItemCognitive" id="vItem15" type="radio" value="0" onclick="f_CalculerCognitive();" />
-      </td>
-      <td>1 <input name="vItemCognitive" id="vItem15" type="radio" value="1" onclick="f_CalculerCognitive();f" />
-      </td>
-      <td>2 <input name="vItemCognitive" id="vItem15" type="radio" value="2" onclick="f_CalculerCognitive();" />
-      </td>
-      <td>3 <input name="vItemCognitive" id="vItem15" type="radio" value="3" onclick="f_CalculerCognitive();" />
-      </td>
-    </tr>
-  </table>
+        <table class="acr_2010">
+            <tr>
+                <td>
+                    <input class="input_score" name="ResultatFatigue" type="text" id="ResultatFatigue" style="" disabled readonly="readonly"/>
+                </td>
+                <td class="score_subtitle">Fatigue (Score 0-3)
+                </td>
+                <td>
+                    <label class="containerRadio smol">0
+                        <input name="vItemFatigue" id="vItemFatigue1" type="radio" value="0" onclick="f_CalculerFatigue()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">1
+                        <input name="vItemFatigue" id="vItemFatigue2" type="radio" value="1" onclick="f_CalculerFatigue()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
 
-<br/>
-Then add just 1 point for each of the following 3 symptoms that have occurred during the previous 6 months:
+                </td>
+                <td>
+                    <label class="containerRadio smol">2
+                        <input name="vItemFatigue" id="vItemFatigue3" type="radio" value="2" onclick="f_CalculerFatigue()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">3
+                        <input name="vItemFatigue" id="vItemFatigue4" type="radio" value="3" onclick="f_CalculerFatigue()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="input_score" name="ResultatWaking" type="text" id="ResultatWaking" style="" disabled readonly="readonly"/>
+                </td>
+                <td class="score_subtitle">Waking unrefreshed (Score 0-3)
+                </td>
+                <td>
+                    <label class="containerRadio smol">0
+                        <input name="vItemWaking" id="vItem15" type="radio" value="0" onclick="f_CalculerWaking()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">1
+                        <input name="vItemWaking" id="vItem15" type="radio" value="1" onclick="f_CalculerWaking()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">2
+                        <input name="vItemWaking" id="vItem15" type="radio" value="2" onclick="f_CalculerWaking()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">3
+                        <input name="vItemWaking" id="vItem15" type="radio" value="3" onclick="f_CalculerWaking()" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="input_score" name="ResultatCognitive" type="text" id="ResultatCognitive" style="" disabled readonly="readonly"/>
+                </td>
+                <td class="score_subtitle">Cognitive symptoms ("brain fog" Score 0-3)
+                </td>
+                <td>
+                    <label class="containerRadio smol">0
+                        <input name="vItemCognitive" id="vItem15" type="radio" value="0" onclick="f_CalculerCognitive();" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">1
+                        <input name="vItemCognitive" id="vItem15" type="radio" value="1" onclick="f_CalculerCognitive();f" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">2
+                        <input name="vItemCognitive" id="vItem15" type="radio" value="2" onclick="f_CalculerCognitive();" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="containerRadio smol">3
+                        <input name="vItemCognitive" id="vItem15" type="radio" value="3" onclick="f_CalculerCognitive();" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </td>
+            </tr>
+        </table>
 
-  <table class="acr_2010">
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatHeadaches" type="text" id="ResultatHeadaches" style="" disabled readonly="readonly"/>
-      </td>
-      <td>Headaches (Score 0-1)
-      </td>
-      <td><input id="vItemHeadaches" type="checkbox" value="0" onclick="f_CalculerHeadaches(); " />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatPain" type="text" id="ResultatPain" style="" disabled readonly="readonly"/>
-      </td>
-      <td >Pain or cramps in lower abdomen (Score 0-1)
-      </td>
-      <td><input id="vItemPain" type="checkbox" value="0" onclick="f_CalculerPain(); " />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <input class="input_score" name="ResultatDepression" type="text" id="ResultatDepression" style="" disabled readonly="readonly"/>
-      </td>
-      <td >Depression (Score 0-1)
-      </td>
-      <td><input  id="vItemDepression" type="checkbox" value="0" onclick="f_CalculerDepression(); " />
-      </td>
-    </tr>
-  </table>
-</div>
+        <br/>
+        Then add just 1 point for each of the following 3 symptoms that have occurred during the previous 6 months:<br/><br/>
 
-<div class="score_result">
-    <input name="ResultatSS" type="text" id="ResultatSS" style="" disabled readonly="readonly"/>
-    Total SS Scale score (adding the 6 items above). The final score is between 0 and 12.
-</div>
+        <table class="acr_2010">
+            <tr>
+                <td>
+                    <div class="flex-row">
+                        <input class="input_score" name="ResultatHeadaches" type="text" id="ResultatHeadaches" style="" disabled readonly="readonly"/><br/>
+                        <label class="containerCb mt">Headaches (Score 0-1)
+                            <input id="vItemHeadaches" type="checkbox" value="0" onclick="f_CalculerHeadaches(); " />
+                            <span class="checkmarkCb"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flex-row">
+                        <input class="input_score" name="ResultatPain" type="text" id="ResultatPain" style="" disabled readonly="readonly"/><br/>
+                        <label class="containerCb mt">Pain or cramps in lower abdomen (Score 0-1)
+                            <input id="vItemPain" type="checkbox" value="0" onclick="f_CalculerPain(); " />
+                            <span class="checkmarkCb"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flex-row">
+                        <input class="input_score" name="ResultatDepression" type="text" id="ResultatDepression" style="" disabled readonly="readonly"/><br/>
+                        <label class="containerCb mt">Depression (Score 0-1)
+                            <input  id="vItemDepression" type="checkbox" value="0" onclick="f_CalculerDepression(); " />
+                            <span class="checkmarkCb"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="score_result">
+        <input name="ResultatSS" type="text" id="ResultatSS" style="" disabled readonly="readonly"/>
+        Total SS Scale score (adding the 6 items above).
+        <span style="font-size:14px; font-weight:normal;"><br/>The final score is between 0 and 12.<br/></span>
+    </div>
 </form>
 
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 
 <script type="text/javascript">
 
     function f_CalculerHeadaches()
     {
         if(document.Form.vItemHeadaches.checked){
-          document.Form.ResultatHeadaches.value="1";
+            document.Form.ResultatHeadaches.value="1";
         }
         else document.Form.ResultatHeadaches.value="";
         f_CalculerScore();
@@ -190,7 +365,7 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
     function f_CalculerPain()
     {
         if(document.Form.vItemPain.checked){
-          document.Form.ResultatPain.value="1";
+            document.Form.ResultatPain.value="1";
         }
         else document.Form.ResultatPain.value="";
         f_CalculerScore();
@@ -200,7 +375,7 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
     function f_CalculerDepression()
     {
         if(document.Form.vItemDepression.checked){
-          document.Form.ResultatDepression.value="1";
+            document.Form.ResultatDepression.value="1";
         }
         else document.Form.ResultatDepression.value="";
         f_CalculerScore();
@@ -209,15 +384,15 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
     // Fonction de calcul de la page
     function f_CalculerScore()
     {
-      var Res = 0;
-      var Fatigue = document.Form.ResultatFatigue.value * 1;
-      var Waking = document.Form.ResultatWaking.value * 1;
-      var Cognitive = document.Form.ResultatCognitive.value * 1;
-      var ResultatHeadaches = document.Form.ResultatHeadaches.value * 1;
-      var ResultatPain = document.Form.ResultatPain.value * 1;
-      var ResultatDepression = document.Form.ResultatDepression.value * 1;
-      
-      document.Form.ResultatSS.value = Fatigue+Waking+Cognitive+ResultatHeadaches+ResultatPain+ResultatDepression;
+        var Res = 0;
+        var Fatigue = document.Form.ResultatFatigue.value * 1;
+        var Waking = document.Form.ResultatWaking.value * 1;
+        var Cognitive = document.Form.ResultatCognitive.value * 1;
+        var ResultatHeadaches = document.Form.ResultatHeadaches.value * 1;
+        var ResultatPain = document.Form.ResultatPain.value * 1;
+        var ResultatDepression = document.Form.ResultatDepression.value * 1;
+
+        document.Form.ResultatSS.value = Fatigue+Waking+Cognitive+ResultatHeadaches+ResultatPain+ResultatDepression;
     }
 
 
@@ -227,10 +402,10 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
         // calcul du résultat
         var radios = document.getElementsByName('vItemFatigue');
         var Res = 0;
-      	for (var i = 0; i < radios.length; i++) {
-      		if (radios[i].checked) {
-      			Res= radios[i].value * 1;
-      		}
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                Res= radios[i].value * 1;
+            }
         }
         document.Form.ResultatFatigue.value = Res;
 
@@ -243,10 +418,10 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
         // calcul du résultat
         var radios = document.getElementsByName('vItemWaking');
         var Res = 0;
-      	for (var i = 0; i < radios.length; i++) {
-      		if (radios[i].checked) {
-      			Res= radios[i].value * 1;
-      		}
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                Res= radios[i].value * 1;
+            }
         }
         document.Form.ResultatWaking.value = Res;
 
@@ -259,10 +434,10 @@ Then add just 1 point for each of the following 3 symptoms that have occurred du
         // calcul du résultat
         var radios = document.getElementsByName('vItemCognitive');
         var Res = 0;
-      	for (var i = 0; i < radios.length; i++) {
-      		if (radios[i].checked) {
-      			Res= radios[i].value * 1;
-      		}
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                Res= radios[i].value * 1;
+            }
         }
         document.Form.ResultatCognitive.value = Res;
 

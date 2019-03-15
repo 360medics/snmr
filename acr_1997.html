@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Critères de classification ACR 1982, mis à jour en 1997</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+</head>
+
+<body class="scorebody">
+<p class="scoretitle_title common_h1">Critères de classification ACR 1982,<br /> mis à jour en 1997<br />
+
+<h2>Évalutation</h2>
+
+<form name="Form" id="Form">
+    <table border="0" align="center" cellpadding="2" cellspacing="0">
+        <tr>
+            <td>
+                <label class="containerCb">Rash malaire
+                    <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" >
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Lupus discoïde
+                    <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Photosensibilité
+                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Ulcérations orales ou nasopharyngées
+                    <input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Arthrites non érosives touchant au moins 2 articulations périphériques, caractérisées par une douleur, un gonflement ou un épanchement
+                    <input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Pleurésie ou péricardite
+                    <input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Protéinurie persistante > 0,5 g/j ou cylindrurie
+                    <input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Convulsions ou psychose (en l'absence de cause médicamenteuse ou métabolique)
+                    <input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Atteinte hématologique: Anémie hémolytique ou Leucopénie < 4000/µL à 2 reprises ou Lymphopénie < 1500/µL à 2 reprises ou Thrombopénie < 100 000/µL en l'absence de drogues cytopéniantes
+                    <input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Titre anormal d'anticorps anti-nucléaires par IF (en l'absence de drogues inductrices)
+                    <input name="vItem10" id="vItem10" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="containerCb">Perturbations immunologiques: titre anormal d'anticorps anti-ADN natif, anticorps anti-Sm ou présence d'anticorps antiphospholipides: sérologie syphilitique dissociée constatée à 2 reprises à 6 mois ou anticoagulant circulant de type lupique ou titre anormal d'anticorps anti-cardiolipine en IgG ou IgM
+                    <input name="vItem11" id="vItem11" type="checkbox" value="1" onclick="f_Calculer()" />
+                    <span class="checkmarkCb"></span>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <div class="score_result">
+        Score
+        <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
+        <span id="score_result_confirm">/11</span>
+        <input class="reponse" name="Mot" type="text" id="reponse" disabled readonly="readonly" />
+    </div>
+</form>
+
+
+<div class="score_inter">Interprétation</div>
+<span class="description">La présence d'au moins 4 des 11 critères permet d'affirmer l'existence d'un lupus systémique avec une sensibilité et une spécificité de 96%.</span>
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+<script type="text/javascript">
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+        // calcul du résultat
+        var Res = 0;
+        for(var i=1; i < 25; i++)
+            Res += f_GetRadioValue('vItem'+i)*1;
+
+        var test = "" ;
+        if (Res >= 4) {
+            test = "Positif";
+        } else {
+            test = "Négatif";
+        }
+
+        // Affichage du résultat
+        document.Form.Resultat.value = Res;
+        document.Form.reponse.value = test;
+    }
+</script>
+
+</body>
+</html>
