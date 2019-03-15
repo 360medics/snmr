@@ -10,14 +10,17 @@
 <style>
     .input_das {
       width:60px; display:block; height:30px; line-height:30px; font-size: 13px;
-      border:2px solid #DDDDDD;
+      border:1px solid #DDDDDD;
       padding-left:6px;
     }
-    label{
-        margin-right:9px;
-        display: block;
-        text-align: left;
+    label {
+      margin-right: 9px;
+      display: block;
+      text-align: left;
+    }
 
+    .test {
+      margin-left: 50px;
     }
 
   </style>
@@ -53,11 +56,11 @@ une évaluation objective, reproductible et comparable de l'activité de la poly
   <table border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
   	  <td><label for="Crit01">VS (mm/première heure)</label></td>
-    	<td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das" /></td>
+    	<td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das test" /></td>
     </tr>
     <tr>
   	  <td><label for="Crit01" id="Gh_label">Etat de santé général<br/>(de 0=le meilleur à 100=le pire)</label></td>
-    	<td><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das" /></td>
+    	<td><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das test" /></td>
     </tr>
   </table>
   <br />
