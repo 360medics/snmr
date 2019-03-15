@@ -17,20 +17,17 @@ table {
 }
 
 table, th, td {
-    border: 0px solid black;
+    border: 0 solid black;
     border-collapse: collapse;
 }
-th, td {
-    /*padding: 10px;*/
-    /*text-align: left;*/
-}
+
 td {
     vertical-align: middle;
-    width: 100%;
 }
-/*td input{*/
-    /*margin:10px;*/
-/*}*/
+
+.mt {
+    margin-top: 8px;
+}
 
 .flex-row {
     display: flex;
@@ -42,8 +39,6 @@ td {
     flex-direction: column;
 }
 [type="checkbox"]{
-    /*width:20px;*/
-    /*height:20px;*/
     font-size: 16px;
 }
 
@@ -51,10 +46,6 @@ td {
     width:17px;
     height:17px;
 }
-/*
-input:disabled, textarea:disable{
-  color:
-}*/
 
 .italic {
     font-style: italic;
@@ -69,9 +60,9 @@ input:disabled, textarea:disable{
     margin:auto;
     margin-bottom:25px;
     display:block;
-    font-size:28px;
-    font-weight: bold;
+    font-size:25px;
     color:#404040;
+    font-weight: lighter;
 }
 
 h2,
@@ -135,15 +126,14 @@ h2,
 }
 .table_qif td{
     text-align: center;
-    border:0px solid #FFFFFF;
+    border:0 solid #FFFFFF;
 }
 .td_question{
     text-align: left !important;
     padding: 20px 0 20px 0 !important;
 }
 .tr_question td{
-    padding: 7px 3px 3px 0px !important;
-    /*vertical-align: bottom;*/
+    padding: 7px 3px 3px 0 !important;
 }
 .info{
     vertical-align: top;
@@ -153,8 +143,13 @@ h2,
 }
 .subtitle td{
     text-align:center;
-    vertical-align: top;
 }
+
+.initial {
+    display: initial !important;
+    margin-left: 9px;
+}
+
 .altern_color{
     background-color:#DEDEDE
 }
@@ -198,23 +193,10 @@ fieldset {
     font-size: 1.2em;
 }
 
-.result1 {
-    margin-left: 80px;
-}
-
-#text2 {
-    margin-left: 110px;
-}
-
 /* ACR_1997 */
 .reponse {
     border: none;
     min-width: 70px;
-}
-
-/* ACR 2010 */
-.acr_2010 {
-    width: auto;
 }
 
 .acr_2010 td{
@@ -223,7 +205,7 @@ fieldset {
 }
 
 .acr_2010 .score_subtitle{
-    text-align:right;
+    text-align:left;
 }
 
 .legalinfo{
@@ -231,22 +213,21 @@ fieldset {
     color:#666;
 }
 
-
 /**** CUSTOMIZED CHECKBOX ****/
 
 /* Customize the label (the container) */
 .containerCb {
     display: block;
     position: relative;
-    padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 21px;
-    min-width: 200px;
+    min-width: 150px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: left;
+    padding: 0 0 0 40px;
 }
 
 /* Hide the browser's default checkbox */
@@ -315,7 +296,6 @@ fieldset {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -377,4 +357,14 @@ fieldset {
 .smol {
     max-width: 12px !important;
     min-width: 0 !important;
+}
+
+.style1 {
+    background-color: lightgray;
+    height: 50px;
+}
+
+.style2 {
+    background-color: #BEBEBE;
+    height: 50px;
 }
