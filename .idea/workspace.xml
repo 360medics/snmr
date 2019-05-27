@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34546208-80e0-4baa-b139-ade4235312e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ACR_2010.html" beforeDir="false" afterPath="$PROJECT_DIR$/ACR_2010.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAS28-CRP.html" beforeDir="false" afterPath="$PROJECT_DIR$/DAS28-CRP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EIFEL.html" beforeDir="false" afterPath="$PROJECT_DIR$/EIFEL.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QIF.html" beforeDir="false" afterPath="$PROJECT_DIR$/QIF.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SLEDAI.html" beforeDir="false" afterPath="$PROJECT_DIR$/SLEDAI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acr_1997.html" beforeDir="false" afterPath="$PROJECT_DIR$/acr_1997.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amor.html" beforeDir="false" afterPath="$PROJECT_DIR$/amor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asas_axiale.html" beforeDir="false" afterPath="$PROJECT_DIR$/asas_axiale.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asas_peripherique.html" beforeDir="false" afterPath="$PROJECT_DIR$/asas_peripherique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caspar.html" beforeDir="false" afterPath="$PROJECT_DIR$/caspar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant.html" beforeDir="false" afterPath="$PROJECT_DIR$/constant.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/das28.html" beforeDir="false" afterPath="$PROJECT_DIR$/das28.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagnostic.html" beforeDir="false" afterPath="$PROJECT_DIR$/diagnostic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dreiser.html" beforeDir="false" afterPath="$PROJECT_DIR$/dreiser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lequesne-genou.html" beforeDir="false" afterPath="$PROJECT_DIR$/lequesne-genou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lequesne-hanche.html" beforeDir="false" afterPath="$PROJECT_DIR$/lequesne-hanche.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style_common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style_common.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,30 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/constant.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style_common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="270" column="17" lean-forward="true" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
-              <folding>
-                <element signature="n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#1;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#2;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#3;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#4;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#6;n#form#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#p#7;n#form#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="232">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style_common.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QIF.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13363">
-              <caret line="581" column="60" selection-start-line="581" selection-start-column="60" selection-end-line="581" selection-end-column="60" />
+            <state relative-caret-position="521">
+              <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -54,36 +50,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>h1</find>
-      <find>input name</find>
-      <find>input {</find>
-      <find>.total</find>
-      <find>margin0</find>
-      <find>reponse</find>
-      <find>text-res</find>
-      <find>.heade</find>
-      <find>femm</find>
-      <find>name=&quot;t</find>
-      <find>input_s</find>
-      <find>heada</find>
-      <find>cramps</find>
-      <find>0-2</find>
-      <find>0=</find>
-      <find>DDDFE2</find>
-      <find>0 points</find>
-      <find>h2</find>
-      <find>musculai</find>
-      <find>tg-0lax</find>
-      <find>-no-</find>
-      <find>100 p</find>
-      <find>40 po</find>
-      <find>input</find>
-      <find>sectio</find>
-      <find>&lt;input type=&quot;number&quot; class=&quot;input-constant&quot; disabled&gt;</find>
-      <find>&lt;input t</find>
-      <find>tg-u55n</find>
-      <find>disabled</find>
-      <find>w214</find>
+      <find>Total SS</find>
+      <find>uni</find>
+      <find>3</find>
+      <find>mation fortement évocatrice de sacro-iliit</find>
+      <find>subtitle1</find>
+      <find>flex-r</find>
+      <find>input-consta</find>
+      <find>tableau 1</find>
+      <find>.input_</find>
+      <find>Sjc28_label</find>
+      <find>.score_res</find>
+      <find>style</find>
+      <find>2px solid rgb(221, 221, 221)</find>
+      <find>input_das</find>
+      <find>rder: 2px solid</find>
+      <find>.marg</find>
+      <find>class=&quot;input&quot;</find>
+      <find>score_re</find>
+      <find>radio</find>
+      <find>&lt;input class=&quot;input&quot; na</find>
+      <find>check</find>
+      <find>twenty</find>
+      <find>80</find>
+      <find>25px</find>
+      <find>style=&quot;margin-left: 20px;&quot;</find>
+      <find>class=&quot;flex-row&quot; class=&quot;first-col&quot;</find>
+      <find>export-</find>
+      <find>&lt;span class=&quot;checkmarkCb&quot;&gt;&lt;/span&gt;</find>
+      <find>&lt;label class=&quot;flex-row&quot;&gt;</find>
+      <find>margin-bott</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;hr&gt;</replace>
@@ -104,6 +100,16 @@
       <replace>&lt;input onchange=&quot;calculate()&quot; t</replace>
       <replace>tg-gvcd</replace>
       <replace>tg-baqh</replace>
+      <replace />
+      <replace>&lt;input na</replace>
+      <replace>&lt;label class=&quot;flex-row&quot; style=&quot;margin-left: 20px;&quot;&gt;</replace>
+      <replace>80</replace>
+      <replace>w80</replace>
+      <replace>class=&quot;not-first-col&quot;</replace>
+      <replace>class=&quot;flex-row first-col&quot;</replace>
+      <replace>&lt;span&gt;&lt;/span&gt;</replace>
+      <replace>&lt;label class=&quot;flex-row mb10&quot;&gt;</replace>
+      <replace>&lt;label for=&quot;&quot;&gt;&lt;/label&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -119,33 +125,35 @@
         <option value="$PROJECT_DIR$/style_ASAS_Peripherique.css" />
         <option value="$PROJECT_DIR$/acr_1997_new.html" />
         <option value="$PROJECT_DIR$/SLEDAI_new.html" />
-        <option value="$PROJECT_DIR$/acr_1997.html" />
-        <option value="$PROJECT_DIR$/asas_axiale.html" />
-        <option value="$PROJECT_DIR$/caspar.html" />
-        <option value="$PROJECT_DIR$/diagnostic.html" />
-        <option value="$PROJECT_DIR$/EIFEL.html" />
-        <option value="$PROJECT_DIR$/SLEDAI.html" />
-        <option value="$PROJECT_DIR$/asas_peripherique.html" />
         <option value="$PROJECT_DIR$/style_common_new_apps.css" />
-        <option value="$PROJECT_DIR$/dreiser.html" />
         <option value="$PROJECT_DIR$/genou.html" />
         <option value="$PROJECT_DIR$/hanche.html" />
-        <option value="$PROJECT_DIR$/ACR_2010.html" />
-        <option value="$PROJECT_DIR$/amor.html" />
-        <option value="$PROJECT_DIR$/das28.html" />
-        <option value="$PROJECT_DIR$/DAS28-CRP.html" />
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/acr_1997.html" />
+        <option value="$PROJECT_DIR$/ACR_2010.html" />
+        <option value="$PROJECT_DIR$/amor.html" />
+        <option value="$PROJECT_DIR$/asas_axiale.html" />
+        <option value="$PROJECT_DIR$/asas_peripherique.html" />
+        <option value="$PROJECT_DIR$/caspar.html" />
+        <option value="$PROJECT_DIR$/constant.html" />
+        <option value="$PROJECT_DIR$/das28.html" />
+        <option value="$PROJECT_DIR$/DAS28-CRP.html" />
+        <option value="$PROJECT_DIR$/diagnostic.html" />
+        <option value="$PROJECT_DIR$/dreiser.html" />
+        <option value="$PROJECT_DIR$/EIFEL.html" />
+        <option value="$PROJECT_DIR$/lequesne-genou.html" />
+        <option value="$PROJECT_DIR$/lequesne-hanche.html" />
         <option value="$PROJECT_DIR$/QIF.html" />
         <option value="$PROJECT_DIR$/style_common.css" />
-        <option value="$PROJECT_DIR$/constant.html" />
+        <option value="$PROJECT_DIR$/SLEDAI.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="568" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="229" />
     <option name="y" value="23" />
-    <option name="width" value="1352" />
+    <option name="width" value="1691" />
     <option name="height" value="1003" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -221,17 +229,18 @@
       <workItem from="1558613609640" duration="9398000" />
       <workItem from="1558681194547" duration="583000" />
       <workItem from="1558940623291" duration="7000" />
+      <workItem from="1558942717371" duration="19986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70276000" />
+    <option name="totallyTimeSpent" value="90262000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="568" y="23" width="1352" height="1003" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1003" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15648855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11075612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,48 +296,26 @@
     <entry file="file://$PROJECT_DIR$/style_ASAS_Peripherique.css" />
     <entry file="file://$PROJECT_DIR$/genou.html" />
     <entry file="file://$PROJECT_DIR$/hanche.html" />
-    <entry file="file://$PROJECT_DIR$/asas_peripherique.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+    <entry file="file://$PROJECT_DIR$/style_common_new_apps.css" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caspar.html">
+    <entry file="file://$PROJECT_DIR$/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/das28.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnostic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dreiser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EIFEL.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="106" selection-start-line="26" selection-start-column="106" selection-end-line="26" selection-end-column="106" />
+        <state relative-caret-position="693">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
@@ -341,90 +328,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style_common_new_apps.css" />
-    <entry file="file://$PROJECT_DIR$/SLEDAI.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAS28-CRP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acr_1997.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="111" column="97" lean-forward="true" selection-start-line="111" selection-start-column="97" selection-end-line="111" selection-end-column="97" />
+        <state relative-caret-position="450">
+          <caret line="117" column="7" lean-forward="true" selection-start-line="117" selection-start-column="7" selection-end-line="119" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ACR_2010.html">
+    <entry file="file://$PROJECT_DIR$/asas_peripherique.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="330" column="20" lean-forward="true" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="132" column="10" lean-forward="true" selection-start-line="132" selection-start-column="10" selection-end-line="132" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="651">
+          <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asas_axiale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/QIF.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="265">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/constant.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="270" column="17" lean-forward="true" selection-start-line="270" selection-start-column="17" selection-end-line="270" selection-end-column="17" />
+        <state relative-caret-position="412">
+          <caret line="209" column="16" lean-forward="true" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
           <folding>
             <element signature="n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#p#1;n#form#0;n#body#0;n#html#0;n#!!top" />
@@ -433,15 +361,133 @@
             <element signature="n#p#4;n#form#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#form#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#p#6;n#form#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#7;n#form#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caspar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="151" column="4" lean-forward="true" selection-start-line="147" selection-end-line="151" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/das28.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="63" column="8" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="63" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAS28-CRP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="56" column="8" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="56" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnostic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dreiser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="197" column="40" lean-forward="true" selection-start-line="197" selection-start-column="40" selection-end-line="197" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EIFEL.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="267" column="29" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lequesne-genou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lequesne-hanche.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="168" column="61" lean-forward="true" selection-start-line="168" selection-start-column="61" selection-end-line="168" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ACR_2010.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="185" column="24" lean-forward="true" selection-start-line="182" selection-start-column="14" selection-end-line="185" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SLEDAI.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="212" column="24" lean-forward="true" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
+          <folding>
+            <element signature="e#5173#5180#0" expanded="true" />
+            <element signature="e#5180#5186#0" expanded="true" />
+            <element signature="e#5197#5203#0" expanded="true" />
+            <element signature="e#5203#5210#0" expanded="true" />
+            <element signature="e#6736#6740#0" expanded="true" />
+            <element signature="e#7110#7114#0" expanded="true" />
+            <element signature="e#7479#7483#0" expanded="true" />
+            <element signature="e#9408#9412#0" expanded="true" />
+            <element signature="e#9757#9761#0" expanded="true" />
+            <element signature="e#9796#9800#0" expanded="true" />
+            <element signature="e#10121#10125#0" expanded="true" />
+            <element signature="e#10461#10465#0" expanded="true" />
+            <element signature="e#10669#10673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style_common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13363">
-          <caret line="581" column="60" selection-start-line="581" selection-start-column="60" selection-end-line="581" selection-end-column="60" />
+        <state relative-caret-position="232">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QIF.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="47" column="54" lean-forward="true" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
         </state>
       </provider>
     </entry>

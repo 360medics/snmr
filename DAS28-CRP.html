@@ -4,6 +4,7 @@
     <title>Calculateur DAS28</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script type="text/javascript" src="script_amor.js"></script>
     <link rel="stylesheet" href="style_common.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -15,11 +16,11 @@
     <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
             <td><label for="Tjc28_label" id="Tjc28_label">Nombre d'articulations douloureuses (0 - 28)</label></td>
-            <td><input min=0 max=28 name="Resultat" type="number" id="Tjc28" class="input input_das" onchange="f_Calculer()" /></td>
+            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Tjc28" class="input input_das" onchange="f_Calculer()" /></td>
         </tr>
         <tr>
             <td><label for="Sjc28_label" id="Sjc28_label">Nombre d'articulations enflées (0 - 28)</label></td>
-            <td><input min=0 max=28 name="Resultat" type="number" id="Sjc28" class="input input_das" onchange="f_Calculer()" /></td>
+            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Sjc28" class="input input_das" onchange="f_Calculer()" /></td>
         </tr>
     </table>
 
@@ -27,11 +28,11 @@
     <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
             <td><label for="Crit01" id="Crit01">CRP (mg/l)</label></td>
-            <td><input name="Crit01" id="Crp" type="number" value="" onchange="f_Calculer()" class="input input_das" /></td>
+            <td style="width: 30%"><input name="Crit01" id="Crp" type="number" value="" onchange="f_Calculer()" class="input input_das" /></td>
         </tr>
         <tr>
             <td><label for="Gh_label" id="Gh_label">Etat de santé général (de 0 = le meilleur à 100 = le pire)</label></td>
-            <td><input min=0 max=100 name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input input_das" /></td>
+            <td style="width: 30%"><input min=0 max=100 name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input input_das" /></td>
         </tr>
     </table>
     <br />
@@ -42,11 +43,16 @@
     <!--</div>-->
     <br>
     <div class="score_result">
-        <h2 class="textAlignL">Score</h2>
+        <h2>Score</h2>
         <div class="flex-row sa">
             <input name="Mot" type="text" id="reponse" disabled placeholder="0.96" class="input margin0 widthAuto" />
             <input class="reponse text-result margin0 input" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" placeholder="Rémission" disabled />
         </div>
+    </div>
+    <br>
+    <br>
+    <div class="export">
+        <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
     </div>
     <br>
     <div class="score_inter">Informations DAS28-CRP</div>

@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SNMR</title>
+    <title>ASAS AXIALE</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="style_common.css" rel="stylesheet" type="text/css" />
 </head>
@@ -14,46 +15,46 @@
 <p class="common_h2">Chez un patient présentant une <span class="bold">rachialgie ≥ à 3 mois</span> dont l'<span class="bold">âge du diagnostic est &lt; à 45 ans</span>, on peut classer sa maladie dans la forme spondylarthrite axiale si :</p>
 
 
-<label class="containerCb">Sacro-iliite à l'imagerie
-    <input onclick="uncheck34()" class="cb" type="checkbox" id="Mitem1" name="Mitem1" value="Mitem1">
-    <span class="checkmarkCb"></span>
+<label class="flex-row">
+    <input type="checkbox" onclick="uncheck34()" id="Mitem1" name="Mitem1" value="Mitem1">
+    <span>Sacro-iliite à l'imagerie</span>
 </label>
 
 <br><span class="and">ET</span><br><br>
 
-<label class="containerCb">≥ 1 signe de spondylarthite
-    <input onclick="uncheck34()" class="cb" type="checkbox" id="Mitem2" name="item2" value="item2">
-    <span class="checkmarkCb"></span>
+<label class="flex-row">
+    <input onclick="uncheck34()" type="checkbox" id="Mitem2" name="item2" value="item2">
+    <span>≥ 1 signe de spondylarthite</span>
 </label>
 
 <br><span>OU</span><br><br>
 
-<label class="containerCb">HLA-B27 positif
-    <input onclick="uncheck12()" class="cb" type="checkbox" id="Mitem3" name="Mitem3" value="Mitem3">
-    <span class="checkmarkCb"></span>
+<label class="flex-row">
+    <input onclick="uncheck12()" type="checkbox" id="Mitem3" name="Mitem3" value="Mitem3">
+    <span>HLA-B27 positif</span>
 </label>
 
 <br><span class="and">ET</span><br><br>
 
-<label class="containerCb">≥ 2 <span class="bold">autres</span> signes de spondylarthite
-    <input onclick="uncheck12()" class="cb" type="checkbox" id="Mitem4" name="item4" value="item4">
-    <span class="checkmarkCb"></span>
+<label class="flex-row">
+    <input onclick="uncheck12()" type="checkbox" id="Mitem4" name="item4" value="item4">
+    <span>≥ 2 <span class="bold">autres</span> signes de spondylarthite</span>
 </label>
 
 <br>
 <p class="common_h2">Sacro-iliite à l'imagerie:</p>
 
 <div>
-    <label class="containerRadio">Inflammation fortement évocatrice de sacro-iliite à l'IRM
-        <input type="radio" id="choice1" name="drone" value="choice1">
-        <span class="checkmarkRadio"></span>
+    <label class="flex-row">
+        <input type="radio" id="choice1" name="drone" value="choice1" />
+        <label for="choice1">Inflammation fortement évocatrice de sacro-iliite à l'IRM</label>
     </label>
 </div>
 <div>OU</div><br>
 <div>
-    <label class="containerRadio">Sacro-iliite radiologique stade ≥ 2 si bilatéral OU ≥ 3 si unilatéral
-        <input type="radio" id="choice2" name="drone" value="choice2">
-        <span class="checkmarkRadio"></span>
+    <label class="flex-row">
+        <input type="radio" id="choice2" name="drone" value="choice2" />
+        <label for="choice2">Sacro-iliite radiologique stade ≥ 2 si bilatéral OU ≥ 3 si unilatéral</label>
     </label>
 </div>
 
@@ -61,51 +62,64 @@
 <br>
 <p class="common_h2">Signes de spondylarthrite:</p>
 
-<label class="containerCb">Rachialgie inflammatoire
+<label class="flex-row">
     <input type="checkbox" id="list_item_1" name="list_item_1" value="list_item_1">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Arthrite
-    <input type="checkbox" id="list_item_2" name="list_item_2" value="list_item_2">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Enthésite (talon)
-    <input type="checkbox" id="list_item_3" name="list_item_3" value="list_item_3">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Uvéite
-    <input type="checkbox" id="list_item_4" name="list_item_4" value="list_item_4">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Dactylite
-    <input type="checkbox" id="list_item_5" name="list_item_5" value="list_item_5">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Psoriasis
-    <input type="checkbox" id="list_item_6" name="list_item_6" value="list_item_6">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Maladie de Crohn / Rectocolite Hémorragique
-    <input type="checkbox" id="list_item_7" name="list_item_7" value="list_item_7">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Bonne réponse aux AINS
-    <input type="checkbox" id="list_item_8" name="list_item_8" value="list_item_8">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">Antécédent familial de Spondylarthrite
-    <input type="checkbox" id="list_item_9" name="list_item_9" value="list_item_9">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">HLA-B27 positif
-    <input type="checkbox" id="list_item_10" name="list_item_10" value="list_item_10">
-    <span class="checkmarkCb"></span>
-</label>
-<label class="containerCb">CRP augmentée
-    <input type="checkbox" id="list_item_11" name="list_item_11" value="list_item_11">
-    <span class="checkmarkCb"></span>
+    <span>Rachialgie inflammatoire</span>
 </label>
 
+<label class="flex-row">
+    <input type="checkbox" id="list_item_2" name="list_item_2" value="list_item_2">
+    <span>Arthrite</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_3" name="list_item_3" value="list_item_3">
+    <span>Enthésite (talon)</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_4" name="list_item_4" value="list_item_4">
+    <span>Uvéite</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_5" name="list_item_5" value="list_item_5">
+    <span>Dactylite</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_6" name="list_item_6" value="list_item_6">
+    <span>Psoriasis</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_7" name="list_item_7" value="list_item_7">
+    <span>Maladie de Crohn / Rectocolite Hémorragique</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_8" name="list_item_8" value="list_item_8">
+    <span>Bonne réponse aux AINS</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_9" name="list_item_9" value="list_item_9">
+    <span>Antécédent familial de Spondylarthrite</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_10" name="list_item_10" value="list_item_10">
+    <span>HLA-B27 positif</span>
+</label>
+
+<label class="flex-row">
+    <input type="checkbox" id="list_item_11" name="list_item_11" value="list_item_11">
+    <span>CRP augmentée</span>
+</label>
+<br>
+<div class="export">
+    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+</div>
 <br>
 <div class="score_inter">Interprétation</div>
 <span class="description">Les critères ASAS (Assessment of SpondyloArthritis international Society) de 2009 permettent de classer une spondylarthrite dans la forme axiale (sensibilité 82,9%, spécificité 84,4%).</span>

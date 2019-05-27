@@ -14,9 +14,71 @@ h1 {
     margin: 0 0 0 5px;
 }
 
+@media screen and (max-width: 1024px){
+    .first-col {
+        margin-left: 25px;
+    }
+
+    .not-first-col {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .first-col {
+        margin-left: 33px;
+    }
+
+    .not-first-col {
+        margin-left: 34px;
+    }
+}
+
+
+.w80 {
+    width: 80px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
 table {
     width:100%;
 }
+
+@media print {
+    #exportBtn {
+        display :  none;
+    }
+}
+
+.export-btn {
+    background-color: white;
+    border: 2px solid #E7E7E7;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.export-btn:hover {
+    background-color: #e7e7e7;
+}
+
+.export {
+    display: flex;
+    justify-content: center;
+}
+
+/*#vItem27 {*/
+    /*background-color: green;*/
+/*}*/
 
 table, th, td {
     border: 0 solid black;
@@ -43,12 +105,14 @@ td {
     flex-direction: column;
 }
 [type="checkbox"]{
-    font-size: 16px;
+    /*font-size: 16px;*/
+    margin: 2px 5px 10px 0;
 }
 
 [type="radio"]{
-    width:17px;
-    height:17px;
+    /*width: 14px;*/
+    /*height: 14px;*/
+    margin: 2px 5px 10px 0;
 }
 
 .italic {
@@ -117,6 +181,7 @@ h2,
     width: 35px;
     height: 28px;
     border: 1px solid #dddfe2;
+    text-align: center;
 }
 
 .input_checkbox{
@@ -147,24 +212,24 @@ h2,
 
 .input_score,
 .score_result input{
-    width: 25px;
-    height: 25px;
-    font-size:20px;
-    color:#c41723 !important;
+    font-size: 1.1em;
+    width: 32px;
+    color: #c41723;
     font-weight: bold;
-    text-align: center;
 }
 
 .score_result div{
     font-size: 15px;
     font-weight: normal;
+    display: flex;
+    justify-content: center;
 }
 
 /* QIF */
-.form_qif td{
-    padding: 2px;
-    text-align:center;
-}
+/*.form_qif td{*/
+    /*padding: 2px;*/
+    /*text-align:center;*/
+/*}*/
 .form_qif td:first-child{
     text-align:left;
 }
@@ -246,6 +311,7 @@ fieldset {
 .acr_2010 td{
     vertical-align: center;
     text-align: center;
+    padding-bottom: 15px !important;
 }
 
 .acr_2010 .score_subtitle{
@@ -288,8 +354,8 @@ fieldset {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 17px;
+    width: 18px;
     background-color: #eee;
 }
 
@@ -300,7 +366,7 @@ fieldset {
 
 /* When the checkbox is checked, add a blue background */
 .containerCb input:checked ~ .checkmarkCb {
-    background-color: #219610;
+    /*border: 1px solid #191919;*/
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -317,11 +383,11 @@ fieldset {
 
 /* Style the checkmark/indicator */
 .containerCb .checkmarkCb:after {
-    left: 9px;
-    top: 5px;
+    left: 5px;
+    top: 0;
     width: 5px;
     height: 10px;
-    border: solid white;
+    border: solid #191919;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -364,6 +430,7 @@ fieldset {
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
+    border: 1px solid darkgray;
 }
 
 /* On mouse-over, add a grey background color */
@@ -371,9 +438,8 @@ fieldset {
     background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
 .containerRadio input:checked ~ .checkmarkRadio {
-    background-color: #2196F3;
+    /*border: 1px solid #191919;*/
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -395,7 +461,7 @@ fieldset {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: white;
+    background: #191919;
 }
 
 .smol {
@@ -451,20 +517,24 @@ fieldset {
 }
 
 .input_das {
-    width:60px; display:block; height:30px; line-height:30px; font-size: 13px;
-    border:1px solid #DDDDDD;
+    width:60px;
+    display:block;
+    height:30px;
+    line-height:30px;
+    font-size: 13px;
     padding-left:6px;
+    border: 1px solid #E7E7E7;
+    text-align: center;
 }
 
 label {
-    margin-right: 9px;
+    margin-right: 2px;
     display: block;
     text-align: left;
 }
 
 .text-result {
-    min-width: fit-content;
-    /*border: 1px solid #DDDDDD;*/
+    min-width: 167px;
 }
 
 .normal {

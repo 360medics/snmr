@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SNMR</title>
+    <title>Critères diagnostiques Américano-Européens de 2002</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="style_common.css" rel="stylesheet" type="text/css" />
@@ -21,65 +21,65 @@
     <p>Au moins un des 3 critères ci-dessous :</p>
     <div id="un">
         <div>
-            <label class="containerCb">Sensation quotidienne, persistante et gênante d’yeux secs depuis plus de 3 mois
+            <label class="flex-row">
                 <input onclick="critereUnValide()" type="checkbox" id="item1" name="check" value="item1">
-                <span class="checkmarkCb"></span>
+                <span>Sensation quotidienne, persistante et gênante d’yeux secs depuis plus de 3 mois</span>
             </label>
         </div>
         <div>
-            <label class="containerCb">Sensation fréquente de « sable dans les yeux »
+            <label class="flex-row">
                 <input onclick="critereUnValide()" type="checkbox" id="item2" name="check" value="item2">
-                <span class="checkmarkCb"></span>
+                <span>Sensation fréquente de « sable dans les yeux »</span>
             </label>
         </div>
         <div>
-            <label class="containerCb">Utilisation de larmes artificielles plus de 3 fois par jour
+            <label class="flex-row">
                 <input onclick="critereUnValide()" type="checkbox" id="item3" name="check" value="item3">
-                <span class="checkmarkCb"></span>
+                <span>Utilisation de larmes artificielles plus de 3 fois par jour</span>
             </label>
         </div>
     </div>
     <p class="common_h2">II. Symptômes buccaux</p>
     <p>Au moins un des 3 critères ci-dessous :</p>
     <div>
-        <label class="containerCb">Sensation quotidienne de bouche sèche depuis plus de 3 mois
+        <label class="flex-row">
             <input onclick="critereDeuxValide()" type="checkbox" id="item4" name="check" value="item4">
-            <span class="checkmarkCb"></span>
+            <span>Sensation quotidienne de bouche sèche depuis plus de 3 mois</span>
         </label>
     </div>
     <div>
-        <label class="containerCb">À l’âge adulte, épisodes récidivants ou permanents de gonflement parotidien
+        <label class="flex-row">
             <input onclick="critereDeuxValide()" type="checkbox" id="item5" name="check" value="item5">
-            <span class="checkmarkCb"></span>
+            <span>À l’âge adulte, épisodes récidivants ou permanents de gonflement parotidien</span>
         </label>
     </div>
     <div>
-        <label class="containerCb">Consommation fréquente de liquides pour avaler les aliments secs
+        <label class="flex-row">
             <input onclick="critereDeuxValide()" type="checkbox" id="item6" name="check" value="item6">
-            <span class="checkmarkCb"></span>
+            <span>Consommation fréquente de liquides pour avaler les aliments secs</span>
         </label>
     </div>
 
     <p class="common_h2">III. Signes objectifs d’atteinte oculaire</p>
     <p>Au moins un des 2 tests ci-dessous positifs :</p>
     <div>
-        <label class="containerCb">Test de Schirmer ≤ 5 mm/5 mn
+        <label class="flex-row">
             <input onclick="critereTroisValide()" type="checkbox" id="item7" name="check" value="item7">
-            <span class="checkmarkCb"></span>
+            <span>Test de Schirmer ≤ 5 mm/5 mn</span>
         </label>
     </div>
     <div>
-        <label class="containerCb">Score de van Bijsterveld ≥ 4 (après examen au vert de Lissamine)
+        <label class="flex-row">
             <input onclick="critereTroisValide()" type="checkbox" id="item8" name="check" value="item8">
-            <span class="checkmarkCb"></span>
+            <span>Score de van Bijsterveld ≥ 4 (après examen au vert de Lissamine)</span>
         </label>
     </div>
 
     <p class="common_h2">IV. Signes histologiques</p>
     <div>
-        <label class="containerCb">Sialadénite avec <span class="bold">focus score</span> ≥ 1 sur la biopsie de glandes salivaires accessoires
+        <label class="flex-row">
             <input onclick="critereQuatreValide()" type="checkbox" id="item9" name="check" value="item9">
-            <span class="checkmarkCb"></span>
+            <span>Sialadénite avec <span class="bold">focus score</span> ≥ 1 sur la biopsie de glandes salivaires accessoires</span>
         </label>
     </div>
     <p class="italic">(<span class="bold">focus score</span> = nombre de foyers par 4 mm2 de tissu glandulaire, un foyer étant défini par l’agglomérat d’au moins 50 lymphocytes)</p>
@@ -87,29 +87,29 @@
     <p class="common_h2">V. Signes objectifs d’atteinte salivaire</p>
     <p>Au moins un des 3 tests ci-dessous positifs :</p>
     <div>
-        <label class="containerCb">Flux salivaire non stimulé ≤ 1,5 mL/15 mn
+        <label class="flex-row">
             <input onclick="critereCinqValide()" type="checkbox" id="item10" name="check" value="item10">
-            <span class="checkmarkCb"></span>
+            <span>Flux salivaire non stimulé ≤ 1,5 mL/15 mn</span>
         </label>
     </div>
     <div>
-        <label class="containerCb">Sialographie parotidienne (ectasies canaliculaires, cavités ou destructions canaliculaires)
+        <label class="flex-row">
             <input onclick="critereCinqValide()" type="checkbox" id="item11" name="check" value="item11">
-            <span class="checkmarkCb"></span>
+            <span>Sialographie parotidienne (ectasies canaliculaires, cavités ou destructions canaliculaires)</span>
         </label>
     </div>
     <div>
-        <label class="containerCb">Scintigraphie salivaire (captation retardée, diminution de la concentration et/ou de l’excrétion du traceur)
+        <label class="flex-row">
             <input onclick="critereCinqValide()" type="checkbox" id="item12" name="check" value="item12">
-            <span class="checkmarkCb"></span>
+            <span>Scintigraphie salivaire (captation retardée, diminution de la concentration et/ou de l’excrétion du traceur)</span>
         </label>
     </div>
 
     <p class="common_h2">VI. Auto-anticorps</p>
     <div>
-        <label class="containerCb">Présence d’anticorps anti-SSA (Ro) ou anti-SSB (La)
+        <label class="flex-row">
             <input onclick="critereSixValide()" type="checkbox" id="item13" name="check" value="item13">
-            <span class="checkmarkCb"></span>
+            <span>Présence d’anticorps anti-SSA (Ro) ou anti-SSB (La)</span>
         </label>
     </div>
 </fieldset>
@@ -127,16 +127,16 @@
 <div class="flex-row">
     <div class="flex-column">
         <div>
-            <label class="containerCb">4/6 critères avec au moins critères IV ou VI présents
+            <label class="flex-row">
                 <input onclick="return false;" type="checkbox" id="item14" name="item14" value="item14">
-                <span class="checkmarkCb"></span>
+                <span>4/6 critères avec au moins critères IV ou VI présents</span>
             </label>
         </div>
         <span class="and">ET</span><br>
         <div>
-            <label class="containerCb">3 au moins des critères III, IV, V, VI
+            <label class="flex-row">
                 <input onclick="return false;" type="checkbox" id="item15" name="item15" value="item15">
-                <span class="checkmarkCb"></span>
+                <span>3 au moins des critères III, IV, V, VI</span>
             </label>
         </div>
     </div>
@@ -150,23 +150,23 @@
 <div class="flex-row">
     <div class="flex-column">
         <div>
-            <label class="containerCb">Association d’une autre connectivite bien définie
+            <label class="flex-row">
                 <input onclick="checkifValid()" type="checkbox" id="item16" name="item16" value="item16">
-                <span class="checkmarkCb"></span>
+                <span>Association d’une autre connectivite bien définie</span>
             </label>
         </div>
         <span class="and">ET</span><br>
         <div>
-            <label class="containerCb">Présence de l’item I ou II
+            <label class="flex-row">
                 <input onclick="return false;" type="checkbox" id="item17" name="item17" value="item17">
-                <span class="checkmarkCb"></span>
+                <span>Présence de l’item I ou II</span>
             </label>
         </div>
         <span class="and">ET</span><br>
         <div>
-            <label class="containerCb">Présence de deux des items III, IV et V
+            <label class="flex-row">
                 <input onclick="return false;" type="checkbox" id="item18" name="item18" value="item18">
-                <span class="checkmarkCb"></span>
+                <span>Présence de deux des items III, IV et V</span>
             </label>
         </div>
     </div>
@@ -174,48 +174,53 @@
 <br>
 <p class="common_h2">Les critères d’exclusion retenus par le Comité International sont :</p>
 <div>
-    <label class="containerCb">Antécédent d’irradiation cervicale ou céphalique
+    <label class="flex-row">
         <input type="checkbox" id="item19" name="item19" value="item19">
-        <span class="checkmarkCb"></span>
+        <span>Antécédent d’irradiation cervicale ou céphalique</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Hépatite C
+    <label class="flex-row">
         <input type="checkbox" id="item20" name="item20" value="item20">
-        <span class="checkmarkCb"></span>
+        <span>Hépatite C</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Immunodéficience acquise
+    <label class="flex-row">
         <input type="checkbox" id="item21" name="item21" value="item21">
-        <span class="checkmarkCb"></span>
+        <span>Immunodéficience acquise</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Antécédent de lymphome
+    <label class="flex-row">
         <input type="checkbox" id="item22" name="item22" value="item22">
-        <span class="checkmarkCb"></span>
+        <span>Antécédent de lymphome</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Sarcoïdose
+    <label class="flex-row">
         <input type="checkbox" id="item23" name="item23" value="item23">
-        <span class="checkmarkCb"></span>
+        <span>Sarcoïdose</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Réaction du greffon contre l’hôte
+    <label class="flex-row">
         <input type="checkbox" id="item24" name="item24" value="item24">
-        <span class="checkmarkCb"></span>
+        <span>Réaction du greffon contre l’hôte</span>
     </label>
 </div>
 <div>
-    <label class="containerCb">Utilisation de médicaments anticholinergiques (depuis une période inférieure à 4 fois la demi-vie du médicament)
+    <label class="flex-row">
         <input type="checkbox" id="item25" name="item25" value="item25">
-        <span class="checkmarkCb"></span>
+        <span>Utilisation de médicaments anticholinergiques (depuis une période inférieure à 4 fois la demi-vie du médicament)</span>
     </label>
 </div>
-
+<br>
+<br>
+<div class="export">
+    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+</div>
+<br>
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 
 <script>

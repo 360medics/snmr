@@ -5,8 +5,10 @@
     <title>Medicalcul - Spondylarthrite, Critères d'Amor ~ Rhumatologie</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script type="text/javascript" src="script_amor.js"></script>
     <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body class="scorebody">
@@ -18,81 +20,81 @@
         </tr>
         <tr>
             <td>
-                <label class="containerCb">1 - Douleurs nocturnes lombaires ou dorsales et/ou raideur matinale lombaire ou dorsale
-                    <input class="input_checkbox" name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                <label class="flex-row">
+                    <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()">
+                    <span>1 - Douleurs nocturnes lombaires ou dorsales et/ou raideur matinale lombaire ou dorsale</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Oligoarthrite asymétrique
-                    <input name="vItem2" id="vItem2" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                <label class="flex-row">
+                    <input name="vItem2" id="vItem2" type="checkbox" value="2" onclick="f_Calculer()">
+                    <span>2 - Oligoarthrite asymétrique</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">1 - Douleurs fessières uni- ou bilatérales
-                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="document.Form.vItem4.checked = false;f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                <label class="flex-row">
+                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="document.Form.vItem4.checked = false;f_Calculer()">
+                    <span>1 - Douleurs fessières uni- ou bilatérales</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Douleurs fessières à bascule
-                    <input name="vItem4" id="vItem4" type="checkbox" value="2" onclick="document.Form.vItem3.checked = false;f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                <label class="flex-row">
+                    <input name="vItem4" id="vItem4" type="checkbox" value="2" onclick="document.Form.vItem3.checked = false;f_Calculer()">
+                    <span>2 - Douleurs fessières à bascule</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Doigt ou orteil &laquo;&nbsp;en saucisse&nbsp;&raquo;
-                    <input name="vItem5" id="vItem5" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                <label class="flex-row">
+                    <input name="vItem5" id="vItem5" type="checkbox" value="2" onclick="f_Calculer()">
+                    <span>2 - Doigt ou orteil &laquo;&nbsp;en saucisse&nbsp;&raquo;</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Talalgie ou autre enthésopathie
+                <label class="flex-row">
                     <input name="vItem6" id="vItem6" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>2 - Talalgie ou autre enthésopathie</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Iritis
+                <label class="flex-row">
                     <input name="vItem7" id="vItem7" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>2 - Iritis</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">1 - Uréthrite non gonococcique ou cervicite moins d'un mois avant le début d'une arthrite
+                <label class="flex-row">
                     <input name="vItem8" id="vItem8" type="checkbox" value="1" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>1 - Uréthrite non gonococcique ou cervicite moins d'un mois avant le début d'une arthrite</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">1 - Diarrhée moins d'un mois avant le début d'une arthrite
+                <label class="flex-row">
                     <input name="vItem9" id="vItem9" type="checkbox" value="1" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>1 - Diarrhée moins d'un mois avant le début d'une arthrite</span>
                 </label>
             </td>
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Présence ou antécédent de psoriasis et/ou de balanite et/ou d'entérocolopathie chronique
+                <label class="flex-row">
                     <input name="vItem10" id="vItem10" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>2 - Présence ou antécédent de psoriasis et/ou de balanite et/ou d'entérocolopathie chronique</span>
                 </label>
             </td>
         </tr>
@@ -101,9 +103,9 @@
         </tr>
         <tr>
             <td>
-                <label class="containerCb">3 - Sacro-iliite radiologique stade &ge; 2 si bilatéral OU ≥ 3 si unilatéral
+                <label class="flex-row">
                     <input name="vItem11" id="vItem11" type="checkbox" value="3" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>3 - Sacro-iliite radiologique stade &ge; 2 si bilatéral OU ≥ 3 si unilatéral</span>
                 </label>
             </td>
         </tr>
@@ -112,9 +114,9 @@
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Présence de l'antigène HLA-B27 ou antécédents familiaux de pelvispondylite, d'arthrite réactionnelle, de syndrome de Reiter, de psoriasis, d'entérocolopathies chroniques
+                <label class="flex-row">
                     <input name="vItem12" id="vItem12" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>2 - Présence de l'antigène HLA-B27 ou antécédents familiaux de pelvispondylite, d'arthrite réactionnelle, de syndrome de Reiter, de psoriasis, d'entérocolopathies chroniques</span>
                 </label>
             </td>
         </tr>
@@ -123,9 +125,9 @@
         </tr>
         <tr>
             <td>
-                <label class="containerCb">2 - Amélioration en 48 heures des douleurs par AINS et/ou rechute rapide (48 h) des douleurs à leur arrêt
+                <label class="flex-row">
                     <input name="vItem13" id="vItem13" type="checkbox" value="2" onclick="f_Calculer()" />
-                    <span class="checkmarkCb"></span>
+                    <span>2 - Amélioration en 48 heures des douleurs par AINS et/ou rechute rapide (48 h) des douleurs à leur arrêt</span>
                 </label>
             </td>
         </tr>
@@ -137,7 +139,12 @@
     </div>
 
 </form>
-
+<br>
+<br>
+<div class="export">
+    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+</div>
+<br>
 <div class="score_inter">Interprétation</div>
 <span class="description">Un score <span style="color:#c41723; font-weight:bold;">supérieur ou égal à 6</span> indique la présence d'une spondylarthrite (sensibilité 85%, spécificité 90%).</span>
 

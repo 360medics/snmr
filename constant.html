@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style_common.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body class="scorebody">
@@ -196,17 +197,21 @@
             </tr>
             <tr>
                 <td class="tg-w214"><strong>Valeur absolue (en points/100)</strong></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="D13" disabled><label for="D13"></label></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="M13" disabled><label for="M13"></label></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="F13" disabled><label for="F13"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="D13" disabled><label for="D13"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="M13" disabled><label for="M13"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="F13" disabled><label for="F13"></label></td>
             </tr>
             <tr>
                 <td class="tg-w214"><strong>Valeur pondérée (%)</strong></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="D14" disabled><label for="D14"></label></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="M14" disabled><label for="M14"></label></td>
-                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="F14" disabled><label for="F14"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="D14" disabled><label for="D14"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="M14" disabled><label for="M14"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled red bold" id="F14" disabled><label for="F14"></label></td>
             </tr>
         </table>
+    </div>
+    <br>
+    <div class="export">
+        <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
     </div>
     <br>
     <div class="sections">
@@ -433,19 +438,6 @@
         let F10 = document.form.F10.value;
         let F11 = document.form.F11.value;
         let F12 = document.form.F12.value;
-
-        // console.log("D1 : "+D1);
-        // console.log("D2 : "+D2);
-        // console.log("D3 : "+D3);
-        // console.log(D4);
-        // console.log(D5);
-        // console.log(D6);
-        // console.log(D7);
-        // console.log(D8);
-        // console.log(D9);
-        // console.log(D10);
-        // console.log(D11);
-        // console.log(D12);
 
         document.form.D13.value = parseInt(D3) + parseInt(D4) + parseInt(D5) + parseInt(D6) + parseInt(D7) + parseInt(D8) + parseInt(D9) + parseInt(D10) + parseInt(D11) + parseInt(D12);
         document.form.M13.value = parseInt(M3) + parseInt(M4) + parseInt(M5) + parseInt(M6) + parseInt(M7) + parseInt(M8) + parseInt(M9) + parseInt(M10) + parseInt(M11) + parseInt(M12);
