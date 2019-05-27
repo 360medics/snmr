@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indices algo-fonctionnels de Lequesne - GENOU</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p class="common_h1">Indices algo-fonctionnels de Lequesne - GENOU</p>
+<div class="content">
+    <h2>Intérêts :</h2>
+    <ul>
+        <li>Suivi clinique de malades coxarthrosiques</li>
+        <li>Détermination du seuil au-delà duquel la prothèse peut être envisagée (Indice ≥ 10-12)</li>
+    </ul>
+    <form name="form" id="form">
+        <div><br>
+            <strong><span class="blue">DOULEUR</span></strong><br><br>
+            <div class="flex-column">
+                <strong>Nocturne</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem1" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Aucune
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem2" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Seulement aux mouvements et dans certaines postures
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem3" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Même immobile, sans bouger
+                </label>
+                <br>
+                <strong>Dérouillage matinal</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem4" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Aucun ou inférieur à 1 minute
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem5" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Entre 1 et 15 minutes
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem6" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Plus d’un quart d’heure
+                </label>
+                <br>
+                <strong>Rester debout ou piétiner sur place 1/2 heure augmente-t-il la douleur ? </strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem7" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Non
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem8" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Oui
+                </label>
+                <br>
+                <strong>Douleur à la marche </strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem9" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Non
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem10" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Seulement après quelque distance
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem11" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Dès le début de la marche et de façon croissante
+                </label>
+                <br>
+                <strong><span class="blue">Pouvez-vous vous relever d’un siège sans l’aide des bras ?</span></strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem12" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Non
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem13" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Oui
+                </label>
+                <br>
+                <strong>PERIMETRE DE MARCHE (quelle que soit la douleur)</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem14" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Illimité
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem15" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Limité mais supérieur à 1 km
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem16" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Environ 1 km (environ 15 minutes)
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem17" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - 500 à 900 mètres (environ 8 à 15 minutes)
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem18" type="radio" value="4" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>4 - 300 à 500 mètres
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem19" type="radio" value="5" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>5 - 100 à 300 mètres
+                </label>
+                <div>
+                    <label class="containerCb">+1 - Une canne ou une béquille est nécessaire
+                        <input class="input" name="g6bis" id="vItem20" type="checkbox" value="1" onclick="Calculate()">
+                        <span class="checkmarkCb"></span>
+                    </label>
+                </div>
+                <div>
+                    <label class="containerCb">+2 - Deux cannes ou deux béquilles sont nécessaires
+                        <input class="input" name="g6bis" id="vItem21" type="checkbox" value="2" onclick="Calculate()">
+                        <span class="checkmarkCb"></span>
+                    </label>
+                </div>
+                <br>
+                <strong><span class="blue">AUTRES DIFFICULTÉS DE LA VIE QUOTIDIENNE</span></strong><br>
+                <div class="formfield-select">
+                    <label><span class="blue">Pouvez-vous monter ou descendre un étage ?</span></label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select1">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">Sans difficulté</option>
+                            <option value="0.5">Assez facilement</option>
+                            <option value="1">Avec difficulté</option>
+                            <option value="1.5">Avec beaucoup de difficulté</option>
+                            <option value="2">Impossible</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select">
+                    <label><span class="blue">Pouvez-vous enfiler vos chaussettes par devant ?</span></label>
+                    <div class="formfield-select--container">
+                        <label for="select2"></label>
+                        <select onchange="Calculate()" id="select2">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">Sans difficulté</option>
+                            <option value="0.5">Assez facilement</option>
+                            <option value="1">Avec difficulté</option>
+                            <option value="1.5">Avec beaucoup de difficulté</option>
+                            <option value="2">Impossible</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select">
+                    <label><span class="blue">Pouvez-vous ramasser un objet par terre ?</span></label>
+                    <div class="formfield-select--container">
+                        <label for="select3"></label>
+                        <select onchange="Calculate()" id="select3">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">Sans difficulté</option>
+                            <option value="0.5">Assez facilement</option>
+                            <option value="1">Avec difficulté</option>
+                            <option value="1.5">Avec beaucoup de difficulté</option>
+                            <option value="2">Impossible</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select">
+                    <label><span class="blue">Pouvez-vous sortir d’une voiture, d’un fauteuil profond ?</span></label>
+                    <div class="formfield-select--container">
+                        <label for="select4"></label>
+                        <select onchange="Calculate()" id="select4">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">Sans difficulté</option>
+                            <option value="0.5">Assez facilement</option>
+                            <option value="1">Avec difficulté</option>
+                            <option value="1.5">Avec beaucoup de difficulté</option>
+                            <option value="2">Impossible</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row center">
+                <h2 class="total">Total :</h2>
+                <label for="total"></label>
+                <input class="input margin0" name="total" type="number" id="total" disabled/>
+            </div>
+            <h4>Si l'indice est ≥ à 10-12, une prothèse peut être envisagée</h4>
+            <div class="cadre">
+                <p><span class="italic"><strong>Cotation :</strong><br>
+                0 = sans difficulté<br>
+                0.5 = assez facilement<br>
+                1 = avec difficulté<br>
+                1.5 =  avec beaucoup de difficultés<br>
+                2 = impossible.</span></p>
+                <p><span class="blue">Phrases en bleu : différentes de l’indice de la gonarthrose.</span></p>
+            </div>
+            <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function GetRadioValue(id)
+    {
+        let radios = document.getElementsByName(id);
+        let total = 0;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                total = radios[i].value * 1;
+            }
+        }
+        return total;
+    }
+
+    function Calculate()
+    {
+        let res = 0;
+        for(let i=1; i<30; i++) {
+            res += GetRadioValue('g' + i);
+        }
+        if (document.getElementById('vItem20').checked) {
+            res += 1;
+        }
+        if (document.getElementById('vItem21').checked) {
+            res += 2;
+        }
+        res += parseFloat(document.getElementById("select1").value);
+        res += parseFloat(document.getElementById("select2").value);
+        res += parseFloat(document.getElementById("select3").value);
+        res += parseFloat(document.getElementById("select4").value);
+        document.form.total.value = res;
+    }
+</script>
+</body>
+</html>

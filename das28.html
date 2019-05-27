@@ -7,23 +7,6 @@
 <meta name="viewport" content="width=device-width" />
 <script type="text/javascript" src="script_amor.js"></script>
 <link rel="stylesheet" href="style_common.css" />
-<style>
-    .input_das {
-      width:60px; display:block; height:30px; line-height:30px; font-size: 13px;
-      border:1px solid #DDDDDD;
-      padding-left:6px;
-    }
-    label {
-      margin-right: 9px;
-      display: block;
-      text-align: left;
-    }
-
-    .test {
-      margin-left: 50px;
-    }
-
-  </style>
 </head>
 
 <body class="scorebody">
@@ -42,12 +25,12 @@ une évaluation objective, reproductible et comparable de l'activité de la poly
 
   <table border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
-      <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses<br/>(entre 0-28)</label></td>
+      <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses<br/>(0 - 28)</label></td>
       <td>
           <input name="Resultat" type="number" id="Tjc28" class="input_das" onchange="f_Calculer()" /></td>
     </tr>
     <tr>
-      <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées<br/>(entre 0-28)</label></td>
+      <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées<br/>(0 - 28)</label></td>
       <td><input name="Resultat" type="number" id="Sjc28" class="input_das" onchange="f_Calculer()" /></td>
     </tr>
   </table>
@@ -59,19 +42,20 @@ une évaluation objective, reproductible et comparable de l'activité de la poly
     	<td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das test" /></td>
     </tr>
     <tr>
-  	  <td><label for="Crit01" id="Gh_label">Etat de santé général<br/>(de 0=le meilleur à 100=le pire)</label></td>
+  	  <td><label for="Crit01" id="Gh_label">Etat de santé général<br/>(de 0 = le meilleur à 100 = le pire)</label></td>
     	<td><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das test" /></td>
     </tr>
   </table>
   <br />
 
-<div class="score_result">
-  <span>Score</span>
 
-  <input name="Mot" type="text" id="reponse" disabled readonly="readonly" style="width:60px;" />
 
-  <input class="reponse" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" readonly="readonly"  style="width:140px; font-weight:normal; font-style: italic; text-align: left; display:inline; font-size:15px; height:50px;" />
-</div>
+  <div class="score_result">
+    <h2>Score</h2>
+    <div class="flex-row sa">
+      <input name="Mot" type="text" id="reponse" disabled class="input margin0 widthAuto" />
+      <input class="reponse text-result margin0 input" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" disabled  />
+    </div></div>
 </form>
 
 <div class="score_ref">Interprétation</div>

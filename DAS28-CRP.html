@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Calculateur DAS28</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="scorebody">
+<p class="common_h1">DAS28-CRP</p>
+<h2>Saisie du score</h2>
+<form name="form" id="form">
+    <table border="0" align="center" cellpadding="2" cellspacing="0">
+        <tr>
+            <td><label for="Tjc28_label" id="Tjc28_label">Nombre d'articulations douloureuses (0 - 28)</label></td>
+            <td><input min=0 max=28 name="Resultat" type="number" id="Tjc28" class="input input_das" onchange="f_Calculer()" /></td>
+        </tr>
+        <tr>
+            <td><label for="Sjc28_label" id="Sjc28_label">Nombre d'articulations enflées (0 - 28)</label></td>
+            <td><input min=0 max=28 name="Resultat" type="number" id="Sjc28" class="input input_das" onchange="f_Calculer()" /></td>
+        </tr>
+    </table>
+
+    <h2>Mesures</h2>
+    <table border="0" align="center" cellpadding="2" cellspacing="0">
+        <tr>
+            <td><label for="Crit01" id="Crit01">CRP (mg/l)</label></td>
+            <td><input name="Crit01" id="Crp" type="number" value="" onchange="f_Calculer()" class="input input_das" /></td>
+        </tr>
+        <tr>
+            <td><label for="Gh_label" id="Gh_label">Etat de santé général (de 0 = le meilleur à 100 = le pire)</label></td>
+            <td><input min=0 max=100 name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input input_das" /></td>
+        </tr>
+    </table>
+    <br />
+    <!--<h2>Date de l'enregistrement</h2>-->
+    <!--<div class="flex-row sb">-->
+    <!--<p>Enregistré le</p>-->
+    <!--<input class="input" type="date" class="das date input_das">-->
+    <!--</div>-->
+    <br>
+    <div class="score_result">
+        <h2 class="textAlignL">Score</h2>
+        <div class="flex-row sa">
+            <input name="Mot" type="text" id="reponse" disabled placeholder="0.96" class="input margin0 widthAuto" />
+            <input class="reponse text-result margin0 input" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" placeholder="Rémission" disabled />
+        </div>
+    </div>
+    <br>
+    <div class="score_inter">Informations DAS28-CRP</div>
+    <span class="description">Le DAS28-CRP<a href="https://www.ncbi.nlm.nih.gov/pubmed/7818570"><sup>1</sup></a> est un score de l'activité de la maladie, il fait partie des nombreux scores « DAS » pour la polyarthrite rhumatoïde, très utiles pour réaliser une évaluation objective, reproductible et comparable de l'activité de la polyarthrite rhumatoïde. Le DAS28-CRP tient compte en particulier des éléments suivants :</span>
+    <br>
+    <span class="description">
+        <ul>
+            <li>TJC28 : nombre d'articulations douloureuses (0 - 28).</li>
+            <li>SJC28 : nombre d'articulations enflées (0 - 28).</li>
+            <li>CRP : le niveau en protéine C-réactive (en mg/l).</li>
+            <li>GH : évaluation globale de la santé par le patient (patient global health assessment) (de 0 = la meilleure à 100 = la pire).</li>
+        </ul>
+    </span>
+    <span class="description">Les scores des 28 articulations douloureuses ou enflées visent les mêmes articulations (épaules, coudes, poignets, articulations métacarpo-phalangiennes, articulations interphalangiennes proximales et les genoux). Le score est calculé avec l'équation suivante :</span>
+    <br>
+    <br>
+    <span class="description center">DAS28-CRP = 0.56 x &#8730;TJC28 + 0.28 x &#8730;SJC28 + 0.36 x ln(CRP + 1) + 0.014 x GH + 0.96</span>
+    <br>
+    <br>
+    <span class="description">L'interprétation du score ne dépend pas de son évolution au cours du temps. Généralement, on considère qu'il y a rémission si le score est compris entre 0 et < 2,6. Une activité faible est indiquée par un score compris entre 2,6 et < 3,2. Une activité modérée est indiquée par un score compris entre 3,2 et ≤ 5,1, alors qu'une activité élevée est indiquée par un score strictement supérieur à 5,1. Toutefois, l'action qu'une valeur spécifique peut déclencher en termes de choix de traitement peut varier d'un pays à l'autre. En Belgique, un traitement DMARD biologique sera instauré si le patient obtient un score de 2,7 ou supérieur. Cette valeur est de 3,7 en France et de plus de 5 au RU. Dans tous les cas, le DAS28-CRP est un puissant facteur prédictif du handicap et de la progression radiologique<a href="https://www.ncbi.nlm.nih.gov/pubmed/1731813"><sup>2</sup></a>.</span>
+    <br>
+    <br>
+    <span class="description">En plus du DAS28-CRP, d'autres scores existent, tel que le DAS original, prenant en compte 44 articulations, ou le DAS28 (dans lequel la CRP est remplacée par la VS), le CDAI (dans lequel la CRP est remplacée par l'évaluation globale de l'activité de la maladie par l'équipe soignante) ou le SDAI (dans lequel l'évaluation globale de l'activité de la maladie par l'équipe soignante est ajoutée au DAS28-CRP).</span>
+    <br>
+    <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+
+</form>
+
+<script type="text/javascript">
+    function f_Calculer()
+    {
+        var Tjc28 = document.form.Tjc28.value * 1;
+        var Sjc28 = document.form.Sjc28.value * 1;
+        var Crp = document.form.Crp.value * 1;
+        var Gh = document.form.Gh.value * 1;
+        var Das28 = 0.56 * Math.sqrt(Tjc28) + 0.28 * Math.sqrt(Sjc28) + 0.36 * Math.log(Crp + 1) + 0.014 * Gh + 0.96;
+
+        if(Das28>0)
+            document.form.reponse.value = Math.round(Das28*100)/100;
+
+        if(Das28>0 && Das28<2.6) {
+            document.form.ResultatMessage.value = "Rémission";
+        }
+        else if(Das28>=2.6 && Das28<3.2 ){
+            document.form.ResultatMessage.value = "Activité Faible";
+        }
+        else if(Das28>3.2 && Das28<=5.1 ){
+            document.form.ResultatMessage.value = "Activité Modérée";
+        }
+        else if(Das28>5.1){
+            document.form.ResultatMessage.value = "Activité Elevée";
+        }
+
+        //Reinitialisation
+        if(Das28=="-Infinity"){
+            document.form.ResultatMessage.value = "";
+            document.form.reponse.value = "";
+        }
+
+        if(Tjc28>28 || Sjc28>28 || Gh>100 || Vs==0 || Tjc28=="" || Sjc28=="" || Vs=="" || Gh==""){
+            document.form.ResultatMessage.value = "";
+            document.form.reponse.value = "";
+        }
+    }
+</script>
+</body>
+</html>

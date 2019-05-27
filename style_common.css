@@ -6,10 +6,12 @@ body {
     text-align: justify;
     margin: 15px;
     background-color: white;
+    font-size: 1em;
 }
 
 h1 {
     text-align: center;
+    margin: 0 0 0 5px;
 }
 
 table {
@@ -53,8 +55,38 @@ td {
     font-style: italic;
 }
 
+.textAlignL {
+    text-align: left;
+}
+
+.mr0 {
+    margin-right: 0;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.fontS17 {
+    font-size: 17px;
+}
+
+.margin5 {
+    /*margin: 0 5px 0 5px;*/
+}
+
+.sections {
+    background-color: #efefef;
+    padding: 4px;
+    border: 2px solid #dddfe2;
+}
+
 .red {
     color: #c41723;
+}
+
+.widthAuto {
+    width: auto !important;
 }
 
 .common_h1{
@@ -75,6 +107,16 @@ h2,
     font-variant:petite-caps;
     font-size: 19px;
 
+}
+
+.disabled {
+    background-color: #efefef;
+    border: none !important;
+}
+.input-constant {
+    width: 35px;
+    height: 28px;
+    border: 1px solid #dddfe2;
 }
 
 .input_checkbox{
@@ -374,3 +416,167 @@ fieldset {
     width: 25px;
     height: 25px;
 }
+
+/******************************
+            NEW APPS
+ *****************************/
+.blue {
+    color: blue;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.text {
+    max-width: 180px;
+}
+
+.das {
+    color: #404040;
+    background-color: white;
+}
+
+.date {
+    min-width: 120px;
+}
+
+.margin0 {
+    margin: 0 !important;
+}
+
+#total {
+    background-color: white !important;
+    border: none;
+}
+
+.input_das {
+    width:60px; display:block; height:30px; line-height:30px; font-size: 13px;
+    border:1px solid #DDDDDD;
+    padding-left:6px;
+}
+
+label {
+    margin-right: 9px;
+    display: block;
+    text-align: left;
+}
+
+.text-result {
+    min-width: fit-content;
+    /*border: 1px solid #DDDDDD;*/
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.sa {
+    justify-content: space-around;
+}
+
+.cadre {
+    border: 1px solid black;
+    padding: 0 10px 0 10px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.input {
+    /*border: #777 1px solid;*/
+    /*margin-left: 10px;*/
+    /*height: 35px;*/
+    margin-top: 10px;
+    font-size: 1em;
+    max-width: 70px;
+    color: #c41723;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+select {
+    border: 1px solid darkgray;
+    margin: 5px 0 5px 0;
+    height: 25px;
+}
+
+/*************************
+          SELECT
+*************************/
+.formfield-select {
+    position: relative;
+}
+
+.formfield-select--container {
+    position: relative;
+    background-color: #fff;
+    border: #777 1px solid;
+    margin: 8px 0 8px 0;
+    overflow: hidden;
+}
+.formfield-select--container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 110%;
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding: .75em;
+    border-radius: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
+    background-color: white;
+}
+
+.formfield-select--container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: .75em;
+    display: block;
+    width: 0; height: 0;
+    border-color: transparent;
+    border-top-color: #444;
+    border-width: 6px;
+    border-style: solid;
+    pointer-events: none;
+}
+/*************************
+         END SELECT
+*************************/
+
+/************************
+       PAGE CONSTANT
+ ***********************/
+.tg-constant  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg-constant td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg-constant th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg-constant .tg-gvcd-no-border{background-color:#efefef;color:#000000;border:none;text-align:left;vertical-align:middle}
+.tg-constant .tg-1nma{background-color:#efefef;color:#000000;border: 1px solid black;text-align:center;vertical-align:middle}
+.tg-constant .tg-gvcd{background-color:#efefef;color:#000000;border: 1px solid black;text-align:left;vertical-align:middle;min-width: 36px;width: 36px;}
+.tg-constant .tg-w214{background-color:#efefef;color:#000000;border: 1px solid black;text-align:left;vertical-align:middle;min-width: 121px;}
+
+.tg-constant-2  {border-collapse:collapse;border-spacing:0;}
+.tg-constant-2 td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg-constant-2 th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg-constant-2 .tg-baqh{text-align:center;vertical-align:top}
+.tg-constant-2 .tg-0lax{text-align:left;vertical-align:top}
+
+.tg-constant-3  {border-collapse:collapse;border-spacing:0;}
+.tg-constant-3 td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg-constant-3 th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg-constant-3 .tg-baqh{text-align:center;vertical-align:top}
+.tg-constant-3 .tg-lqy6{text-align:right;vertical-align:top}
+.tg-constant-3 .tg-0lax{text-align:left;vertical-align:top}
+.tg-constant-3 .tg-tf2e{text-align:left;vertical-align:top}
+.tg-constant-3 .tg-jjut{text-align:right;vertical-align:top}

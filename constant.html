@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Score de constant</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="scorebody">
+<p class="common_h1">Score de constant</p>
+<p>D’après Constant CR, Murley AHG. A clinical method of functional assessment of the shoulder. Clin
+    Orthop Relat Res 1987;(214):160-4. Traduction de M. Dougados, avec son aimable autorisation. </p>
+<form name="form" id="form">
+    <div class="sections">
+        <h2>Douleur (total sur 15 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-gvcd-no-border"></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214"><strong>A. Échelle verbale</strong><br>0 = intolérable<br>5 = moyenne<br>10 = modérée<br>15 = aucune</td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="D1"><label for="D1"></label></td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="M1"><label for="M1"></label></td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="F1"><label for="F1"></label></td>
+            </tr>
+            <tr>
+                <td class="tg-w214"><strong>B. Échelle algométrique</strong><br>Soustraire le chiffre obtenu du nombre 15<br><span class="italic">0 (Absence de douleur) à 15 (douleur sévère)</span></td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="D2"><label for="D2"></label></td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="M2"><label for="M2"></label></td>
+                <td class="tg-gvcd"><input min="0" max="15" onchange="calculate()" type="number" class="input-constant" id="F2"><label for="F2"></label></td>
+            </tr>
+            <tr>
+                <td class="tg-w214"><strong>Total :</strong> A + B / 2 (/15)</td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="D3" disabled><label for="D3"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="M3" disabled><label for="M3"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="F3" disabled><label for="F3"></label></td>
+            </tr>
+        </table>
+        <h2>Niveau d’activités quotidiennes (total sur 10 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Activités professionnelles / occupationnelles</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Travail impossible ou non repris : 0 point<br><br>Gêne importante : 1 point<br><br>Gêne moyenne : 2 points<br><br>Gêne modérée : 3 points<br><br>Aucune gêne : 4 points</td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="D4"><label for="D4"></label></td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="M4"><label for="M4"></label></td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="F4"><label for="F4"></label></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Activités de loisirs</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Impossible : 0 point<br><br>Gêne importante : 1 point<br><br>Gêne moyenne : 2 points<br><br>Gêne modérée : 3 points<br><br>Aucune gêne : 4 points</td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="D5"><label for="D5"></label></td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="M5"><label for="M5"></label></td>
+                <td class="tg-gvcd"><input min="0" max="4" onchange="calculate()" type="number" class="input-constant" id="F5"><label for="F5"></label></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Gêne dans le sommeil exemple : aux changements de position</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Douleurs insomniantes : 0 point<br><br>Gêne modérée : 1 point<br><br>Aucune gêne : 2 points</td>
+                <td class="tg-gvcd"><input min="0" max="2" onchange="calculate()" type="number" class="input-constant" id="D6"><label for="D6"></label></td>
+                <td class="tg-gvcd"><input min="0" max="2" onchange="calculate()" type="number" class="input-constant" id="M6"><label for="M6"></label></td>
+                <td class="tg-gvcd"><input min="0" max="2" onchange="calculate()" type="number" class="input-constant" id="F6"><label for="F6"></label></td>
+            </tr>
+        </table>
+        <br>
+        <h2>Niveau de travail avec la main (total sur 10 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>À quelle hauteur le patient peut-il utiliser sa main sans douleur et avec une force suffisante ?</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Taille : 2 points<br><br>Xiphoïde : 4 points<br><br>Cou : 6 points<br><br>Tête : 8 points<br><br>Au dessus de la tête : 10 points</td>
+                <td class="tg-gvcd"><input min="2" max="10" onchange="calculate()" type="number" class="input-constant" id="D7"><label for="D7"></label></td>
+                <td class="tg-gvcd"><input min="2" max="10" onchange="calculate()" type="number" class="input-constant" id="M7"><label for="M7"></label></td>
+                <td class="tg-gvcd"><input min="2" max="10" onchange="calculate()" type="number" class="input-constant" id="F7"><label for="F7"></label></td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <br>
+    <div class="sections">
+        <h2>Mobilité (sur 40 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Antépulsion (total / 10)</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">0°-30° : 0 point <br><br>31°-60° : 2 points<br><br>61°-90° : 4 points <br><br>91°-120° : 6 points<br><br>121°-150° : 8 points<br><br>>150° : 10 points</td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="D8"><label for="D8"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="M8"><label for="M8"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="F8"><label for="F8"></label></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Abduction (total / 10)</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">0°-30° : 0 point <br><br>31°-60° : 2 points<br><br>61°-90° : 4 points <br><br>91°-120° : 6 points<br><br>121°-150° : 8 points<br><br>>150° : 10 points</td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="D9"><label for="D9"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="M9"><label for="M9"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="F9"><label for="F9"></label></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Rotation latérale (total / 10)</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Main derrière la tête, coude en avant  : 2 points <br><br>Main derrière la tête, coude en arrière : 4 points<br><br>Main sur la tête, coude en avant : 6 points <br><br>Main sur la tête, coude en arrière : 8 points<br><br>Élévation complète depuis le sommet de la tête : 10 points</td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="D10"><label for="D10"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="M10"><label for="M10"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="F10"><label for="F10"></label></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Rotation médiale (total / 10)</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Dos de la main niveau fesse  : 2 points <br><br>Dos de la main niveau sacrum : 4 points<br><br>Dos de la main niveau L3 : 6 points <br><br>Dos de la main niveau T12 : 8 points<br><br>Dos de la main niveau T7-T8 : 10 points</td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="D11"><label for="D11"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="M11"><label for="M11"></label></td>
+                <td class="tg-gvcd"><input min="0" max="10" onchange="calculate()" type="number" class="input-constant" id="F11"><label for="F11"></label></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="sections">
+        <h2>Force musculaire (total sur 25 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-w214"><strong>Abduction isométrique (élévation antéro-latérale de 90° dans le plan de l’omoplate)</strong></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214">Si 90° n’est pas atteint en actif  : 0 point <br><br>Si maintien de 5 s, par 500g : 1 point</td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant" id="D12"><label for="D12"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant" id="M12"><label for="M12"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant" id="F12"><label for="F12"></label></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="sections">
+        <h2>Total (total sur 100 points)</h2>
+        <table class="tg-constant">
+            <tr>
+                <th class="tg-gvcd-no-border"></th>
+                <th class="tg-1nma">Début</th>
+                <th class="tg-1nma">Milieu</th>
+                <th class="tg-1nma">Fin</th>
+            </tr>
+            <tr>
+                <td class="tg-w214"><strong>Valeur absolue (en points/100)</strong></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="D13" disabled><label for="D13"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="M13" disabled><label for="M13"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="F13" disabled><label for="F13"></label></td>
+            </tr>
+            <tr>
+                <td class="tg-w214"><strong>Valeur pondérée (%)</strong></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="D14" disabled><label for="D14"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="M14" disabled><label for="M14"></label></td>
+                <td class="tg-gvcd"><input onchange="calculate()" type="number" class="input-constant disabled" id="F14" disabled><label for="F14"></label></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="sections">
+        <h2><strong>Tableau 1 :</strong> Valeur fonctionnelle normale de l’épaule selon l’indice de Constant en fonction de l’âge et du sexe.</h2>
+        <table class="tg-constant-2">
+            <tr>
+                <th class="tg-baqh" rowspan="2">Âge</th>
+                <th class="tg-baqh" colspan="3">Hommes</th>
+            </tr>
+            <tr>
+                <td class="tg-baqh">Droit</td>
+                <td class="tg-baqh">Gauche</td>
+                <td class="tg-baqh">Moyenne</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">21/30</td>
+                <td class="tg-baqh">97</td>
+                <td class="tg-baqh">99</td>
+                <td class="tg-baqh">98</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">31/40</td>
+                <td class="tg-baqh">97</td>
+                <td class="tg-baqh">90</td>
+                <td class="tg-baqh">93</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">41/50</td>
+                <td class="tg-baqh">86</td>
+                <td class="tg-baqh">96</td>
+                <td class="tg-baqh">92</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">51/60</td>
+                <td class="tg-baqh">94</td>
+                <td class="tg-baqh">87</td>
+                <td class="tg-baqh">90</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">61/70 </td>
+                <td class="tg-baqh">83</td>
+                <td class="tg-baqh">83</td>
+                <td class="tg-baqh">83</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">71/80</td>
+                <td class="tg-baqh">76</td>
+                <td class="tg-baqh">73</td>
+                <td class="tg-baqh">75</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">81/90</td>
+                <td class="tg-baqh">70</td>
+                <td class="tg-baqh">61</td>
+                <td class="tg-baqh">66</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">91/100</td>
+                <td class="tg-baqh">60</td>
+                <td class="tg-baqh">54</td>
+                <td class="tg-baqh">56</td>
+            </tr>
+        </table>
+        <br>
+        <table class="tg-constant-3">
+            <tr>
+                <th class="tg-baqh" rowspan="2">Âge</th>
+                <th class="tg-baqh" colspan="3">Femmes</th>
+            </tr>
+            <tr>
+                <td class="tg-baqh">Droit</td>
+                <td class="tg-baqh">Gauche</td>
+                <td class="tg-baqh">Moyenne</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">21/30</td>
+                <td class="tg-baqh">98</td>
+                <td class="tg-baqh">96</td>
+                <td class="tg-baqh">97</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">31/40</td>
+                <td class="tg-baqh">90</td>
+                <td class="tg-baqh">91</td>
+                <td class="tg-baqh">90</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">41/50</td>
+                <td class="tg-baqh">85</td>
+                <td class="tg-baqh">78</td>
+                <td class="tg-baqh">80</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">51/60</td>
+                <td class="tg-baqh">75</td>
+                <td class="tg-baqh">71</td>
+                <td class="tg-baqh">73</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">61/70 </td>
+                <td class="tg-baqh">70</td>
+                <td class="tg-baqh">61</td>
+                <td class="tg-baqh">70</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">71/80</td>
+                <td class="tg-baqh">71</td>
+                <td class="tg-baqh">64</td>
+                <td class="tg-baqh">69</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">81/90</td>
+                <td class="tg-baqh">65</td>
+                <td class="tg-baqh">64</td>
+                <td class="tg-baqh">64</td>
+            </tr>
+            <tr>
+                <td class="tg-0lax">91/100</td>
+                <td class="tg-baqh">58</td>
+                <td class="tg-baqh">50</td>
+                <td class="tg-baqh">52</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h2>Mode de calcul et de présentation des résultats </h2>
+    <h3>Douleur</h3>
+    <p>Pour le domaine de la douleur, une double appréciation est nécessaire. On demande au patient
+        d’indiquer l’intensité de sa douleur selon une échelle verbale. En l’absence de douleur, la note de 15
+        lui est attribuée. Autrement, la note sera de 10, 5 ou 0 selon que la douleur est modérée, moyenne ou
+        intolérable. Puis, on utilise une échelle visuelle analogique mesurant 15 cm. Celle-ci sera complétée
+        par le patient après que l’examinateur lui ait expliqué de couper d’un trait à l’endroit qui correspond à
+        l’intensité de sa douleur. Précisons l’existence de part et d’autre de cette échelle des chiffres 0 et 15,
+        où 0 signifie l’absence de douleur et 15 une douleur extrême. Le score douloureux définitif sera
+        obtenu en soustrayant le chiffre obtenu du nombre 15 sur l’EVA, pour retomber sur la même échelle
+        de cotation que l’échelle verbale. Puis, les 2 chiffres seront additionnés et leur somme divisée par 2.
+        On obtient ainsi une moyenne des deux appréciations correspondant au score douloureux définitif.</p>
+    <p>Dans la référence princeps, le score douloureux est effectué sur « le degré de douleur le plus sévère
+        survenant au cours des activités de la vie courante, telles que le travail, la détente, le repos ou la
+        douleur survenant la nuit ».</p>
+    <h3>Activités</h3>
+    <p>Pour les domaines concernant l’activité, le médecin note l’information recueillie à l’interrogatoire du
+        patient.</p>
+    <h3>Mobilité</h3>
+    <p>En ce qui concerne le domaine « mobilité », les amplitudes à considérer sont celles qui sont possibles,
+        activement et sans douleur, le patient étant assis sur une chaise sans accoudoir. L’épaule n’étant pas
+        bloquée, on comprend que l’abduction puisse dépasser 90°.<br>
+        En ce qui concerne le domaine de la force musculaire, son évaluation nécessite d’avoir recours à du
+        matériel dynamomètre dont la sensibilité est d’au moins 500 g fixé au poignet par une bande. Le
+        patient est assis, le bras tendu dans le plan de l’omoplate, c’est-à-dire à 30° d’antépulsion. Le pati ent
+        doit résister à la poussée vers le bas exprimée par l’examinateur, pendant 5 secondes. Le test est
+        répété 5 fois.</p>
+    <h3>Autres domaines</h3>
+    <p>Pour chacun des autres domaines, on attribue les scores dispensés à chacun des items. Le score
+        total est sur 100 points. </p>
+    <p>Pour la présentation des résultats, 3 possibilités :</p>
+    <ul>
+        <li>soit présenter séparément chacun des 5 domaines </li>
+        <li>soit présenter la somme en valeur absolue</li>
+        <li>soit présenter la somme en valeur relative par rapport à la normale pour l’âge et le sexe.</li>
+    </ul>
+    <p>Cette dernière technique a l’avantage de pouvoir quantifier au mieux les anomalies (différence d’un
+        individu par rapport à la valeur normale d’un groupe de même âge et de même sexe), et ensuite de
+        proposer une moyenne de ces valeurs dans une étude de groupe de patients hétérogènes (hommes
+        et femmes, jeunes et vieux). Par exemple, si la valeur absolue obtenue chez un homme de 35 ans est
+        de 40 points, alors que la norme pour les hommes de cette tranche d’âge est de 97, alors la valeur
+        « normalisée » sera de -57 points (tableau 3-1). En 2008, les auteurs privilégient la valeur
+        « pondérée » qui est le rapport entre la valeur mesurée et la valeur normale, soit une valeur pondérée
+        de 43 % (40/97 = 0,43) dans l’exemple ci-dessus.</p>
+    <p>En ce qui concerne la capacité physiologique dépendant du sexe et de l’âge, il a été proposé des
+        normes à partir des valeurs observées chez des centaines de volontaires, hommes et femmes de tous
+        âges (étude des amplitudes articulaires actives et de la force musculaire en abduction dans le plan de
+        l’omoplate) (tableau 1). </p>
+
+    <div class="score_inter"></div>
+    <span class="description"></span>
+    <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+</form>
+
+<script type="text/javascript">
+    function calculate()
+    {
+        let D1 = document.getElementById('D1').value;
+        let D2 = document.getElementById('D2').value;
+        document.getElementById('D3').value = (parseInt(D1) + parseInt(D2)) / 2;
+
+        let M1 = document.getElementById('M1').value;
+        let M2 = document.getElementById('M2').value;
+        document.getElementById('M3').value = (parseInt(M1) + parseInt(M2)) / 2;
+
+        let F1 = document.getElementById('F1').value;
+        let F2 = document.getElementById('F2').value;
+        document.getElementById('F3').value = (parseInt(F1) + parseInt(F2)) / 2;
+
+        let D3 = document.form.D3.value;
+        let D4 = document.form.D4.value;
+        let D5 = document.form.D5.value;
+        let D6 = document.form.D6.value;
+        let D7 = document.form.D7.value;
+        let D8 = document.form.D8.value;
+        let D9 = document.form.D9.value;
+        let D10 = document.form.D10.value;
+        let D11 = document.form.D11.value;
+        let D12 = document.form.D12.value;
+
+        let M3 = document.form.M3.value;
+        let M4 = document.form.M4.value;
+        let M5 = document.form.M5.value;
+        let M6 = document.form.M6.value;
+        let M7 = document.form.M7.value;
+        let M8 = document.form.M8.value;
+        let M9 = document.form.M9.value;
+        let M10 = document.form.M10.value;
+        let M11 = document.form.M11.value;
+        let M12 = document.form.M12.value;
+
+        let F3 = document.form.F3.value;
+        let F4 = document.form.F4.value;
+        let F5 = document.form.F5.value;
+        let F6 = document.form.F6.value;
+        let F7 = document.form.F7.value;
+        let F8 = document.form.F8.value;
+        let F9 = document.form.F9.value;
+        let F10 = document.form.F10.value;
+        let F11 = document.form.F11.value;
+        let F12 = document.form.F12.value;
+
+        // console.log("D1 : "+D1);
+        // console.log("D2 : "+D2);
+        // console.log("D3 : "+D3);
+        // console.log(D4);
+        // console.log(D5);
+        // console.log(D6);
+        // console.log(D7);
+        // console.log(D8);
+        // console.log(D9);
+        // console.log(D10);
+        // console.log(D11);
+        // console.log(D12);
+
+        document.form.D13.value = parseInt(D3) + parseInt(D4) + parseInt(D5) + parseInt(D6) + parseInt(D7) + parseInt(D8) + parseInt(D9) + parseInt(D10) + parseInt(D11) + parseInt(D12);
+        document.form.M13.value = parseInt(M3) + parseInt(M4) + parseInt(M5) + parseInt(M6) + parseInt(M7) + parseInt(M8) + parseInt(M9) + parseInt(M10) + parseInt(M11) + parseInt(M12);
+        document.form.F13.value = parseInt(F3) + parseInt(F4) + parseInt(F5) + parseInt(F6) + parseInt(F7) + parseInt(F8) + parseInt(F9) + parseInt(F10) + parseInt(F11) + parseInt(F12);
+
+        document.form.D14.value = 0;
+        document.form.M14.value = 0;
+        document.form.F14.value = 0;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indice de Dreiser</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<p class="common_h1">Indice de Dreiser</p>
+<div class="content">
+    <h2>Intérêt :</h2>
+    <p>Il s’agit d’un indice fonctionnel comportant 10 questions concernant des activités ou des types de geste de la vie quotidienne. Il permet d’apprécier l’activité de la maladie arthrosique des articulations des mains. </p>
+    <form name="form" id="form">
+        <div>
+            <br>
+            <div class="flex-column">
+                <strong>Pouvez-vous tourner une clef dans une serrure ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem1" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem2" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem3" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g1" id="vItem4" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong> Pouvez-vous couper de la viande avec un couteau ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem5" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem6" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem7" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g2" id="vItem8" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong> Pouvez-vous couper du tissu ou du papier avec une paire de ciseaux ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem9" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem10" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem11" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g3" id="vItem12" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pouvez-vous soulever une bouteille pleine avec la main ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem13" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem14" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem15" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g4" id="vItem16" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pouvez-vous fermer le poing complètement ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem17" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem18" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem19" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g5" id="vItem20" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pouvez-vous faire un nœud ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem21" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem22" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem23" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g6" id="vItem24" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pour les femmes : Pouvez-vous coudre ?<br>
+                    Pour les hommes : Pouvez-vous visser ? </strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g7" id="vItem25" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g7" id="vItem26" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g7" id="vItem27" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g7" id="vItem28" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pouvez-vous boutonner un vêtement ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g8" id="vItem29" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g8" id="vItem30" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g8" id="vItem31" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g8" id="vItem32" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Pouvez-vous écrire longtemps (sans interruption) ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g9" id="vItem33" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g9" id="vItem34" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g9" id="vItem35" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g9" id="vItem36" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+                <strong>Acceptez-vous sans réticence que l'on vous serre la main ?</strong><br>
+                <label class="containerRadio">
+                    <input class="input" name="g10" id="vItem37" type="radio" value="0" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>0 - Possible sans difficulté
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g10" id="vItem38" type="radio" value="1" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>1 - Possible avec difficulté modérée
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g10" id="vItem39" type="radio" value="2" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>2 - Possible avec difficulté importante
+                </label>
+                <label class="containerRadio">
+                    <input class="input" name="g10" id="vItem40" type="radio" value="3" onclick="Calculate()" />
+                    <span class="checkmarkRadio"></span>3 - Impossible
+                </label>
+                <br>
+            </div>
+            <div class="flex-row center">
+                <h2 class="total">Total :</h2>
+                <label for="total"></label>
+                <input class="margin0 input" name="total" type="number" id="total" disabled/>
+            </div>
+            <div class="score_inter">Références</div>
+            <span class="description">Dreiser R.L., Maheu E., Guillou G.B., Caspard H., Grouin J.M. Validation d’un indice algofonctionnel dans l’arthrose de la main. Rev.Rhum. (Ed Fr) 1995, 62, 129S-39S.</span>
+            <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function GetRadioValue(id)
+    {
+        let radios = document.getElementsByName(id);
+        let total = 0;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                total = radios[i].value * 1;
+            }
+        }
+        return total;
+    }
+
+    function Calculate()
+    {
+        let res = 0;
+        for(let i=1; i<30; i++) {
+            res += GetRadioValue('g' + i);
+        }
+        document.form.total.value = res;
+    }
+</script>
+</body>
+</html>
