@@ -14,7 +14,72 @@ h1 {
     margin: 0 0 0 5px;
 }
 
+.label-asdas {
+    margin: 22px 0 0 10px;
+}
+
+.input-asdas {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    max-width: 70px;
+    width: 60px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    border: 1px solid #E7E7E7;
+}
+
+.margin-r-5 {
+    margin-right: 5px;
+}
+
+.margin-bot-5 {
+    margin-bottom: 5px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.margin-b-2 {
+    margin-bottom: 2px;
+}
+
+.input-basdai {
+    margin-top: 10px;
+    font-size: 1em;
+    max-width: 70px;
+    font-weight: bold;
+    width: 60px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 6px;
+    border: 1px solid #E7E7E7;
+    text-align: center;
+}
+
+.res-asdas {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    max-width: 70px;
+    width: 60px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    color: #c41723;
+    border: 1px solid #E7E7E7 !important;
+}
+
 @media screen and (max-width: 1024px){
+    .export, #exportBtn {
+        display: none;
+    }
+    
     .first-col {
         margin-left: 25px;
     }
@@ -207,7 +272,21 @@ h2,
     font-weight: bold;
     width:100%;
     text-align: center;
+}
 
+.score_result_asdas {
+    font-size:20px;
+    font-weight: bold;
+    width:100%;
+}
+
+.score_result_asdas input {
+    font-size: 1.1em;
+    width: 70px;
+    color: #c41723;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid;
 }
 
 .input_score,
@@ -216,6 +295,7 @@ h2,
     width: 32px;
     color: #c41723;
     font-weight: bold;
+    text-align: center;
 }
 
 .score_result div{
@@ -305,7 +385,7 @@ fieldset {
 /* ACR_1997 */
 .reponse {
     border: none;
-    min-width: 70px;
+    min-width: 77px;
 }
 
 .acr_2010 td{

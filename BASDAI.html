@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Score BASDAI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="scorebody">
+<p class="common_h1">Score BASDAI</p>
+<p class="italic">Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême) concernant votre ressenti.</p>
+<h2>Saisie du score</h2>
+<form name="form" id="form">
+    <label for="vItem1">1. Où situez-vous votre degré global de fatigue ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem1" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label for="vItem2">2. Où situez-vous votre degré global de douleur au niveau du cou, du dos et des hanches dans le cadre de votre spondylarthrite ankylosante ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem2" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label for="vItem3">3. Où situez-vous votre degré de gonflement articulaire en dehors du cou, du dos et des hanches ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem3" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label for="vItem4">4. Où situez-vous votre degré de gêne pour les zones sensibles au toucher ou à la pression ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem4" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label for="vItem5">5. Où situez-vous votre degré de raideur matinale depuis votre réveil ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem5" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label>6. Quelle est la durée de votre raideur matinale à partir de votre réveil ?</label><br>
+    <div class="flex-column">
+        <label class="flex-row">
+            <input name="g1" checked id="item1" type="radio" value="0" onclick="calculate()" /><label for="item1">Aucune</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item2" type="radio" value="0.125" onclick="calculate()" /><label for="item2">15 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item3" type="radio" value="0.25" onclick="calculate()" /><label for="item3">30 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item4" type="radio" value="0.375" onclick="calculate()" /><label for="item4">45 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item5" type="radio" value="0.5" onclick="calculate()" /><label for="item5">1 heure</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item6" type="radio" value="0.625" onclick="calculate()" /><label for="item6">1h15</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item7" type="radio" value="0.75" onclick="calculate()" /><label for="item7">1h30</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item8" type="radio" value="0.875" onclick="calculate()" /><label for="item8">1h45</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item9" type="radio" value="1" onclick="calculate()" /><label for="item9">2h ou plus</label>
+        </label>
+    </div>
+    <br>
+    <h2>Score</h2>
+    <div class="flex-row sa">
+        <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
+    </div>
+    <br>
+    <br>
+    <div class="export">
+        <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+    </div>
+</form>
+<div class="score_inter">Interprétation</div>
+<span class="description">Le BASDAI (Bath Ankylosing Spondylitis Disease Activity Index) est un questionnaire pour calculer l'index d'activité de la spondylarthrite ankylosante. Estimez l'intensité de 5 symptômes pendant la semaine écoulée, en donnant une cote de 0 à 10, sachant que 0 signifie l'absence du symptôme et 10 sa présence au plus haut degré. Ce score est une aide au suivi des spondylarthrites ankylosantes.</span>
+<br>
+<div class="score_ref">Références</div>
+<span class="description">Garrett S., Jenkinson T., Kennedy L.G., Whitelock H., Gaisford P., Calin A.; A new approach to defining disease status in ankylosing spondylitis: the Bath Ankylosing Spondylitis Disease Activity Index; Journal of Rheumatology; Dec. 1994, 21(12):2286-91.</span>
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+<script type="text/javascript">
+    function calculate()
+    {
+        vItem1 = document.form.vItem1.value;
+        vItem2 = document.form.vItem2.value;
+        vItem3 = document.form.vItem3.value;
+        vItem4 = document.form.vItem4.value;
+        vItem5 = document.form.vItem5.value;
+
+        let radios = document.getElementsByName('g1');
+        let radio = 0;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                radio= radios[i].value * 1;
+            }
+        }
+
+        document.form.total.value = (vItem1 / 5) + (vItem2 / 5) + (vItem3 / 5) + (vItem4 / 5) + (vItem5 / 10) + radio;
+    }
+</script>
+</body>
+</html>

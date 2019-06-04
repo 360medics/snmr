@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Échelle de dépression de Hamilton</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="scorebody">
+<p class="common_h1">Échelle de dépression de Hamilton</p>
+<p class="italic">Pour chacun des 17 items, choisir la définition qui caractérise le mieux le malade.</p>
+<form name="form" id="form">
+    <h2 class="margin-b-2">Humeur dépressive</h2>
+    <span class="italic">(tristesse, sentiment d'être sans espoir, impuissant, auto-dépréciation)</span>
+    <br>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g1" checked id="item1" type="radio" value="0" onclick="calculate()" /><label for="item1">0 - Absent.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g1" id="item2" type="radio" value="1" onclick="calculate()" /><label for="item2">1 - Ces états affectifs ne sont signalés que si l'on interroge le sujet.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g1" id="item3" type="radio" value="2" onclick="calculate()" /><label for="item3">2 - Ces états affectifs sont signalés verbalement spontanément.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g1" id="item4" type="radio" value="3" onclick="calculate()" /><label for="item4">3 - Le sujet communique ces états affectifs non verbalement ; par exemple par son expression faciale, son attitude, sa voix et sa tendance à pleurer.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g1" id="item5" type="radio" value="4" onclick="calculate()" /><label for="item5">4 - Le sujet ne communique <span class="underline">pratiquement que</span> ces états affectifs dans ses communications spontanées verbales et non verbales.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Sentiments de culpabilité</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g2" checked id="item6" type="radio" value="0" onclick="calculate()" /><label for="item6">0 - Absent.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g2" id="item7" type="radio" value="1" onclick="calculate()" /><label for="item7">1 - S'adresse des reproches à lui-même, a l'impression qu'il a causé un préjudice à des gens.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g2" id="item8" type="radio" value="2" onclick="calculate()" /><label for="item8">2 - Idées de culpabilité ou ruminations sur des erreurs passées ou sur des actions condamnables.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g2" id="item9" type="radio" value="3" onclick="calculate()" /><label for="item9">3 - La maladie actuelle est une punition. Idées délirantes de culpabilité.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g2" id="item10" type="radio" value="4" onclick="calculate()" /><label for="item10">4 - Entend des voix qui l'accusent ou le dénoncent et/ou a des hallucinations visuelles menaçantes.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Suicide</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g3" checked id="item11" type="radio" value="0" onclick="calculate()" /><label for="item11">0 - Absent.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g3" id="item12" type="radio" value="1" onclick="calculate()" /><label for="item12">1 - A l'impression que la vie ne vaut pas la peine d'être vécue.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g3" id="item13" type="radio" value="2" onclick="calculate()" /><label for="item13">2 - Souhaite être mort ou équivalent : toute pensée de mort possible dirigée contre lui-même.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g3" id="item14" type="radio" value="3" onclick="calculate()" /><label for="item14">3 - Idées ou geste de suicide.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g3" id="item15" type="radio" value="4" onclick="calculate()" /><label for="item15">4 - Tentatives de suicide (cocher pour toute tentative sérieuse).</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Insomnie du début de la nuit</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g4" checked id="item16" type="radio" value="0" onclick="calculate()" /><label for="item16">0 - Pas de difficulté à s'endormir.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g4" id="item17" type="radio" value="1" onclick="calculate()" /><label for="item17">1 - Se plaint de difficultés éventuelles à s'endormir ; par exemple de mettre plus d'une demi-heure.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g4" id="item18" type="radio" value="2" onclick="calculate()" /><label for="item18">2 - Se plaint d'avoir chaque soir des difficultés à s'endormir.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Insomnie du milieu de la nuit</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g5" checked id="item19" type="radio" value="0" onclick="calculate()" /><label for="item19">0 - Pas de difficulté.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g5" id="item20" type="radio" value="1" onclick="calculate()" /><label for="item20">1 - Le malade se plaint d'être agité et troublé pendant la nuit.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g5" id="item21" type="radio" value="2" onclick="calculate()" /><label for="item21">2 - Il se réveille pendant la nuit (cocher pour toutes les fois où le malade se lève du lit sauf si c'est pour uriner).</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Insomnie du matin</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g6" checked id="item22" type="radio" value="0" onclick="calculate()" /><label for="item22">0 - Pas de difficulté.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g6" id="item23" type="radio" value="1" onclick="calculate()" /><label for="item23">1 - Se réveille de très bonne heure le matin mais se rendort.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g6" id="item24" type="radio" value="2" onclick="calculate()" /><label for="item24">2 - Incapable de se rendormir s'il se lève.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Travail et activités</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g7" checked id="item25" type="radio" value="0" onclick="calculate()" /><label for="item25">0 - Pas de difficulté.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g7" id="item26" type="radio" value="1" onclick="calculate()" /><label for="item26">1 - Pensées et sentiments d'incapacité, fatigue ou faiblesse se rapportant à des activités professionnelles ou de détente.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g7" id="item27" type="radio" value="2" onclick="calculate()" /><label for="item27">2 - Perte d'intérêt pour les activités professionnelles ou de détente - ou bien décrite directement par le malade, ou indirectement par son apathie, son indécision et ses hésitations (il a l'impression qu'il doit se forcer pour travailler ou pour avoir une activité quelconque).</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g7" id="item28" type="radio" value="3" onclick="calculate()" /><label for="item28">3 - Diminution du temps d'activité ou diminution de la productivité. A l'hôpital : cocher si le malade ne passe pas au moins 3 heures par jour à des activités - aides aux infirmières ou thérapie occupationnelle (à l'exclusion des tâches de routine de la salle).</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g7" id="item29" type="radio" value="4" onclick="calculate()" /><label for="item29">4 - A arrêté son travail en raison de sa maladie actuelle. A l'hôpital, cocher si le malade n'a aucune autre activité que les tâches de routine de salle, ou s'il est incapable d'exécuter ces tâches de routine sans être aidé.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Ralentissement</h2>
+    <span class="italic">(lenteur de la pensée et du langage ; baisse de la faculté de concentration ; baisse de l'activité motrice).</span>
+    <br>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g8" checked id="item30" type="radio" value="0" onclick="calculate()" /><label for="item30">0 - Langage et pensée normaux.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g8" id="item31" type="radio" value="1" onclick="calculate()" /><label for="item31">1 - Léger ralentissement à l'entretien.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g8" id="item32" type="radio" value="2" onclick="calculate()" /><label for="item32">2 - Ralentissement manifeste à l'entretien.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g8" id="item33" type="radio" value="3" onclick="calculate()" /><label for="item33">3 - Entretien difficile.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g8" id="item34" type="radio" value="4" onclick="calculate()" /><label for="item34">4 - Stupeur.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Agitation</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g9" checked id="item35" type="radio" value="0" onclick="calculate()" /><label for="item35">0 - Aucune.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g9" id="item36" type="radio" value="1" onclick="calculate()" /><label for="item36">1 - Crispations, secousses musculaires.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g9" id="item37" type="radio" value="2" onclick="calculate()" /><label for="item37">2 - Joue avec ses mains, ses cheveux, etc.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g9" id="item38" type="radio" value="3" onclick="calculate()" /><label for="item38">3 - Bouge, ne peut rester assis tranquille.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g9" id="item39" type="radio" value="4" onclick="calculate()" /><label for="item39">4 - Se tord les mains, ronge ses ongles, arrache ses cheveux, se mord les lèvres.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Anxiété psychique</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g10" checked id="item40" type="radio" value="0" onclick="calculate()" /><label for="item40">0 - Aucun trouble.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g10" id="item41" type="radio" value="1" onclick="calculate()" /><label for="item41">1 - Tension subjective et irritabilité.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g10" id="item42" type="radio" value="2" onclick="calculate()" /><label for="item42">2 - Se fait du souci à propos de problèmes mineurs.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g10" id="item43" type="radio" value="3" onclick="calculate()" /><label for="item43">3 - Attitude inquiète, apparente dans l'expression faciale et le langage.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g10" id="item44" type="radio" value="4" onclick="calculate()" /><label for="item44">4 - Peurs exprimées sans qu'on pose de questions.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Anxiété somatique</h2>
+    <span class="italic">Concomitants physiques de l'anxiété tels que : gastro-intestinaux (bouche sèche, troubles digestifs, diarrhée, coliques, éructations), cardiovasculaires (palpitations, céphalées), respiratoires (hyperventilation, soupirs), pollakiurie, transpiration.</span>
+    <br>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g11" checked id="item45" type="radio" value="0" onclick="calculate()" /><label for="item45">0 - Absente.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g11" id="item46" type="radio" value="1" onclick="calculate()" /><label for="item46">1 - Discrète.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g11" id="item47" type="radio" value="2" onclick="calculate()" /><label for="item47">2 - Moyenne.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g11" id="item48" type="radio" value="3" onclick="calculate()" /><label for="item48">3 - Grave.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g11" id="item49" type="radio" value="4" onclick="calculate()" /><label for="item49">4 - Frappant le sujet d'incapacité fonctionnelle.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Symptômes somatiques gastro-intestinaux</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g12" checked id="item50" type="radio" value="0" onclick="calculate()" /><label for="item50">0 - Aucun.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g12" id="item51" type="radio" value="1" onclick="calculate()" /><label for="item51">1 - Perte d'appétit, mais mange sans y être poussé par les infirmières. Sentiment de lourdeur abdominale.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g12" id="item52" type="radio" value="2" onclick="calculate()" /><label for="item52">2 - A des difficultés à manger en l'absence d'incitations du personnel. Demande ou a besoin de laxatifs, de médicaments intestinaux ou gastriques.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Symptômes somatiques généraux</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g13" checked id="item53" type="radio" value="0" onclick="calculate()" /><label for="item53">0 - Aucun.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g13" id="item54" type="radio" value="1" onclick="calculate()" /><label for="item54">1 - Lourdeur dans les membres, dans le dos ou la tête. Douleurs dans le dos, céphalées, douleurs musculaires. Perte d'énergie et fatigabilité.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g13" id="item55" type="radio" value="2" onclick="calculate()" /><label for="item55">2 - Cocher dans le cas où n'importe quel symptôme est net.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Symptômes génitaux</h2>
+    <span class="italic">symptômes tels que : perte de libido, troubles menstruels.</span>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g14" checked id="item56" type="radio" value="0" onclick="calculate()" /><label for="item56">0 - Absents.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g14" id="item57" type="radio" value="1" onclick="calculate()" /><label for="item57">1 - Légers.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g14" id="item58" type="radio" value="2" onclick="calculate()" /><label for="item58">2 - Graves.</label>
+        </label>
+    </div>
+    <h2 class="margin-b-2">Hypocondrie</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g15" checked id="item59" type="radio" value="0" onclick="calculate()" /><label for="item59">0 - Absente.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g15" id="item60" type="radio" value="1" onclick="calculate()" /><label for="item60">1 - Attention concentrée sur son propre corps.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g15" id="item61" type="radio" value="2" onclick="calculate()" /><label for="item61">2 - Préoccupations sur sa santé.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g15" id="item62" type="radio" value="3" onclick="calculate()" /><label for="item62">3 - Plaintes fréquentes, demandes d'aide, etc.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g15" id="item63" type="radio" value="4" onclick="calculate()" /><label for="item63">4 - Idées délirantes hypochondriques.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Perte de poids : (coter soit A, soit B)</h2>
+    <strong>A : D'après les dires du malade</strong>
+    <br>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g16" checked id="item64" type="radio" value="0" onclick="calculate()" /><label for="item64">0 - Pas de perte de poids.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g16" id="item65" type="radio" value="1" onclick="calculate()" /><label for="item65">1 - Perte de poids probable liée à la maladie actuelle.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g16" id="item66" type="radio" value="2" onclick="calculate()" /><label for="item66">2 - Perte de poids certaine (suivant ce que dit le sujet).</label>
+        </label>
+    </div>
+    <br>
+    <strong>B : Appréciation par pesées hebdomadaires par le personnel soignant lorsque des modifications actuelles de poids sont évaluées</strong>
+    <br>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g16" id="item67" type="radio" value="0" onclick="calculate()" /><label for="item67">0 - Moins de 500 g de perte de poids par semaine.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g16" id="item68" type="radio" value="1" onclick="calculate()" /><label for="item68">1 - Plus de 500 g de perte de poids par semaine.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g16" id="item69" type="radio" value="2" onclick="calculate()" /><label for="item69">2 - Plus de 1 Kg de perte de poids par semaine.</label>
+        </label>
+    </div>
+    <br>
+    <h2 class="margin-b-2">Prise de conscience</h2>
+    <br>
+    <div class="flex-column">
+         <label class="flex-row margin-bot-5">
+            <input name="g17" checked id="item70" type="radio" value="0" onclick="calculate()" /><label for="item70">0 - Reconnaît qu'il est déprimé et malade.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g17" id="item71" type="radio" value="1" onclick="calculate()" /><label for="item71">1 - Reconnaît qu'il est malade, mais l'attribue à la nourriture, au climat, au surmenage, à un virus, à un besoin de repos, etc.</label>
+        </label>
+         <label class="flex-row margin-bot-5">
+            <input name="g17" id="item72" type="radio" value="2" onclick="calculate()" /><label for="item72">2 - Nie qu'il est malade.</label>
+        </label>
+    </div>
+    <br>
+    <h2>Score</h2>
+    <div class="flex-row sa">
+        <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
+    </div>
+    <br>
+    <div class="export">
+        <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+    </div>
+</form>
+<div class="score_inter">Interprétation</div>
+<span class="description">L'échelle de dépression de Hamilton est le test le plus utilisé pour évaluer l'intensité des symptômes dépressifs. Il est valable pour toutes les personnes, y compris les personnes âgées bien que certains aspects puissent être parfois inopérants (par ex. ceux qui font référence aux activités professionnelles alors qu'il peut s'agir de personnes en retraite).<br>
+        L'évaluation est généralement faite toutes le deux semaines. Plus la note est élevée, plus la dépression est grave :<br>
+        Score de 10 à 13 : symptômes dépressifs légers.<br>
+        Score de 14 à 17 : symptômes dépressifs légers à modérés.<br>
+        Score supérieur à 18 : symptômes dépressifs modérés à sévères.</span>
+<br>
+<div class="score_ref">Références</div>
+<span class="description">M. Hamilton, « A rating scale for depression », dans Journal of Neurology, Neurosurgery and Psychiatry, no 23, 1960, p. 56-62.<br>
+        M. Hamilton, « Assessment of change in psychiatric state by means of rating scales », dans Proceedings of the Royal Society of Medicine, no 59 (Suppl. 1), 1966, p. 10-13.<br>
+        M. Hamilton, « Rating depressive patients », dans Journal of Clinical Psychiatry, no 41, 1980, p. 21-24.</span>
+
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+<script type="text/javascript">
+    function calculate()
+    {
+        let radio1 = document.getElementsByName('g1');
+        let g1 = 0;
+        for (let i = 0; i < radio1.length; i++) {
+            if (radio1[i].checked) {
+                g1= radio1[i].value * 1;
+            }
+        }
+
+        let radio2 = document.getElementsByName('g2');
+        let g2 = 0;
+        for (let i = 0; i < radio2.length; i++) {
+            if (radio2[i].checked) {
+                g2= radio2[i].value * 1;
+            }
+        }
+
+        let radio3 = document.getElementsByName('g3');
+        let g3 = 0;
+        for (let i = 0; i < radio3.length; i++) {
+            if (radio3[i].checked) {
+                g3= radio3[i].value * 1;
+            }
+        }
+
+        let radio4 = document.getElementsByName('g4');
+        let g4 = 0;
+        for (let i = 0; i < radio4.length; i++) {
+            if (radio4[i].checked) {
+                g4= radio4[i].value * 1;
+            }
+        }
+
+        let radio5 = document.getElementsByName('g5');
+        let g5 = 0;
+        for (let i = 0; i < radio5.length; i++) {
+            if (radio5[i].checked) {
+                g5= radio5[i].value * 1;
+            }
+        }
+
+        let radio6 = document.getElementsByName('g6');
+        let g6 = 0;
+        for (let i = 0; i < radio6.length; i++) {
+            if (radio6[i].checked) {
+                g6= radio6[i].value * 1;
+            }
+        }
+
+        let radio7 = document.getElementsByName('g7');
+        let g7 = 0;
+        for (let i = 0; i < radio7.length; i++) {
+            if (radio7[i].checked) {
+                g7= radio7[i].value * 1;
+            }
+        }
+
+        let radio8 = document.getElementsByName('g8');
+        let g8 = 0;
+        for (let i = 0; i < radio8.length; i++) {
+            if (radio8[i].checked) {
+                g8= radio8[i].value * 1;
+            }
+        }
+
+        let radio9 = document.getElementsByName('g9');
+        let g9 = 0;
+        for (let i = 0; i < radio9.length; i++) {
+            if (radio9[i].checked) {
+                g9= radio9[i].value * 1;
+            }
+        }
+
+        let radio10 = document.getElementsByName('g10');
+        let g10 = 0;
+        for (let i = 0; i < radio10.length; i++) {
+            if (radio10[i].checked) {
+                g10= radio10[i].value * 1;
+            }
+        }
+
+        let radio11 = document.getElementsByName('g11');
+        let g11 = 0;
+        for (let i = 0; i < radio11.length; i++) {
+            if (radio11[i].checked) {
+                g11= radio11[i].value * 1;
+            }
+        }
+
+        let radio12 = document.getElementsByName('g12');
+        let g12 = 0;
+        for (let i = 0; i < radio12.length; i++) {
+            if (radio12[i].checked) {
+                g12= radio12[i].value * 1;
+            }
+        }
+
+        let radio13 = document.getElementsByName('g13');
+        let g13 = 0;
+        for (let i = 0; i < radio13.length; i++) {
+            if (radio13[i].checked) {
+                g13= radio13[i].value * 1;
+            }
+        }
+
+        let radio14 = document.getElementsByName('g14');
+        let g14 = 0;
+        for (let i = 0; i < radio14.length; i++) {
+            if (radio14[i].checked) {
+                g14= radio14[i].value * 1;
+            }
+        }
+
+        let radio15 = document.getElementsByName('g15');
+        let g15 = 0;
+        for (let i = 0; i < radio15.length; i++) {
+            if (radio15[i].checked) {
+                g15= radio15[i].value * 1;
+            }
+        }
+
+        let radio16 = document.getElementsByName('g16');
+        let g16 = 0;
+        for (let i = 0; i < radio16.length; i++) {
+            if (radio16[i].checked) {
+                g16= radio16[i].value * 1;
+            }
+        }
+
+        let radio17 = document.getElementsByName('g17');
+        let g17 = 0;
+        for (let i = 0; i < radio17.length; i++) {
+            if (radio17[i].checked) {
+                g17= radio17[i].value * 1;
+            }
+        }
+
+        document.form.total.value = g1 + g2 + g3 + g4 + g5 + g6 + g7 + g8 + g9 + g10 + g11 + g12 + g13 + g14 + g15 + g16 + g17 ;
+    }
+</script>
+</body>
+</html>

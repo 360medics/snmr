@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Score ASDAS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script type="text/javascript" src="script_amor.js"></script>
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body class="scorebody">
+<p class="common_h1">Score ASDAS</p>
+<p class="italic">Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême) concernant votre ressenti.</p>
+<h2>Saisie du score</h2>
+<form name="form" id="form">
+    <label for="vItem1">1. Où situez-vous votre degré global de douleur au niveau du cou, du dos et des hanches dans le cadre de votre spondylarthrite ankylosante ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem1" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label>2. Quelle est la durée de votre raideur matinale à partir de votre réveil ?</label><br>
+    <div class="flex-column">
+        <label class="flex-row">
+            <input name="g1" checked id="item1" type="radio" value="0" onclick="calculate()" /><label for="item1">Aucune</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item2" type="radio" value="1.25" onclick="calculate()" /><label for="item2">15 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item3" type="radio" value="2.5" onclick="calculate()" /><label for="item3">30 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item4" type="radio" value="3.75" onclick="calculate()" /><label for="item4">45 minutes</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item5" type="radio" value="5" onclick="calculate()" /><label for="item5">1 heure</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item6" type="radio" value="6.25" onclick="calculate()" /><label for="item6">1h15</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item7" type="radio" value="7.5" onclick="calculate()" /><label for="item7">1h30</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item8" type="radio" value="8.75" onclick="calculate()" /><label for="item8">1h45</label>
+        </label>
+        <label class="flex-row">
+            <input name="g1" id="item9" type="radio" value="10" onclick="calculate()" /><label for="item9">2h ou plus</label>
+        </label>
+    </div>
+    <br>
+    <label for="vItem3">3. Comment évaluez-vous globalement de votre maladie ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem3" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <label for="vItem4">4. Où situez-vous votre degré de gonflement ou de douleur articulaire en dehors du cou, du dos et des hanches ?</label>
+    <div class="flex-row">
+        <input min=0 max=10 name="Resultat" type="number" id="vItem4" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+    </div>
+    <br>
+    <br>
+    <div class="flex-row">
+        <input name="g2" type="radio" checked id="useCRP" value="0" onclick="calculate()"><label for="useCRP"> Utiliser CRP.</label>
+    </div>
+    <div class="flex-row">
+        <input name="g2" type="radio" id="useVS" value="0.29" onclick="calculate()"><label for="useVS"> Utiliser VS.</label>
+    </div>
+    <br>
+    <div class="flex-row">
+        <label for="vCRP"></label>
+        <p>CRP :&nbsp;</p>
+        <input name="vCRP" id="vCRP" type="number" class="input-asdas" onchange="useCRP.checked='true';calculate()"> <p> mg/l</p>
+    </div>
+    <div class="flex-row">
+        <label for="vVS"></label>
+        <p>VS :&nbsp;</p>
+        <input name="vVS" id="vVS" type="number" class="input-asdas" onchange="useVS.checked='true';calculate()"> <p> s</p>
+    </div>
+    <h2>Score</h2>
+    <div class="flex-row sa">
+        <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
+    </div>
+    <br>
+    <br>
+    <div class="export">
+        <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+    </div>
+</form>
+<div class="score_inter">Interprétation</div>
+<span class="description">Le score ASDAS (Ankylosing Spondylitis Disease Activity Score) permet de quantifier l'activité d'une spondylarthrite ankylosante. Les seuils d'activité retenus sont:</span>
+<ul>
+    <li>Score < 1,3 : Inactif.</li>
+    <li>Score ≥ 1,3 et < 2,1 : Modéré.</li>
+    <li>Score ≥ 2,1 et < 3,5 : Actif.</li>
+    <li>Score ≥ 3,5 : Très actif.</li>
+</ul>
+<div class="score_ref">Références</div>
+<span class="description">Lukas C, Landewe R, Sieper J, Dougados M, Davis J, Braun J, et al. Development of an ASAS-endorsed disease activity score (ASDAS) in patients with ankylosing spondylitis. Ann Rheum Dis. 2009 Jan; 68(1):18-24.<br>
+        Van der Heijde D, et al. ASDAS, a highly discriminatory ASAS-endorsed disease activity score in patients with ankylosing spondylitis. Ann Rheum Dis 2009;68:1811-8.</span>
+<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+<script type="text/javascript">
+    function calculate()
+    {
+        let radios = document.getElementsByName('g1');
+        let radio1 = 0;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                radio1= radios[i].value * 1;
+            }
+        }
+
+        let radios2 = document.getElementsByName('g2');
+        let radio2 = 0;
+        for (let j = 0; j < radios2.length; j++) {
+            if (radios2[j].checked) {
+                radio2= radios2[j].value * 1;
+            }
+        }
+
+        if(document.form.useCRP.checked === true) {
+            var abc = 0.121 * document.form.vItem1.value + 0.058 * radio1 + 0.110 * document.form.vItem3.value + 0.073 * document.form.vItem4.value + 0.579 * Math.log(document.form.vCRP.value * 1 + 1);
+        } else {
+            var abc = 0.079 * document.form.vItem1.value + 0.069 * radio1 + 0.113 * document.form.vItem3.value + 0.086 * document.form.vItem4.value + 0.293 * Math.sqrt(document.form.vVS.value * 1 + 1);
+        }
+        abc = Math.round(abc * 100) / 100;
+        document.form.total.value = abc ;
+    }
+</script>
+</body>
+</html>
