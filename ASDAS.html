@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style_common.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body class="scorebody">
-<p class="common_h1">Score ASDAS</p>
+<body>
+<h1>Score ASDAS</h1>
 <p class="italic">Pour chaque item, indiquez une valeur de 0 (absent) à 10 (extrême) concernant votre ressenti.</p>
 <h2>Saisie du score</h2>
 <form name="form" id="form">
     <label for="vItem1">1. Où situez-vous votre degré global de douleur au niveau du cou, du dos et des hanches dans le cadre de votre spondylarthrite ankylosante ?</label>
     <div class="flex-row">
-        <input min=0 max=10 name="Resultat" type="number" id="vItem1" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+        <input min=0 max=10 name="Resultat" type="number" id="vItem1" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
     </div>
     <br>
     <label>2. Quelle est la durée de votre raideur matinale à partir de votre réveil ?</label><br>
@@ -52,12 +52,12 @@
     <br>
     <label for="vItem3">3. Comment évaluez-vous globalement de votre maladie ?</label>
     <div class="flex-row">
-        <input min=0 max=10 name="Resultat" type="number" id="vItem3" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+        <input min=0 max=10 name="Resultat" type="number" id="vItem3" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
     </div>
     <br>
     <label for="vItem4">4. Où situez-vous votre degré de gonflement ou de douleur articulaire en dehors du cou, du dos et des hanches ?</label>
     <div class="flex-row">
-        <input min=0 max=10 name="Resultat" type="number" id="vItem4" class="input input_das margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
+        <input min=0 max=10 name="Resultat" type="number" id="vItem4" class="input-basdai margin-r-5" onchange="calculate()" /> <p>(0 = absent, 10 = extrême)</p>
     </div>
     <br>
     <br>
@@ -71,14 +71,14 @@
     <div class="flex-row">
         <label for="vCRP"></label>
         <p>CRP :&nbsp;</p>
-        <input name="vCRP" id="vCRP" type="number" class="input-asdas" onchange="useCRP.checked='true';calculate()"> <p> mg/l</p>
+        <input name="vCRP" id="vCRP" type="number" class="input-basdai" onchange="useCRP.checked='true';calculate()"> <p> mg/l</p>
     </div>
     <div class="flex-row">
         <label for="vVS"></label>
         <p>VS :&nbsp;</p>
-        <input name="vVS" id="vVS" type="number" class="input-asdas" onchange="useVS.checked='true';calculate()"> <p> s</p>
+        <input name="vVS" id="vVS" type="number" class="input-basdai" onchange="useVS.checked='true';calculate()"> <p> s</p>
     </div>
-    <h2>Score</h2>
+    <h2>Score : </h2>
     <div class="flex-row sa">
         <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
     </div>

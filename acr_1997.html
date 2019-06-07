@@ -11,8 +11,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">Critères de classification ACR 1982, mis à jour en 1997<br />
+<body>
+<h1>Critères de classification ACR 1982, mis à jour en 1997</h1>
 
 <h2>Évaluation</h2>
 
@@ -108,18 +108,27 @@
         </tr>
     </table>
     <br />
+    <!--<h2 class="total">Score :</h2>-->
+    <!--<div class="flex-column center">-->
+        <!--<div class="flex-row">-->
+        <!--<input class="margin0 acr_eular_2010-input center" name="Resultat" type="text" id="Resultat" disabled /><br>-->
+            <!--<span id="score_result_confirm">/11</span><br>-->
+            <!--<label for="Resultat"></label>-->
+        <!--</div>-->
+        <!--<input class="acr_eular_2010-result" name="Mot" type="text" id="reponse" disabled /><label for="reponse"></label>-->
+    <!--</div>-->
 
     <div class="score_result">
-        Score
-        <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
-        <span id="score_result_confirm">/11</span>
-        <input class="reponse" name="Mot" type="text" id="reponse" disabled readonly="readonly" />
+        <h2 class="left">Score : </h2>
+        <input name="Resultat" type="text" id="Resultat" disabled  />
+        <span id="score_result_confirm">/11</span><br>
+        <input class="reponse" name="Mot" type="text" id="reponse" disabled />
     </div>
 </form>
 <br>
 <br>
 <div class="export">
-    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+    <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
 </div>
 <br>
 <div class="score_inter">Interprétation</div>

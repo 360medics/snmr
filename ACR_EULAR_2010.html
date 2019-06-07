@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>ACR/EULAR 2010</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<h1>ACR/EULAR 2010</h1>
+<div class="content">
+    <form name="form" id="form">
+        <form>
+            <div class="flex-column">
+                <h2>Atteinte articulaire</h2>
+                <label class="flex-row">
+                    <input name="g1" id="vItem1" checked type="radio" value="0" onclick="Calculate()" />
+                    <label for="vItem1">1 grosse articulation</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g1" id="vItem2" type="radio" value="1" onclick="Calculate()" />
+                    <label for="vItem2">2 à 10 grosses articulations</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g1" id="vItem3" type="radio" value="2" onclick="Calculate()" />
+                    <label for="vItem3">1 à 3 petites articulations (avec ou sans atteinte de grosses articulations)</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g1" id="vItem4" type="radio" value="3" onclick="Calculate()" />
+                    <label for="vItem4">4 à 10 petites articulations (avec ou sans atteinte de grosses articulations)</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g1" id="vItem5" type="radio" value="5" onclick="Calculate()" />
+                    <label for="vItem5">> 10 articulations (au moins une petite articulation)</label>
+                </label>
+                <br>
+                <h2>Sérologie</h2>
+                <label class="flex-row">
+                    <input name="g2" id="vItem6" checked type="radio" value="0" onclick="Calculate()" />
+                    <label for="vItem6">FR négatif et ACPA négatifs</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g2" id="vItem7" type="radio" value="2" onclick="Calculate()" />
+                    <label for="vItem7">FR faiblement positif ou ACPA faiblement positifs</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g2" id="vItem8" type="radio" value="3" onclick="Calculate()" />
+                    <label for="vItem8">FR hautement positif ou ACPA hautement positifs</label>
+                </label>
+                <br>
+                <h2>Marqueurs de la phase aiguë</h2>
+                <label class="flex-row">
+                    <input name="g3" id="vItem9" checked type="radio" value="0" onclick="Calculate()" />
+                    <label for="vItem9">CRP normale et ESR normale</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g3" id="vItem10" type="radio" value="1" onclick="Calculate()" />
+                    <label for="vItem10">CRP anormale ou VS anormale</label>
+                </label>
+                <br>
+                <h2>Durée des symptômes</h2>
+                <label class="flex-row">
+                    <input name="g4" id="vItem11" checked type="radio" value="0" onclick="Calculate()" />
+                    <label for="vItem11">< 6 semaines</label>
+                </label>
+                <label class="flex-row">
+                    <input name="g4" id="vItem12" type="radio" value="1" onclick="Calculate()" />
+                    <label for="vItem12">>= 6 semaines</label>
+                </label>
+            </div>
+            <h2 class="total">Total :</h2>
+            <div class="flex-column center">
+                <input class="margin0 acr_eular_2010-input center" name="total" type="number" id="total" disabled /><br><label for="total"></label>
+                <input class="acr_eular_2010-result" name="resultat" type="text" id="ResultatMessage" disabled /><label for="ResultatMessage"></label>
+            </div>
+            <br>
+            <div class="export">
+                <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+            </div>
+            <br>
+            <div class="score_inter">Informations</div>
+            <span class="description">Les critères ACR/EULAR 2010<sup><a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/20872595">1</a></sup> sont une méthode de classification des patients comme ayant ou non une polyarthrite rhumatoïde. C'est une initiative conjointe de l'American College of Rheumatology (ACR) et de l'EUropean League Against Rheumatism (EULAR). ACR/EULAR 2010 est le successeur du précédent ACR/EULAR 1987, qui a été critiqué pour son manque de sensibilité au début de la maladie.</span>
+            <br><br><span class="description bold">À quel patient les critères doivent-ils être appliqués ?</span>
+            <br><br><span class="description">Patients qui :</span>
+            <ol class="description">
+                <li>vous avez au moins 1 articulation avec une synovite clinique définitive (gonflement)*</li>
+                <li>avec la synovite pas mieux expliquée par une autre maladie**</li>
+            </ol>
+            <span class="description bold">ACR/EULAR 2010 et RheumaKit ?</span>
+            <span class="description">Ces critères sont une norme dans les études cliniques pour avoir un groupe cohérent de patients atteints de PR. Néanmoins, ils manquent de sensibilité et de spécificité. Dans notre cohorte de référence de patients atteints d'arthrite indifférenciée [2], ils présentaient une sensibilité de 51 % tandis que le RheumaKit sur les mêmes patients donnait une sensibilité de 93,5 %. La valeur prédite positive (c.à.d. le taux auquel les critères sont exacts lorsqu'ils prédisent la PR) était de 72 % sur ces patients tandis que RheumaKit atteignait 84,9 % sur les mêmes patients. Des informations supplémentaires sur <a href="https://www.rheumakit.com/fr/instructions" target="_blank">comment utiliser RheumaKit pour le diagnostic différentiel de l'arthrite</a> et sur ses performances sont disponibles en ligne.</span>
+            <br><br><span class="description bold">Comment utiliser l'ACR/EULAR 2010 ?</span>
+            <br><br><span class="description">ACR/EULAR 2010 tient compte des éléments suivants :</span>
+            <ul class="description">
+                <li>L'atteinte articulaire désigne toute articulation enflée ou sensible à l'examen, qui peut être confirmée par une preuve de synovite par imagerie. Les articulations interphalangiennes distales, les premières articulations carpo-métacarpiennes et les premières articulations métatarso-phalangiennes sont exclues de l'évaluation. Les catégories de distribution d'articulations sont classées selon la localisation et le nombre d'articulations atteintes, avec affectation dans la catégorie la plus élevée possible sur la base du profil de l'atteinte articulaire. « Grosses articulations » désigne les épaules, les coudes, les hanches, les genoux et les chevilles. « Petites articulations » désigne les articulations métacarpo-phalangiennes, les articulations interphalangiennes proximales, les secondes à cinquième articulations métatarso-phalangiennes, les articulations interphalangiennes des pouces et les poignets.</li>
+                <li>Sérologie :
+                    <ul>
+                        <li>Les valeurs négatives correspondent à des valeurs UI qui sont inférieures ou égales à la limite supérieure de la normale (LSN) pour le laboratoire et le dosage ;</li>
+                        <li>Les valeurs faiblement positives désignent les valeurs UI qui sont supérieures à la LSN mais ≤ 3 la LSN pour le laboratoire et le dosage ;</li>
+                        <li>la mention fortement positive indique des valeurs UI qui sont > 3 fois la LSN pour le laboratoire et le dosage.</li>
+                        <li>Lorsque des informations concernant le facteur rhumatoïde (FR) ne sont disponibles que sous forme positive ou négative, un résultat positif doit être noté comme faiblement positif pour FR.</li>
+                        <li>FR signifie facteur rhumatoïde.</li>
+                        <li>ACPA = anticorps contre la protéine citrullinée.</li>
+                    </ul></li>
+                <li>Marqueurs de la phase aiguë :
+                    <ul>
+                        <li>Normale/anormale est déterminé par les normes du laboratoire local.</li>
+                        <li>CRP signifie protéine C-réactive</li>
+                        <li>VS signifie vitesse de sédimentation des érythrocytes.</li>
+                    </ul></li>
+                <li>La durée des symptômes désigne une auto-notification par le patient de la durée des signes ou des symptômes de synovite (p. ex. douleur, gonflement, sensibilité) des articulations qui sont cliniquement atteintes au moment de l'évaluation, indépendamment du statut du traitement.</li>
+            </ul>
+            <span class="description"><span class="bold">Remarque supplémentaire :</span> bien que les patients ayant un score < 6/10 ne soient pas classables comme ayant une PR, leur statut peut être réévalué et les critères peuvent être remplis de manière cumulative au cours du temps.</span>
+            <br><br>
+            <span class="description small italic">* Les critères sont destinés à la classification des patients récemment diagnostiqués. De plus, les patients atteints de pathologie érosive typique de la polyarthrite rhumatoïde (PR) avec des antécédents compatibles avec les critères de 2010 doivent être classés comme ayant une PR. Les patients malades depuis longtemps, y compris ceux dont la maladie est inactive (avec ou sans traitement) qui, d'après les données rétrospectives disponibles, ont préalablement rempli les critères de 2010, doivent être classés comme ayant une PR.</span>
+            <br><br><span class="description small italic">** Les diagnostics différentiels varient selon les patients avec des présentations différentes, mais peuvent englober des pathologies telles que le lupus érythémateux disséminé, l'arthrite psoriasique et la goutte. Un rhumatologue expert doit être consulté en cas de doute sur les diagnostics différentiels pertinents à envisager.</span>
+            <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+        </form>
+    </form>
+</div>
+<script type="text/javascript">
+    function GetRadioValue(id)
+    {
+        let radios = document.getElementsByName(id);
+        let total = 0;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                total = radios[i].value * 1;
+            }
+        }
+        return total;
+    }
+
+    function Calculate()
+    {
+        let res = 0;
+        for(let i=1; i<30; i++) {
+            res += GetRadioValue('g' + i);
+        }
+        document.form.total.value = res;
+
+        if (res >= 6) {
+            document.form.resultat.value = "Polyarthrite rhumatoïde : Oui"
+        } else {
+            document.form.resultat.value = "Polyarthrite rhumatoïde : Non"
+        }
+    }
+</script>
+</body>
+</html>

@@ -11,23 +11,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">2010 ACR Fibromyalgia Diagnostic Criteria (Modified 2011)</p>
+<body>
+<h1>2010 ACR Fibromyalgia Diagnostic Criteria (Modified 2011)</h1>
 
-<form name="Form" id="Form">
-    <h2></h2>
+<form name="Form" id="Form" action="">
     <div>
-        A patient satisfies diagnostic criteria for fibromyalgia if the following conditions are met:<br/>
-        1. Widespread pain index (WPI) ≥7 and symptom severity (SS) scale score ≥5 or WPI 3-6 and SS scale score ≥9.<br/>
+        A patient satisfies diagnostic criteria for fibromyalgia if the following conditions are met :<br/>
+        1. Widespread pain index (WPI) ≥ 7 and symptom severity (SS) scale score ≥ 5 or WPI 3-6 and SS scale score ≥ 9.<br/>
         2. Symptoms have been present at a similar level for at least 3 months.<br/>
-        3. The patient does not have a disorder that would otherwise explain the pain<br/>
+        3. The patient does not have a disorder that would otherwise explain the pain.<br/>
     </div>
 
     <h2>Take this test and add</h2>
     <div>
 
         <div class="score_result">
-            <input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled readonly="readonly"/>
+            <input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled /><label for="ResultatWPI"></label>
             WPI: Check each area you’ve had pain over the last week.
             <span style="font-size:14px; font-weight:normal;"><br/>(score will be between 0 and 19)<br/><br/></span>
         </div>
@@ -209,7 +208,7 @@
         <table class="acr_2010">
             <tr>
                 <td>
-                    <input class="input_score" name="ResultatFatigue" type="text" id="ResultatFatigue" style="" disabled readonly="readonly"/>
+                    <input class="input_score" name="ResultatFatigue" type="text" id="ResultatFatigue" style="" disabled /><label for="ResultatFatigue"></label>
                 </td>
                 <td class="score_subtitle">Fatigue (Score 0-3)
                 </td>
@@ -240,7 +239,7 @@
             </tr>
             <tr>
                 <td>
-                    <input class="input_score" name="ResultatWaking" type="text" id="ResultatWaking" style="" disabled readonly="readonly"/>
+                    <input class="input_score" name="ResultatWaking" type="text" id="ResultatWaking" style="" disabled /><label for="ResultatWaking"></label>
                 </td>
                 <td class="score_subtitle">Waking unrefreshed (Score 0-3)
                 </td>
@@ -271,7 +270,7 @@
             </tr>
             <tr>
                 <td>
-                    <input class="input_score" name="ResultatCognitive" type="text" id="ResultatCognitive" style="" disabled readonly="readonly"/>
+                    <input class="input_score" name="ResultatCognitive" type="text" id="ResultatCognitive" style="" disabled /><label for="ResultatCognitive"></label>
                 </td>
                 <td class="score_subtitle">Cognitive symptoms ("brain fog" Score 0-3)
                 </td>
@@ -283,7 +282,7 @@
                 </td>
                 <td>
                     <label class="flex-row">
-                        <input name="vItemCognitive" id="vItem25" type="radio" value="1" onclick="f_CalculerCognitive();f" />
+                        <input name="vItemCognitive" id="vItem25" type="radio" value="1" onclick="f_CalculerCognitive();" />
                         <label for="vItem25">1</label>
                     </label>
                 </td>
@@ -313,8 +312,8 @@
             <tr>
                 <td>
                     <div class="flex-row">
-                        <input class="input_score" name="ResultatHeadaches" type="text" id="ResultatHeadaches" style="" disabled readonly="readonly"/><br/>
-                        <label class="flex-row">
+                        <input class="input_score" name="ResultatHeadaches" type="text" id="ResultatHeadaches" style="" disabled /><br/><label for="ResultatHeadaches"></label>
+                        <label class="flex-row margin-top-9">
                             <input id="vItemHeadaches" type="checkbox" value="0" onclick="f_CalculerHeadaches();">
                             <span>Headaches (Score 0-1)</span>
                         </label>
@@ -324,8 +323,8 @@
             <tr>
                 <td>
                     <div class="flex-row">
-                        <input class="input_score" name="ResultatPain" type="text" id="ResultatPain" style="" disabled readonly="readonly"/><br/>
-                        <label class="flex-row">
+                        <input class="input_score" name="ResultatPain" type="text" id="ResultatPain" style="" disabled /><br/><label for="ResultatPain"></label>
+                        <label class="flex-row margin-top-9">
                             <input id="vItemPain" type="checkbox" value="0" onclick="f_CalculerPain();">
                             <span>Pain or cramps in lower abdomen (Score 0-1)</span>
                         </label>
@@ -335,8 +334,8 @@
             <tr>
                 <td>
                     <div class="flex-row">
-                        <input class="input_score" name="ResultatDepression" type="text" id="ResultatDepression" style="" disabled readonly="readonly"/><br/>
-                        <label class="flex-row">
+                        <input class="input_score" name="ResultatDepression" type="text" id="ResultatDepression" style="" disabled /><br/><label for="ResultatDepression"></label>
+                        <label class="flex-row margin-top-9">
                             <input id="vItemDepression" type="checkbox" value="0" onclick="f_CalculerDepression();">
                             <span>Depression (Score 0-1)</span>
                         </label>
@@ -347,21 +346,27 @@
     </div>
 <br>
 <br>
-    <div class="score_result">
-        <input name="ResultatSS" type="text" id="ResultatSS" style="" disabled readonly="readonly"/>
-        Total SS Scale score (adding the 6 items above).
-        <span style="font-size:14px; font-weight:normal;"><br/>The final score is between 0 and 12.<br/></span>
+    <h2 class="total">Score :</h2>
+    <div class="flex-column center">
+        <input class="margin0 acr_eular_2010-input center" name="ResultatSS" type="text" id="ResultatSS" style="" disabled /><label for="ResultatSS"></label>
+        <input class="acr_eular_2010-result" id="text-res" type="text" disabled /><label for="text-res" class="center"><span class="center bold">Total SS Scale score (adding the 6 items above).</span> <br><span class="acr_eular_2010-result" style="font-size:14px; font-weight:bold;">The final score is between 0 and 12.</span></label>
     </div>
+    <!--<div class="score_result">-->
+        <!--Score :-->
+        <!--<input name="ResultatSS" type="text" id="ResultatSS" style="" disabled /><label for="ResultatSS"></label>-->
+        <!--Total SS Scale score (adding the 6 items above).-->
+        <!--<span style="font-size:14px; font-weight:normal;"><br/>The final score is between 0 and 12.<br/></span>-->
+    <!--</div>-->
 </form>
 
 <br>
 <br>
 <div class="export">
-    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+    <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
 </div>
 <br>
 
-<span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+<p class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</p>
 
 <script type="text/javascript">
 
@@ -461,7 +466,7 @@
     {
         // calcul du résultat
         var Res = 0;
-        for(var i=1; i<20; i++)
+        for(var i=1; i < 20; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
 
         // Affichage du résultat

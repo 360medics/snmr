@@ -11,8 +11,8 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">Calculateur DAS28</p>
+<body>
+<h1>Calculateur DAS28</h1>
 
 
 <h2>Méthode</h2>
@@ -22,17 +22,17 @@
   une évaluation objective, reproductible et comparable de l'activité de la polyarthrite rhumatoïde.
   <div>
 
-    <form name="Form" id="Form">
+    <form name="Form" id="Form" action="">
       <h2>Score des articulations</h2>
 
       <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
-          <td><label for="Crit01" id="Tjc28_label">Nombre d'articulations douloureuses (0 - 28)</label></td>
+          <td><label for="Tjc28" id="Tjc28_label">Nombre d'articulations douloureuses (0 - 28)</label></td>
           <td>
             <input name="Resultat" type="number" id="Tjc28" class="input_das" onchange="f_Calculer()" /></td>
         </tr>
         <tr>
-          <td><label for="Crit01" id="Sjc28_label">Nombre d'articulations enflées (0 - 28)</label></td>
+          <td><label for="Sjc28" id="Sjc28_label">Nombre d'articulations enflées (0 - 28)</label></td>
           <td style="width: 30%"><input name="Resultat" type="number" id="Sjc28" class="input_das" onchange="f_Calculer()" /></td>
         </tr>
       </table>
@@ -40,26 +40,34 @@
       <h2>Mesures</h2>
       <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
-          <td><label for="Crit01">VS (mm/première heure)</label></td>
+          <td><label for="Vs">VS (mm/première heure)</label></td>
           <td><input name="Crit01" id="Vs" type="number" value="" onchange="f_Calculer()" class="input_das test" /></td>
         </tr>
         <tr>
-          <td><label for="Crit01" id="Gh_label">Etat de santé général (de 0 = le meilleur à 100 = le pire)</label></td>
+          <td><label for="Gh" id="Gh_label">Etat de santé général (de 0 = le meilleur à 100 = le pire)</label></td>
           <td style="width: 30%"><input name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das test" /></td>
         </tr>
       </table>
       <br />
 
+
       <div class="score_result">
-        <h2>Score</h2>
-        <div class="flex-row">
-          <input name="Mot" type="text" id="reponse" disabled class="input margin0 widthAuto" />
-          <input class="reponse text-result margin0 input" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" disabled  />
-        </div></div>
+        <h2 class="left">Score :</h2>
+        <span class="flex-column center">
+          <input name="Mot" type="text" id="reponse" disabled class="margin0 widthAuto center" /><br>
+          <input class="text-result margin0 center width100" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" disabled  />
+        </span>
+      </div>
+
+
+
+
+
+
     </form>
     <br>
     <div class="export">
-      <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+      <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
     </div>
     <br>
     <div class="score_ref">Interprétation</div>

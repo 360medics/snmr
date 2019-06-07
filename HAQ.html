@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HAQ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>HAQ</h1>
+<div class="content">
+    <form name="form" id="form">
+        <div><br>
+            <div class="flex-column">
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous habiller vous-même, notamment en ce qui concerne les lacets des chaussures et les boutons ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select1">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous faire des shampoings ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select2"></label>
+                        <select onchange="Calculate()" id="select2">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous lever d'une chaise droite ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select3"></label>
+                        <select onchange="Calculate()" id="select3">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous mettre au lit et en sortir ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select4"></label>
+                        <select onchange="Calculate()" id="select4">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous couper vous-même votre viande ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select5"></label>
+                        <select onchange="Calculate()" id="select5">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous amener une tasse ou un verre plein jusqu'à votre bouche ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select6"></label>
+                        <select onchange="Calculate()" id="select6">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous ouvrir une boîte de lait ou de jus neuve ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select7"></label>
+                        <select onchange="Calculate()" id="select7">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous marcher à l'extérieur sur un sol plat ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select8"></label>
+                        <select onchange="Calculate()" id="select8">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous monter cinq marches ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select9"></label>
+                        <select onchange="Calculate()" id="select9">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous laver et vous sécher ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select10"></label>
+                        <select onchange="Calculate()" id="select10">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous prendre un bain ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select11"></label>
+                        <select onchange="Calculate()" id="select11">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous asseoir sur les toilettes et vous en relever ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select12"></label>
+                        <select onchange="Calculate()" id="select12">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous soulever un objet de 2 kilos situé au-dessus de votre tête et le descendre ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select13"></label>
+                        <select onchange="Calculate()" id="select13">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous pencher pour prendre des vêtements au sol ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select14"></label>
+                        <select onchange="Calculate()" id="select14">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous ouvrir les portes de voiture ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select15"></label>
+                        <select onchange="Calculate()" id="select15">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous dévisser des couvercles de bocaux déjà ouverts ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select16"></label>
+                        <select onchange="Calculate()" id="select16">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous ouvrir et fermer des robinets ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select17"></label>
+                        <select onchange="Calculate()" id="select17">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous faire les courses et du shopping ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select18"></label>
+                        <select onchange="Calculate()" id="select18">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous monter et descendre de voiture ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select19"></label>
+                        <select onchange="Calculate()" id="select19">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous faire des tâches telles que passer l'aspirateur ou le jardinage ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select20"></label>
+                        <select onchange="Calculate()" id="select20">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.05">Avec une certaie difficulté</option>
+                            <option value="0.10">Avec beaucoup de difficultés</option>
+                            <option value="0.15">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                <h2 class="total">Total :</h2>
+                <div class="flex-column center">
+                <label for="total"></label>
+                <input class="acr_eular_2010-input" name="total" type="number" id="total" disabled/>
+                <input class="acr_eular_2010-result font-size-08" name="resultat" type="text" id="ResultatMessage" disabled /><label for="ResultatMessage"></label>
+            </div>
+
+            <br>
+            <div class="export">
+                <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+            </div>
+            <br>
+            <br>
+            <div class="score_inter">Informations sur le HAQ-DI</div>
+            <span class="description">HAQ-DI ou Health Assessment Questionnaire without Didability Index<sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC165587/" target="_blank">1</a></sup> est un indice de mesure de qualité de vie en matière de santé, dérivé du HAQ, plus long. Le HAQ date des années 1980. Il s'agit d'un indice très général. Dans le contexte de RheumaKit, cet indice estime à quel point l'arthrite a un impact sur la vie de tous les jours. Le questionnaire est conçu pour être rempli par le patient lui-même, sans l'aide d'un médecin.</span>
+            <br>
+            <br>
+            <span class="description">Le HAQ a été réalisé par le Stanford Arthritis, Rheumatism, and Aging Medical Information System (ARAMIS) plus de 200.000 fois dans des contextes de routine et de recherche, et est également recommandé par l'American College of Rheumatology (ACR) pour mesurer la fonctionnalité physique dans les études concernant la polyarthrite rhumatoïde<sup><a href="https://www.ncbi.nlm.nih.gov/pubmed/8507213" target="_blank">2</a></sup>, <sup><a href="https://www.ncbi.nlm.nih.gov/pubmed/12508408" target="_blank">3</a></sup>.</span>
+            <br>
+            <br>
+            <span class="description">La valeur de l'indice HAQ-DI peut être interprétée en termes de 3 catégories :</span>
+            <ul>
+                <li>de 0 à 1 : difficultés légères à invalidité modérée,</li>
+                <li>de 1 à 2 : invalidité modérée à sevère,</li>
+                <li>de 2 à 3 : invalidité sévère à très sévère.</li>
+            </ul>
+            <span class="description">Le score moyen rapporté dans des études sur l'arthrose est de 0.8 et de 1.2 dans des études sur la polyarthrite rhumatoïde. Il est de 0.49 dans la population globale.</span>
+            <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function Calculate()
+    {
+        let res = 0;
+
+        res += parseFloat(document.getElementById("select1").value);
+        res += parseFloat(document.getElementById("select2").value);
+        res += parseFloat(document.getElementById("select3").value);
+        res += parseFloat(document.getElementById("select4").value);
+        res += parseFloat(document.getElementById("select5").value);
+        res += parseFloat(document.getElementById("select6").value);
+        res += parseFloat(document.getElementById("select7").value);
+        res += parseFloat(document.getElementById("select8").value);
+        res += parseFloat(document.getElementById("select9").value);
+        res += parseFloat(document.getElementById("select10").value);
+        res += parseFloat(document.getElementById("select11").value);
+        res += parseFloat(document.getElementById("select12").value);
+        res += parseFloat(document.getElementById("select13").value);
+        res += parseFloat(document.getElementById("select14").value);
+        res += parseFloat(document.getElementById("select15").value);
+        res += parseFloat(document.getElementById("select16").value);
+        res += parseFloat(document.getElementById("select17").value);
+        res += parseFloat(document.getElementById("select18").value);
+        res += parseFloat(document.getElementById("select19").value);
+        res += parseFloat(document.getElementById("select20").value);
+
+        document.form.total.value = Math.round(res*100)/100;
+
+        if (res <= 1) {
+            document.form.resultat.value = "Difficultés légères à invalidité modérée"
+        } else if (res >= 1.01 && res <=2) {
+            document.form.resultat.value = "Invalidité modérée à sévère"
+        } else if (res > 2) {
+            document.form.resultat.value = "Invalidité sévère à très sévère"
+        }
+    }
+</script>
+</body>
+</html>

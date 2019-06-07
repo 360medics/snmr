@@ -11,8 +11,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">FIRST<br />
+<body>
+<h1>FIRST</h1>
 
 <h2>Évaluation</h2>
 
@@ -69,15 +69,18 @@
     </table>
     <br />
 
-    <div class="score_result">
+    <div class="score_result left">
         <span id="score_result_confirm">Items présents :</span>
-        <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
+    </div>
+    <br>
+    <div class="score_result">
+        <input name="Resultat" type="text" id="Resultat" style="" disabled  />
     </div>
 </form>
 <br>
 <br>
 <div class="export">
-    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+    <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
 </div>
 <br>
 <div class="score_inter">Interprétation</div>

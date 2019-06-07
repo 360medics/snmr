@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>RAPID3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>RAPID3</h1>
+<div class="content">
+    <form name="form" id="form">
+        <div><br>
+            <div class="flex-column">
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous habiller vous-même, notamment en ce qui concerne les lacets des chaussures et les boutons ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select1">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous mettre au lit et en sortir ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select2"></label>
+                        <select onchange="Calculate()" id="select2">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous amener une tasse ou un verre plein jusqu'à votre bouche ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select3"></label>
+                        <select onchange="Calculate()" id="select3">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous marcher à l'extérieur sur un sol plat ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select4"></label>
+                        <select onchange="Calculate()" id="select4">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous laver et vous sécher ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select5"></label>
+                        <select onchange="Calculate()" id="select5">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous vous pencher pour prendre des vêtements au sol ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select6"></label>
+                        <select onchange="Calculate()" id="select6">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous ouvrir et fermer des robinets ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select7"></label>
+                        <select onchange="Calculate()" id="select7">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous monter et descendre de voiture ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select8"></label>
+                        <select onchange="Calculate()" id="select8">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous marcher trois kilomètres, si vous le voulez ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select9"></label>
+                        <select onchange="Calculate()" id="select9">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous participer à des activités récréatives et sportives comme vous le souhaitez, si vous le voulez ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select10"></label>
+                        <select onchange="Calculate()" id="select10">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous obtenir une bonne nuit de sommeil ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select11"></label>
+                        <select onchange="Calculate()" id="select11">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous faire face à des sentiments d'anxiété ou de nervosité ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select12"></label>
+                        <select onchange="Calculate()" id="select12">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Pouvez-vous faire face à des sentiments de dépression ou de déprime ?</label>
+                    <div class="formfield-select--container">
+                        <label for="select13"></label>
+                        <select onchange="Calculate()" id="select13">
+                            <option value="0.00" selected="selected">Sélectionner</option>
+                            <option value="0.00">Sans aucune difficulté</option>
+                            <option value="0.03">Avec une certaie difficulté</option>
+                            <option value="0.07">Avec beaucoup de difficultés</option>
+                            <option value="1.00">Incapable de le faire</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label class="bold">Quel niveau de douleur avez-vous ressenti en raison de votre état AU COURS DE LA SEMAINE DERNIERE ? Veuillez indiquer ci-dessous la sévérité de votre douleur :</label>
+                    <div class="formfield-select--container">
+                        <label for="select14"></label>
+                        <select onchange="Calculate()" id="select14">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0 (Aucune douleur)</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                            <option value="6.5">6.5</option>
+                            <option value="7">7</option>
+                            <option value="7.5">7.5</option>
+                            <option value="8">8</option>
+                            <option value="8.5">8.5</option>
+                            <option value="9">9</option>
+                            <option value="9.5">9.5</option>
+                            <option value="10">10 (Douleur aussi forte qu'elle pourrait être)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label class="bold">Compte tenu de toutes les façons dont la maladie et les conditions de santé peuvent vous affecter à ce moment, s'il vous plaît indiquer ci-dessous comment vous vous portez :</label>
+                    <div class="formfield-select--container">
+                        <label for="select15"></label>
+                        <select onchange="Calculate()" id="select15">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0 (Très bien)</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6">6</option>
+                            <option value="6.5">6.5</option>
+                            <option value="7">7</option>
+                            <option value="7.5">7.5</option>
+                            <option value="8">8</option>
+                            <option value="8.5">8.5</option>
+                            <option value="9">9</option>
+                            <option value="9.5">9.5</option>
+                            <option value="10">10 (Très mal)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                <h2 class="total">Total :</h2>
+                <div class="flex-column center">
+                <label for="total"></label>
+                <input class="acr_eular_2010-input" name="total" type="number" id="total" disabled/>
+                <input class="acr_eular_2010-result" name="resultat" type="text" id="ResultatMessage" disabled /><label for="ResultatMessage"></label>
+            </div>
+
+            <br>
+            <div class="export">
+                <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+            </div>
+            <br>
+            <br>
+            <div class="score_inter">Informations sur le RAPID3</div>
+            <span class="description">RAPID3 ou Routine Assessment of Patient Index Data 3<sup><a href="https://watermark.silverchair.com/kem364.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlMwggJPBgkqhkiG9w0BBwagggJAMIICPAIBADCCAjUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMSpsqHlLE5J_Hyt38AgEQgIICBn5bVMEftofG_7j4jYrqkC-7aT9SHwb2BYvc2xG9NXH7VhcN_ElZ1cQXxK_gWMJ2v9LjZwaiALDK93VTkwLeRVfytbIp9Gumck6L9WSmg4ccd_HUl0xnepzyzdissJsibuu8D_sCZfBY0Zd5ndIdcvkPYeLX_mlNxISHaO08lZ6W9gBqboaEG_-7QZYbB8jQU8oBFpuCP6Jx8i-f6ERmpXCb3EQ2ABd14EvruVmhI7TCV6W48DiSKK12sm7Aprbtq7OmjBjwg1i80AZQYChJYlQblZ5-ro6t0xj_TWJfK9xnpZ_KRYu-YVoHLKyle8POXp_RakuvjnymmAEpnXON6_0r2gvMCLdpjCY3iyRjRgLjcDjSFZ7N6eF1LNVPj20Ul2CdxOvDM8FIyw7li0NNCoHYnsS56AcPJFWSZE5QbuX9JmeF3Inr1JZPzJR_sxEivI9nyPERdel4d-JHyugPfjzaFnYaQha4uqt8zKMPEGzXbPmSoRcbqbkZHvMCfrApi7-0vvAzbTDg4gnoeDNYCAJVnohDq07ErJAhKY9NsmrTbRtbUcL-Y8yLmwO3vGMgDE4i-Eg6j2hTsG6aTz1B65G-rieMLohtyWXh7Qii8m6byU9oBcgFaPTlfVJmMIOEzF2As806OOVx4RTaLv7RNEivSjlVw48zCXYTSKEIIVVDDAR-bPv3" target="_blank">1</a></sup> est un indice de mesure d'activité de l'arthrite, calculé sur base d'un questionnaire très simple. Cet indice estime à quel point l'arthrite a un impact sur la vie de tous les jours. Le questionnaire RAPID3 est conçu pour être rapidement et facilement rempli par le patient lui-même, sans l'aide d'un médecin. Bien qu'il soit simple, cet indice mesure efficacement l'activité de la maladie tout en étant sensible au changement de condition du patient. RAPID3 est également corrélé avec les indices DAS28 et CDAI mais il a l'avantage de se passer d'un comptage formel des articulations atteintes. Même si cet indice vise les patients atteints d'arthrite rhumatoïde, il est également utilisé pour d'autres pathologies telles que l'arthrite psoriatique, l'ostéoarthrite, les spondylarthropathies, le lupus et la goutte.</span>
+            <br>
+            <br>
+            <span class="description">Les trois dimensions suivantes sont prises en compte :</span>
+            <ul>
+                <li>capacités physiques (13 questions),</li>
+                <li>douleur (évaluation personnelle sur une échelle de 0 à 10),</li>
+                <li>santé (évaluation personnelle sur une échelle de 0 à 10).</li>
+            </ul>
+            <span class="description">L'indice RAPID3 est calculé comme suit<sup><a href="https://www.rheumatology.org/Portals/0/Files/RAPID3%20Form.pdf" target="_blank">2</a></sup> :</span>
+            <br>
+            <br>
+            <span class="description">D'abord, les réponses aux 13 questions sont ramenées à un score entre 0 et 10.</span>
+            <span class="description">Ensuite, on y ajoute les scores de douleur et de santé.</span>
+            <br>
+            <br>
+            <span class="description">La valeur de l'indice RAPID3 peut être interprétée en termes de 4 catégories<sup><a href="http://www.jrheum.org/content/35/11/2136.short" target="_blank">3</a></sup> :</span>
+            <ul>
+                <li>de 1 à 3 : quasi-rémission,</li>
+                <li>de 4 à 6 : sévérité basse,</li>
+                <li>de 7 à 12 : sévérité moyenne,</li>
+                <li>de 13 à 30 : sévérité aigüe.</li>
+            </ul>
+            <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+    function Calculate()
+    {
+        let res = 0;
+
+        res += parseFloat(document.getElementById("select1").value);
+        res += parseFloat(document.getElementById("select2").value);
+        res += parseFloat(document.getElementById("select3").value);
+        res += parseFloat(document.getElementById("select4").value);
+        res += parseFloat(document.getElementById("select5").value);
+        res += parseFloat(document.getElementById("select6").value);
+        res += parseFloat(document.getElementById("select7").value);
+        res += parseFloat(document.getElementById("select8").value);
+        res += parseFloat(document.getElementById("select9").value);
+        res += parseFloat(document.getElementById("select10").value);
+        res += parseFloat(document.getElementById("select11").value);
+        res += parseFloat(document.getElementById("select12").value);
+        res += parseFloat(document.getElementById("select13").value);
+        res += parseFloat(document.getElementById("select14").value);
+        res += parseFloat(document.getElementById("select15").value);
+
+        document.form.total.value = Math.round(res*100)/100;
+
+        if (res <= 0.5) {
+            document.form.resultat.value = "Pas d'activité de la maladie"
+        } else if (res >= 1 && res <= 3) {
+            document.form.resultat.value = "Quasi-rémission (NR)"
+        } else if (res > 3 && res <= 6) {
+            document.form.resultat.value = "Sévérité basse (LS)"
+        } else if (res >= 6.5) {
+            document.form.resultat.value = "Sévérité moyenne (MS)"
+        }
+    }
+</script>
+</body>
+</html>

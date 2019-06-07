@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="style_common.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body class="scorebody">
-<p class="common_h1">DAS28-CRP</p>
+<body>
+<h1>DAS28-CRP</h1>
 <h2>Saisie du score</h2>
 <form name="form" id="form">
     <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
             <td><label for="Tjc28_label" id="Tjc28_label">Nombre d'articulations douloureuses (0 - 28)</label></td>
-            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Tjc28" class="input input_das" onchange="f_Calculer()" /></td>
+            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Tjc28" class="input_das" onchange="f_Calculer()" /></td>
         </tr>
         <tr>
             <td><label for="Sjc28_label" id="Sjc28_label">Nombre d'articulations enflées (0 - 28)</label></td>
-            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Sjc28" class="input input_das" onchange="f_Calculer()" /></td>
+            <td style="width: 30%"><input min=0 max=28 name="Resultat" type="number" id="Sjc28" class="input_das" onchange="f_Calculer()" /></td>
         </tr>
     </table>
 
@@ -28,31 +28,25 @@
     <table border="0" align="center" cellpadding="2" cellspacing="0">
         <tr>
             <td><label for="Crit01" id="Crit01">CRP (mg/l)</label></td>
-            <td style="width: 30%"><input name="Crit01" id="Crp" type="number" value="" onchange="f_Calculer()" class="input input_das" /></td>
+            <td style="width: 30%"><input name="Crit01" id="Crp" type="number" value="" onchange="f_Calculer()" class="input_das" /></td>
         </tr>
         <tr>
             <td><label for="Gh_label" id="Gh_label">Etat de santé général (de 0 = le meilleur à 100 = le pire)</label></td>
-            <td style="width: 30%"><input min=0 max=100 name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input input_das" /></td>
+            <td style="width: 30%"><input min=0 max=100 name="Resultat" type="number" id="Gh" onchange="f_Calculer()" class="input_das" /></td>
         </tr>
     </table>
-    <br />
-    <!--<h2>Date de l'enregistrement</h2>-->
-    <!--<div class="flex-row sb">-->
-    <!--<p>Enregistré le</p>-->
-    <!--<input class="input" type="date" class="das date input_das">-->
-    <!--</div>-->
     <br>
     <div class="score_result">
-        <h2>Score</h2>
-        <div class="flex-row sa">
-            <input name="Mot" type="text" id="reponse" disabled placeholder="0.96" class="input margin0 widthAuto" />
-            <input class="reponse text-result margin0 input" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" placeholder="Rémission" disabled />
+        <h2 class="left">Score</h2>
+        <div class="flex-column">
+            <input name="Mot" type="text" id="reponse" disabled placeholder="0.96" class="margin0 widthAuto" /><br>
+            <input class="reponse text-result margin0 width100" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" placeholder="Rémission" disabled />
         </div>
     </div>
     <br>
     <br>
     <div class="export">
-        <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+        <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
     </div>
     <br>
     <div class="score_inter">Informations DAS28-CRP</div>

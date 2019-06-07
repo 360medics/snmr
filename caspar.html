@@ -16,7 +16,7 @@
             padding-top: 10px;
         }
         .score_result input {
-            width:120px;
+            width:126px;
         }
         .flex-row {
             margin-bottom: 10px;
@@ -24,8 +24,8 @@
     </style>
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">Rhumatisme Psoriasique, Critères de classification CASPAR</p>
+<body>
+<h1>Rhumatisme Psoriasique, Critères de classification CASPAR</h1>
 
 
 <h2>Méthode</h2>
@@ -139,15 +139,15 @@
     <br />
 
     <div class="score_result">
-        Diagnostic
-        <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly"  style="width:150px; display:block; height:100px;" />
+        <h2 class="left">Diagnostic</h2>
+        <input name="Resultat" type="text" id="Resultat" style="" disabled   style="width:150px; display:block; height:100px;" />
         <div id="score_result_confirm" style="width:70px;"></div>
     </div>
 
 </form>
 <br>
 <div class="export">
-    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+    <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
 </div>
 <br>
 <div class="score_ref">Références</div>

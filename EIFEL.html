@@ -11,8 +11,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<body class="scorebody">
-<p class="scoretitle_title common_h1">Échelle d’Incapacité Fonctionnelle pour L’Évaluation des Lombalgies (EIFEL)</p>
+<body>
+<h1>Échelle d’Incapacité Fonctionnelle pour L’Évaluation des Lombalgies (EIFEL)</h1>
 
 <h2>Préambule</h2>
 <div>
@@ -240,8 +240,8 @@
     <br />
 
     <div class="score_result">
-        <h2>Score</h2>
-        <input name="Resultat" type="text" id="Resultat" style="" disabled readonly="readonly" />
+        <h2 class="left">Score :</h2>
+        <input name="Resultat" type="text" id="Resultat" style="" disabled  />
         <span id="score_result_confirm">/24</span>
     </div>
 
@@ -249,7 +249,7 @@
 <br>
 <br>
 <div class="export">
-    <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+    <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
 </div>
 <br>
 

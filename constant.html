@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body class="scorebody">
-<p class="common_h1">Score de constant</p>
+<body>
+<h1>Score de constant</h1>
 <p>D’après Constant CR, Murley AHG. A clinical method of functional assessment of the shoulder. Clin
     Orthop Relat Res 1987;(214):160-4. Traduction de M. Dougados, avec son aimable autorisation. </p>
 <form name="form" id="form">
@@ -211,7 +211,7 @@
     </div>
     <br>
     <div class="export">
-        <btn title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</btn>
+        <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
     </div>
     <br>
     <div class="sections">
@@ -338,7 +338,7 @@
     </div>
     <br>
     <h2>Mode de calcul et de présentation des résultats </h2>
-    <h3>Douleur</h3>
+    <div class="score_ref">Douleur</div>
     <p>Pour le domaine de la douleur, une double appréciation est nécessaire. On demande au patient
         d’indiquer l’intensité de sa douleur selon une échelle verbale. En l’absence de douleur, la note de 15
         lui est attribuée. Autrement, la note sera de 10, 5 ou 0 selon que la douleur est modérée, moyenne ou
@@ -352,10 +352,10 @@
     <p>Dans la référence princeps, le score douloureux est effectué sur « le degré de douleur le plus sévère
         survenant au cours des activités de la vie courante, telles que le travail, la détente, le repos ou la
         douleur survenant la nuit ».</p>
-    <h3>Activités</h3>
+    <div class="score_ref">Activités</div>
     <p>Pour les domaines concernant l’activité, le médecin note l’information recueillie à l’interrogatoire du
         patient.</p>
-    <h3>Mobilité</h3>
+    <div class="score_ref">Mobilité</div>
     <p>En ce qui concerne le domaine « mobilité », les amplitudes à considérer sont celles qui sont possibles,
         activement et sans douleur, le patient étant assis sur une chaise sans accoudoir. L’épaule n’étant pas
         bloquée, on comprend que l’abduction puisse dépasser 90°.<br>
@@ -364,7 +364,7 @@
         patient est assis, le bras tendu dans le plan de l’omoplate, c’est-à-dire à 30° d’antépulsion. Le pati ent
         doit résister à la poussée vers le bas exprimée par l’examinateur, pendant 5 secondes. Le test est
         répété 5 fois.</p>
-    <h3>Autres domaines</h3>
+    <div class="score_ref">Autres domaines</div>
     <p>Pour chacun des autres domaines, on attribue les scores dispensés à chacun des items. Le score
         total est sur 100 points. </p>
     <p>Pour la présentation des résultats, 3 possibilités :</p>
@@ -385,9 +385,6 @@
         normes à partir des valeurs observées chez des centaines de volontaires, hommes et femmes de tous
         âges (étude des amplitudes articulaires actives et de la force musculaire en abduction dans le plan de
         l’omoplate) (tableau 1). </p>
-
-    <div class="score_inter"></div>
-    <span class="description"></span>
     <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 </form>
 
