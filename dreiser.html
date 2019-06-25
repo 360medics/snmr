@@ -191,7 +191,9 @@
                 </label>
             </div>
             <h2 class="total left">Total :</h2><label for="total"></label>
-            <div class="center"><input class="margin0 input center" name="total" type="number" id="total" disabled/></div>
+            <div class="center">
+                <div class="margin0 input center" type="number" id="total"></div>
+            </div>
             <br>
             <div class="export">
                 <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
@@ -222,7 +224,7 @@
         for(let i=1; i<30; i++) {
             res += GetRadioValue('g' + i);
         }
-        document.form.total.value = res;
+        document.getElementById("total").innerText = res;
     }
 </script>
 </body>

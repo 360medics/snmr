@@ -80,7 +80,7 @@
     </div>
     <h2>Score : </h2>
     <div class="flex-row sa">
-        <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
+        <div id="total" class="res-asdas margin0 widthAuto"></div>
     </div>
     <br>
     <br>
@@ -126,7 +126,7 @@
             var abc = 0.079 * document.form.vItem1.value + 0.069 * radio1 + 0.113 * document.form.vItem3.value + 0.086 * document.form.vItem4.value + 0.293 * Math.sqrt(document.form.vVS.value * 1 + 1);
         }
         abc = Math.round(abc * 100) / 100;
-        document.form.total.value = abc ;
+        document.getElementById("total").innerText = abc;
     }
 </script>
 </body>

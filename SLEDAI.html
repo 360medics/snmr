@@ -226,7 +226,7 @@
 
     <div class="score_result">
         <h2 class="left">Score :</h2>
-        <input name="Resultat" type="text" id="Resultat" style="" disabled  />
+        <div id="Resultat" style=""></div>
         <div id="score_result_confirm"></div>
     </div>
 
@@ -245,17 +245,13 @@
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 
 <script type="text/javascript">
-    // Fonction de calcul de la page
     function f_Calculer()
     {
-        // calcul du résultat
         var Res = 0;
         for(var i=1; i<24; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
 
-        // Affichage du résultat
-        document.Form.Resultat.value = Res;
-
+        document.getElementById("Resultat").innerText = Res;
 
         try { MSSAndroidFunction.storeHistory(f_GetFilename(), "Systemic Lupus", "rhumatologie", "Score:", Res); } catch(e) {}
     }

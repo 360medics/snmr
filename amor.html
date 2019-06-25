@@ -135,7 +135,7 @@
     <br />
     <div class="score_result">
         <h2 class="left">Score :</h2>
-        <input name="Resultat" type="text" id="Resultat" style="" disabled  /><br><br>
+        <div id="Resultat" style=""></div>
         <span id="score_result_confirm" class="red bold fontS17"></span>
     </div>
 </form>
@@ -154,16 +154,13 @@
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 
 <script type="text/javascript">
-    // Fonction de calcul de la page
     function f_Calculer()
     {
-        // calcul du résultat
         var Res = 0;
-        for(var i=1; i<14; i++)
+        for(var i=1; i < 14; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
 
-        // Affichage du résultat
-        document.Form.Resultat.value = Res;
+        document.getElementById("Resultat").innerText = Res;
         if (Res>=6){
             document.getElementById("score_result_confirm").textContent = "Confirmation de la présence d'une spondylarthrite";
         }

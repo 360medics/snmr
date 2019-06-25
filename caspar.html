@@ -140,7 +140,8 @@
 
     <div class="score_result">
         <h2 class="left">Diagnostic</h2>
-        <input name="Resultat" type="text" id="Resultat" style="" disabled   style="width:150px; display:block; height:100px;" />
+        <div id="Resultat" style="" style="width:150px; display:block; height:100px;"></div>
+        <!--<input name="Resultat" type="text" id="Resultat" style="" disabled style="width:150px; display:block; height:100px;" />-->
         <div id="score_result_confirm" style="width:70px;"></div>
     </div>
 
@@ -160,20 +161,17 @@
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.  </span>
 
 <script type="text/javascript">
-    // Fonction de calcul de la page
     function f_Calculer()
     {
-        // calcul du résultat
         var Res = 0;
         for(var i=1; i<24; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
 
-        // Affichage du résultat
         if(Res>=3 && document.Form.Crit01.checked ){
-            document.Form.Resultat.value = "AFFIRMATIF";
+            document.getElementById("Resultat").innerText = "AFFIRMATIF";
         }
         else {
-            document.Form.Resultat.value = "NEGATIF";
+            document.getElementById("Resultat").innerText = "NEGATIF";
         }
     }
 </script>

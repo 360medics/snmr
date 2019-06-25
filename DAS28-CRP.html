@@ -39,8 +39,8 @@
     <div class="score_result">
         <h2 class="left">Score</h2>
         <div class="flex-column">
-            <input name="Mot" type="text" id="reponse" disabled placeholder="0.96" class="margin0 widthAuto" /><br>
-            <input class="reponse text-result margin0 width100" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" placeholder="Rémission" disabled />
+            <div id="reponse" class="margin0 widthAuto"></div>
+            <div class="reponse text-result margin0 width100" id="ResultatMessage" onclick="f_Calculer()"></div>
         </div>
     </div>
     <br>
@@ -77,6 +77,10 @@
 </form>
 
 <script type="text/javascript">
+
+    document.getElementById("ResultatMessage").innerText = "Rémission";
+    document.getElementById("reponse").innerText = "0.96";
+
     function f_Calculer()
     {
         var Tjc28 = document.form.Tjc28.value * 1;
@@ -86,30 +90,29 @@
         var Das28 = 0.56 * Math.sqrt(Tjc28) + 0.28 * Math.sqrt(Sjc28) + 0.36 * Math.log(Crp + 1) + 0.014 * Gh + 0.96;
 
         if(Das28>0)
-            document.form.reponse.value = Math.round(Das28*100)/100;
+            document.getElementById("reponse").innerText = Math.round(Das28*100)/100;
 
         if(Das28>0 && Das28<2.6) {
-            document.form.ResultatMessage.value = "Rémission";
+            document.getElementById("ResultatMessage").innerText = "Rémission";
         }
         else if(Das28>=2.6 && Das28<3.2 ){
-            document.form.ResultatMessage.value = "Activité Faible";
+            document.getElementById("ResultatMessage").innerText = "Activité Faible";
         }
         else if(Das28>3.2 && Das28<=5.1 ){
-            document.form.ResultatMessage.value = "Activité Modérée";
+            document.getElementById("ResultatMessage").innerText = "Activité Modérée";
         }
         else if(Das28>5.1){
-            document.form.ResultatMessage.value = "Activité Elevée";
+            document.getElementById("ResultatMessage").innerText = "Activité Modérée";
         }
 
-        //Reinitialisation
         if(Das28=="-Infinity"){
-            document.form.ResultatMessage.value = "";
-            document.form.reponse.value = "";
+            document.getElementById("ResultatMessage").innerText = "";
+            document.getElementById("reponse").innerText = "";
         }
 
-        if(Tjc28>28 || Sjc28>28 || Gh>100 || Vs==0 || Tjc28=="" || Sjc28=="" || Vs=="" || Gh==""){
-            document.form.ResultatMessage.value = "";
-            document.form.reponse.value = "";
+        if(Tjc28>28 || Sjc28>28 || Gh>100 || Tjc28=="" || Sjc28=="" || Gh==""){
+            document.getElementById("ResultatMessage").innerText = "";
+            document.getElementById("reponse").innerText = "";
         }
     }
 </script>

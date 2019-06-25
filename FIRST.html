@@ -74,7 +74,7 @@
     </div>
     <br>
     <div class="score_result">
-        <input name="Resultat" type="text" id="Resultat" style="" disabled  />
+        <div id="Resultat" style=""></div>
     </div>
 </form>
 <br>
@@ -93,16 +93,12 @@ Perrot S, Bouhassira D, Fermanian J. Cercle d'Etude de la Douleur en Rhumatologi
 <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
 
 <script type="text/javascript">
-    // Fonction de calcul de la page
     function f_Calculer()
     {
-        // calcul du résultat
         var Res = 0;
         for(var i=1; i < 25; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
-
-        // Affichage du résultat
-        document.Form.Resultat.value = Res;
+        document.getElementById("Resultat").innerText = Res;
     }
 </script>
 

@@ -16,64 +16,64 @@
             <div class="flex-column">
                 <h2>Atteinte articulaire</h2>
                 <label class="flex-row">
-                    <input name="g1" id="vItem1" checked type="radio" value="0" onclick="Calculate()" />
+                    <input name="g1" id="vItem1" checked type="radio" class="radio-eular" value="0" onclick="Calculate()" />
                     <label for="vItem1">1 grosse articulation</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g1" id="vItem2" type="radio" value="1" onclick="Calculate()" />
+                    <input name="g1" id="vItem2" type="radio" class="radio-eular" value="1" onclick="Calculate()" />
                     <label for="vItem2">2 à 10 grosses articulations</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g1" id="vItem3" type="radio" value="2" onclick="Calculate()" />
+                    <input name="g1" id="vItem3" type="radio" class="radio-eular" value="2" onclick="Calculate()" />
                     <label for="vItem3">1 à 3 petites articulations (avec ou sans atteinte de grosses articulations)</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g1" id="vItem4" type="radio" value="3" onclick="Calculate()" />
+                    <input name="g1" id="vItem4" type="radio" class="radio-eular" value="3" onclick="Calculate()" />
                     <label for="vItem4">4 à 10 petites articulations (avec ou sans atteinte de grosses articulations)</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g1" id="vItem5" type="radio" value="5" onclick="Calculate()" />
+                    <input name="g1" id="vItem5" type="radio" class="radio-eular" value="5" onclick="Calculate()" />
                     <label for="vItem5">> 10 articulations (au moins une petite articulation)</label>
                 </label>
                 <br>
                 <h2>Sérologie</h2>
                 <label class="flex-row">
-                    <input name="g2" id="vItem6" checked type="radio" value="0" onclick="Calculate()" />
+                    <input name="g2" id="vItem6" checked type="radio" class="radio-eular" value="0" onclick="Calculate()" />
                     <label for="vItem6">FR négatif et ACPA négatifs</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g2" id="vItem7" type="radio" value="2" onclick="Calculate()" />
+                    <input name="g2" id="vItem7" type="radio" value="2" class="radio-eular" onclick="Calculate()" />
                     <label for="vItem7">FR faiblement positif ou ACPA faiblement positifs</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g2" id="vItem8" type="radio" value="3" onclick="Calculate()" />
+                    <input name="g2" id="vItem8" type="radio" value="3" class="radio-eular" onclick="Calculate()" />
                     <label for="vItem8">FR hautement positif ou ACPA hautement positifs</label>
                 </label>
                 <br>
                 <h2>Marqueurs de la phase aiguë</h2>
                 <label class="flex-row">
-                    <input name="g3" id="vItem9" checked type="radio" value="0" onclick="Calculate()" />
+                    <input name="g3" id="vItem9" checked type="radio" class="radio-eular" value="0" onclick="Calculate()" />
                     <label for="vItem9">CRP normale et ESR normale</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g3" id="vItem10" type="radio" value="1" onclick="Calculate()" />
+                    <input name="g3" id="vItem10" type="radio" class="radio-eular" value="1" onclick="Calculate()" />
                     <label for="vItem10">CRP anormale ou VS anormale</label>
                 </label>
                 <br>
                 <h2>Durée des symptômes</h2>
                 <label class="flex-row">
-                    <input name="g4" id="vItem11" checked type="radio" value="0" onclick="Calculate()" />
+                    <input name="g4" id="vItem11" checked type="radio" class="radio-eular" value="0" onclick="Calculate()" />
                     <label for="vItem11">< 6 semaines</label>
                 </label>
                 <label class="flex-row">
-                    <input name="g4" id="vItem12" type="radio" value="1" onclick="Calculate()" />
+                    <input name="g4" id="vItem12" type="radio" value="1" class="radio-eular" onclick="Calculate()" />
                     <label for="vItem12">>= 6 semaines</label>
                 </label>
             </div>
-            <h2 class="total">Total :</h2>
+            <h2 class="total">Résultat :</h2>
             <div class="flex-column center">
-                <input class="margin0 acr_eular_2010-input center" name="total" type="number" id="total" disabled /><br><label for="total"></label>
-                <input class="acr_eular_2010-result" name="resultat" type="text" id="ResultatMessage" disabled /><label for="ResultatMessage"></label>
+                <div class="margin0 acr_eular_2010-input center" type="number" id="total" ></div>
+                <div class="acr_eular_2010-result" type="text" id="ResultatMessage" ></div>
             </div>
             <br>
             <div class="export">
@@ -120,6 +120,9 @@
     </form>
 </div>
 <script type="text/javascript">
+    document.getElementById("total").innerText = "0";
+    document.getElementById("ResultatMessage").innerText = "Polyarthrite rhumatoïde : Non";
+
     function GetRadioValue(id)
     {
         let radios = document.getElementsByName(id);
@@ -138,12 +141,12 @@
         for(let i=1; i<30; i++) {
             res += GetRadioValue('g' + i);
         }
-        document.form.total.value = res;
+        document.getElementById("total").innerText = res;
 
         if (res >= 6) {
-            document.form.resultat.value = "Polyarthrite rhumatoïde : Oui"
+            document.getElementById("ResultatMessage").innerText = "Polyarthrite rhumatoïde : Oui"
         } else {
-            document.form.resultat.value = "Polyarthrite rhumatoïde : Non"
+            document.getElementById("ResultatMessage").innerText = "Polyarthrite rhumatoïde : Non"
         }
     }
 </script>

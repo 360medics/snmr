@@ -26,7 +26,8 @@
     <div>
 
         <div class="score_result">
-            <input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled /><label for="ResultatWPI"></label>
+            <div id="ResultatWPI" style=""></div>
+            <!--<input name="ResultatWPI" type="text" id="ResultatWPI" style="" disabled /><label for="ResultatWPI"></label>-->
             WPI: Check each area you’ve had pain over the last week.
             <span style="font-size:14px; font-weight:normal;"><br/>(score will be between 0 and 19)<br/><br/></span>
         </div>
@@ -348,15 +349,9 @@
 <br>
     <h2 class="total">Score :</h2>
     <div class="flex-column center">
-        <input class="margin0 acr_eular_2010-input center" name="ResultatSS" type="text" id="ResultatSS" style="" disabled /><label for="ResultatSS"></label>
+        <div class="margin0 acr_eular_2010-input center" id="ResultatSS" style=""></div>
         <input class="acr_eular_2010-result" id="text-res" type="text" disabled /><label for="text-res" class="center"><span class="center bold">Total SS Scale score (adding the 6 items above).</span> <br><span class="acr_eular_2010-result" style="font-size:14px; font-weight:bold;">The final score is between 0 and 12.</span></label>
     </div>
-    <!--<div class="score_result">-->
-        <!--Score :-->
-        <!--<input name="ResultatSS" type="text" id="ResultatSS" style="" disabled /><label for="ResultatSS"></label>-->
-        <!--Total SS Scale score (adding the 6 items above).-->
-        <!--<span style="font-size:14px; font-weight:normal;"><br/>The final score is between 0 and 12.<br/></span>-->
-    <!--</div>-->
 </form>
 
 <br>
@@ -398,7 +393,6 @@
         f_CalculerScore();
     }
 
-    // Fonction de calcul de la page
     function f_CalculerScore()
     {
         var Res = 0;
@@ -409,14 +403,13 @@
         var ResultatPain = document.Form.ResultatPain.value * 1;
         var ResultatDepression = document.Form.ResultatDepression.value * 1;
 
-        document.Form.ResultatSS.value = Fatigue+Waking+Cognitive+ResultatHeadaches+ResultatPain+ResultatDepression;
+        document.getElementById("ResultatSS").innerText = Fatigue+Waking+Cognitive+ResultatHeadaches+ResultatPain+ResultatDepression;
     }
 
 
     function f_CalculerFatigue()
     {
 
-        // calcul du résultat
         var radios = document.getElementsByName('vItemFatigue');
         var Res = 0;
         for (var i = 0; i < radios.length; i++) {
@@ -429,10 +422,8 @@
         f_CalculerScore();
     }
 
-    // Fonction de calcul de la page
     function f_CalculerWaking()
     {
-        // calcul du résultat
         var radios = document.getElementsByName('vItemWaking');
         var Res = 0;
         for (var i = 0; i < radios.length; i++) {
@@ -445,10 +436,8 @@
         f_CalculerScore();
     }
 
-    // Fonction de calcul de la page
     function f_CalculerCognitive()
     {
-        // calcul du résultat
         var radios = document.getElementsByName('vItemCognitive');
         var Res = 0;
         for (var i = 0; i < radios.length; i++) {
@@ -461,16 +450,13 @@
         f_CalculerScore();
     }
 
-    // Fonction de calcul de la page
     function f_Calculer()
     {
-        // calcul du résultat
         var Res = 0;
         for(var i=1; i < 20; i++)
             Res += f_GetRadioValue('vItem'+i)*1;
 
-        // Affichage du résultat
-        document.Form.ResultatWPI.value = Res;
+        document.getElementById("ResultatWPI").innerText = Res;
 
         f_CalculerScore();
     }

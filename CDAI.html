@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CDAI</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>CDAI</h1>
+<h2>Score des articulations</h2>
+<h2>Saisie du score</h2>
+<div class="content">
+    <form name="form" id="form">
+        <div>
+            <br>
+            <div class="flex-column">
+                <div class="formfield-select margin-bottom-20">
+                    <label>Nombre d'articulations douloureuses</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select1">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Nombre d'articulations enflées</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select2">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                        </select>
+                    </div>
+                </div>
+                <h2>Mesures</h2>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Évaluation globale par le patient de l'activité de la maladie (0-10)</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select3">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formfield-select margin-bottom-20">
+                    <label>Évaluation globale par l'équipe soignante de l'activité de la maladie (0-10)</label>
+                    <div class="formfield-select--container">
+                        <label for="select1"></label>
+                        <select onchange="Calculate()" id="select4">
+                            <option value="0" selected="selected">Sélectionner</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2 class="total">Score :</h2>
+            <div class="flex-column center">
+                <label for="total"></label>
+                <div class="acr_eular_2010-input" type="number" id="total" ></div>
+                <!--<input class="acr_eular_2010-input" name="total" type="number" id="total" placeholder="0" disabled/>-->
+                <div class="acr_eular_2010-result" type="text" id="ResultatMessage"></div>
+                <!--<input class="acr_eular_2010-result" name="resultat" type="text" placeholder="Rémission" id="ResultatMessage" disabled /><label for="ResultatMessage"></label>-->
+            </div>
+
+            <br>
+            <div class="export">
+                <button title="exporter en pdf" id="exportBtn" class="export-btn" onclick="window.print();" target="_blank"><i class="fas fa-file-pdf"></i> Exporter en PDF</button>
+            </div>
+        </div>
+    </form>
+    <div class="score_inter">Informations CDAI</div>
+    <span class="description">Le CDAI ou Clinical Disease Activity Index<a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/20699241"><sup>1</sup></a> et le SDAI ou Simplified Disease Activity Index<a target="_blank" href="https://www.ncbi.nlm.nih.gov/pubmed/12595618"><sup>2</sup></a> sont inspirés de la famille de scores « DAS » pour la polyarthrite rhumatoïde, comprenant <a href="https://360medics.com/assets/media/snmr-tools/das28.html">DAS28</a> et <a href="https://360medics.com/assets/media/snmr-tools/DAS28-CRP.html">DAS28-CRP</a>. Ils sont très utiles pour réaliser une évaluation objective, reproductible et comparable de l'activité de la polyarthrite rhumatoïde.</span>
+    <br>
+    <br>
+    <span>Le CDAI tient compte des éléments suivants :</span>
+    <br>
+    <br>
+    <ul>
+        <li>TJC28 : nombre d'articulations douloureuses (0-28).</li>
+        <li>SJC28 : nombre d'articulations enflées (0-28).</li>
+        <li>PaGH : évaluation globale de la santé par le patient (patient global health assessment) (de 0=la meilleure à 10=la pire).</li>
+        <li>PrGH : évaluation globale de la santé par l'équipe soignante (care provider global health assessment) (de 0=la meilleure à 10=la pire).</li>
+    </ul>
+    <br>
+    <span>Le score est calculé avec l'équation suivante :</span>
+    <br>
+    <br>
+    <span>CDAI = TJC28 + SJC28 + PaGH + PrGH</span>
+    <br>
+    <br>
+    <span>L'interprétation de ce score compris entre 0 et 76 ne dépend pas de son évolution au cours du temps. Généralement, on considère qu'il y a rémission si le score est compris entre 0 et 2,8 inclus. Une activité faible est indiquée par un score > 2,8 jusqu'à 10 inclus. Une activité modérée est indiquée par un score compris entre > 10 et 22 inclus, tandis qu'une activité élevée est indiquée par un score strictement supérieur à 22.</span>
+    <br>
+    <br>
+    <span>Autant pour le CDAI que pour le SDAI, les scores des 28 articulations douloureuses ou enflées visent les mêmes articulations (épaules, coudes, poignets, articulations métacarpo-phalangiennes, articulations interphalangiennes proximales et les genoux).</span>
+
+    <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.</span>
+
+</div>
+<script type="text/javascript">
+    document.getElementById("total").innerText = 0;
+    document.getElementById("ResultatMessage").innerText = "Rémission";
+
+    function Calculate()
+    {
+        let res = 0;
+
+        res += parseFloat(document.getElementById("select1").value);
+        res += parseFloat(document.getElementById("select2").value);
+        res += parseFloat(document.getElementById("select3").value);
+        res += parseFloat(document.getElementById("select4").value);
+
+        document.getElementById("total").innerText = res;
+
+        if (res >= 23) {
+            document.getElementById("ResultatMessage").innerText = "Haute activité";
+        } else if (res >= 11) {
+            document.getElementById("ResultatMessage").innerText = "Activité modérée";
+        } else if (res >= 3) {
+            document.getElementById("ResultatMessage").innerText = "Activité faible";
+        } else if (res < 3) {
+            document.getElementById("ResultatMessage").innerText = "Rémission";
+        }
+
+    }
+</script>
+</body>
+</html>

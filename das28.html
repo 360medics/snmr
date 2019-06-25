@@ -53,14 +53,12 @@
 
       <div class="score_result">
         <h2 class="left">Score :</h2>
-        <span class="flex-column center">
-          <input name="Mot" type="text" id="reponse" disabled class="margin0 widthAuto center" /><br>
-          <input class="text-result margin0 center width100" name="Resultat" type="text" id="ResultatMessage" onclick="f_Calculer()" disabled  />
-        </span>
+        <div class="flex-column center">
+          <div id="reponse" class="margin0 widthAuto center"></div>
+          <br>
+          <div class="text-result margin0 center width100" id="ResultatMessage" onclick="f_Calculer()"></div>
+        </div>
       </div>
-
-
-
 
 
 
@@ -77,7 +75,6 @@
     <span class="legalinfo"><br/><br/>L'évaluation d'un patient est avant tout clinique et/ou biologique. Le traitement d'un patient ne peut reposer sur le seul résultat de ce site.  </span>
 
     <script type="text/javascript">
-      // Fonction de calcul de la page
       function f_Calculer()
       {
         var Tjc28 = document.Form.Tjc28.value * 1;
@@ -85,8 +82,6 @@
         var Vs = document.Form.Vs.value * 1;
         var Gh = document.Form.Gh.value * 1;
         var Das28 = 0.56*Math.sqrt(Tjc28)+0.28*Math.sqrt(Sjc28)+0.7*Math.log(Vs)+0.014*Gh;
-
-        console.log(Tjc28+" "+Sjc28+" "+Vs+" "+Gh+" DAS="+Das28);
 
         if(Tjc28>28){
           document.getElementById('Tjc28_label').style.color="#F00";
@@ -114,33 +109,31 @@
           document.getElementById('Gh').style.color="#000";
         }
 
-        if(Das28>0)
-          document.Form.reponse.value = Math.round(Das28*100)/100;
-
+        if(Das28>0) {
+          document.getElementById("reponse").innerText = Math.round(Das28 * 100) / 100;
+        }
         if(Das28>0 && Das28<2.6) {
-          document.Form.ResultatMessage.value = "Rémission";
+          document.getElementById("ResultatMessage").innerText = "Rémission";
         }
         else if(Das28>=2.6 && Das28<3.2 ){
-          document.Form.ResultatMessage.value = "Activité Faible";
+          document.getElementById("ResultatMessage").innerText = "Activité Faible";
         }
         else if(Das28>3.2 && Das28<=5.1 ){
-          document.Form.ResultatMessage.value = "Activité Modérée";
+          document.getElementById("ResultatMessage").innerText = "Activité Modérée";
         }
         else if(Das28>5.1){
-          document.Form.ResultatMessage.value = "Activité Elevée";
+          document.getElementById("ResultatMessage").innerText = "Activité Elevée";
         }
-        //Reinitialisation
+
         if(Das28=="-Infinity"){
-          document.Form.ResultatMessage.value = "";
-          document.Form.reponse.value = "";
+          document.getElementById("ResultatMessage").innerText = "";
+          document.getElementById("reponse").innerText = "";
         }
 
         if(Tjc28>28 || Sjc28>28 || Gh>100 || Vs==0 || Tjc28=="" || Sjc28=="" || Vs=="" || Gh==""){
-          document.Form.ResultatMessage.value = "";
-          document.Form.reponse.value = "";
+          document.getElementById("ResultatMessage").innerText = "";
+          document.getElementById("reponse").innerText = "";
         }
-
-
       }
     </script>
 

@@ -2,11 +2,12 @@ body {
     font-family: "Arial", "Georgia";
     font-smooth: never;
     max-width: 100vw;
-    color: #303030;;
+    color: #303030;
     text-align: justify;
     margin: 15px;
     background-color: white;
     font-size: 1em;
+    margin-top: 40px;
 }
 
 h1 {
@@ -48,6 +49,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    border: none;
 }
 
 .margin-b-2 {
@@ -176,13 +178,23 @@ h2,
     line-height:27px;
     font-variant:petite-caps;
     font-size: 19px;
-
 }
 
 .disabled {
     background-color: #efefef;
     border: none !important;
 }
+
+input:disabled {
+    background-color: #fff !important;
+}
+
+.radio-eular {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+}
+
 .input-constant {
     width: 35px;
     height: 28px;
@@ -230,15 +242,6 @@ h2,
 .margin-top-9 {
     margin-top: 9px;
 }
-
-.score_result div{
-    font-size: 15px;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-}
-
-
 
 .initial {
     display: initial !important;
@@ -350,8 +353,19 @@ label {
     font-weight: normal;
 }
 
+a {
+    text-decoration: none;
+    color: #c41723;
+}
+
 .sa {
     justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+    .responsive-sa {
+        justify-content: space-around;
+    }
 }
 
 .cadre {
@@ -505,8 +519,17 @@ select {
     width: 100% !important;
 }
 
+.cdai-msg {
+    max-width: 100%;
+    border: none;
+}
+
 .font-size-08 {
     font-size: 0.8em;
+}
+
+::placeholder {
+    color: #c41723 !important;
 }
 
 .score_result_asdas input {
@@ -760,7 +783,6 @@ fieldset {
 .reponse {
     border: none;
     min-width: 77px;
-    margin-top: 20px;
 }
 
 .acr_2010 td{

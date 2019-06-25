@@ -181,10 +181,10 @@
                 </div>
             </div>
             <div class="flex-row">
-                <h2 class="total left">Total :</h2><label for="total"></label>
+                <h2 class="total left">Total :</h2>
             </div>
             <div class="center">
-                <input class="input margin0" name="total" type="number" id="total" disabled/>
+                <div class="input margin0" style="max-width: 100%;" type="number" id="total"></div>
             </div>
             <br>
             <div class="export">
@@ -235,7 +235,7 @@
         res += parseFloat(document.getElementById("select2").value);
         res += parseFloat(document.getElementById("select3").value);
         res += parseFloat(document.getElementById("select4").value);
-        document.form.total.value = res;
+        document.getElementById("total").innerText = res;
     }
 </script>
 </body>

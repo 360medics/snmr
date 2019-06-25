@@ -72,7 +72,7 @@
     <br>
     <h2>Score</h2>
     <div class="flex-row sa">
-        <input name="Mot" type="text" id="total" disabled class="res-asdas margin0 widthAuto" />
+        <div id="total" class="res-asdas margin0 widthAuto"></div>
     </div>
     <br>
     <br>
@@ -105,7 +105,7 @@
             }
         }
 
-        document.form.total.value = (vItem1 / 5) + (vItem2 / 5) + (vItem3 / 5) + (vItem4 / 5) + (vItem5 / 10) + radio;
+        document.getElementById("total").innerText = (vItem1 / 5) + (vItem2 / 5) + (vItem3 / 5) + (vItem4 / 5) + (vItem5 / 10) + radio;
     }
 </script>
 </body>
