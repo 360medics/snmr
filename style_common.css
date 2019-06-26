@@ -129,6 +129,7 @@ td {
     display: flex;
     flex-direction: column;
 }
+
 [type="checkbox"]{
     margin: 2px 5px 10px 0;
 }
@@ -139,18 +140,6 @@ td {
 
 .italic {
     font-style: italic;
-}
-
-.textAlignL {
-    text-align: left;
-}
-
-.mr0 {
-    margin-right: 0;
-}
-
-.mb0 {
-    margin-bottom: 0 !important;
 }
 
 .fontS17 {
@@ -248,10 +237,6 @@ input:disabled {
     margin-left: 9px;
 }
 
-.altern_color{
-    background-color:#DEDEDE
-}
-
 .bold {
     font-weight: bold;
 }
@@ -261,10 +246,6 @@ input:disabled {
     margin: 5px;
 }
 
-.red {
-    color: #c41723;
-}
-
 .small {
     font-size: 0.8em;
 }
@@ -272,12 +253,6 @@ input:disabled {
 .legalinfo{
     font-style: italic;
     color:#666;
-}
-
-
-.smol {
-    max-width: 12px !important;
-    min-width: 0 !important;
 }
 
 .style1 {
@@ -360,12 +335,6 @@ a {
 
 .sa {
     justify-content: space-around;
-}
-
-@media screen and (max-width: 1024px) {
-    .responsive-sa {
-        justify-content: space-around;
-    }
 }
 
 .cadre {
@@ -695,7 +664,7 @@ select {
 ***********************************************************************************************************************/
 @media screen and (max-width: 1024px){
     .export, #exportBtn {
-        display: none;
+        /*display: none;*/
     }
 
     .first-col {
@@ -704,6 +673,10 @@ select {
 
     .not-first-col {
         margin-left: 20px;
+    }
+
+    .responsive-sa {
+        justify-content: space-around;
     }
 }
 
@@ -719,7 +692,7 @@ select {
 
 @media print {
     #exportBtn {
-        display :  none;
+        /*display :  none;*/
     }
 }
 
